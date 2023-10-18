@@ -1,0 +1,29 @@
+#travelpartner {
+    grid-column: 2 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 2rem 0;
+}
+
+#travelpartner h3 {
+    grid-column: 1;
+    font-weight: 500;
+    color: var(--base-color);
+}
+
+#travelpartner ul {
+    grid-column: 2 / span 2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 0;
+    align-items: center;
+}
+
+#travelpartner ul li {
+    list-style: none;    
+}
+
+#travelpartner ul li img {
+    width: 6rem;
+}

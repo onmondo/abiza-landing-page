@@ -1,0 +1,41 @@
+#navigation {
+    top: 0;
+    text-align: center;
+    z-index: 1;
+    font-size: 0.7rem;
+    font-weight: 600;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+#navigation img {
+    width: 3.1rem;
+}
+
+#navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+#navigation ul li {
+    list-style: none;    
+}
+
+#aboutme {
+    margin: 2rem 0;
+}
+
+#aboutme h1 {
+    font-size: 2.7rem;
+}
+
+#aboutme p {
+    font-size: 0.8rem;
+    color: var(--base-color);
+    font-weight: 500;
+}
