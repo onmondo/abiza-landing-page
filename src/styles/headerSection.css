@@ -27,15 +27,95 @@
 }
 
 #aboutme {
+    /* grid-column: 2 / span 2; */
     margin: 2rem 0;
+    padding-right: 2rem;
 }
 
-#aboutme h1 {
+#aboutme header h1 {
     font-size: 2.7rem;
 }
 
-#aboutme p {
+.description {
     font-size: 0.8rem;
     color: var(--base-color);
     font-weight: 500;
 }
+
+#promote {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.homestayreview {
+    width: 20rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 1.2rem;
+    box-shadow: 1px 6px 20px;
+    z-index: 1;
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin:1.1rem;
+}
+
+.homestayreview header h4 {
+    font-size: 1.1rem;
+    margin: 0.4rem 0;
+}
+
+.homestayreview header p {
+    margin: 0.4rem 0;
+}
+
+.homestayreview img {
+    float: left;
+    width: 4rem;
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 1rem;
+}
+
+#promote img.backgroundimg {
+    width: 36rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 2rem;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+}
+
+#promote span {
+    width: 10rem;
+    box-sizing: border-box;
+    border-style: none;
+    background-color: white;
+}
+
+#promotetop {
+    border-bottom-right-radius: 2rem;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+#promotebottom {
+    border-top-left-radius: 2rem;
+    grid-column: 4;
+    grid-row: 3;
+    text-align: center;
+}
+
+#promotebottom img {
+    width: 7.2rem;
+}
+
+/* #promotebottom .chip {
+    width: 2.7rem;
+    grid-row: 2;
+} */
