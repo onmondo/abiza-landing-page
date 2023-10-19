@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo-transparent.png';
 
 class Navigation extends Component {
     render() {
@@ -9,7 +9,8 @@ class Navigation extends Component {
                 <nav>
                     <ul>
                         <li>Home</li>
-                        <li>Packages</li>
+                        <li>Partners</li>
+                        <li>Contact Us</li>
                         <li>FAQ</li>
                     </ul>
                 </nav>

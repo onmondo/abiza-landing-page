@@ -27,7 +27,6 @@
 }
 
 #aboutme {
-    /* grid-column: 2 / span 2; */
     margin: 2rem 0;
     padding-right: 2rem;
 }
@@ -51,7 +50,7 @@
 }
 
 .homestayreview {
-    width: 20rem;
+    width: 18rem;
     box-sizing: border-box;
     border-style: none;
     border-radius: 1.2rem;
@@ -59,18 +58,31 @@
     z-index: 1;
     grid-column: 1 /span 2;
     grid-row: 2;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--base-bg-color);
     padding: 1rem;
-    margin:1.1rem;
+    margin: 1.1rem 1rem 2rem 1rem;
 }
 
 .homestayreview header h4 {
     font-size: 1.1rem;
     margin: 0.4rem 0;
+    text-align:justify;
+}
+
+.homestayreview header h4 aside {
+    display: inline;
+    font-size: 0.7rem;
 }
 
 .homestayreview header p {
     margin: 0.4rem 0;
+}
+
+.homestayreview header p aside {
+    margin: 0.4rem 0;
+    display: inline;
+    color: black;
+    font-weight: 700;
 }
 
 .homestayreview img {
@@ -95,7 +107,7 @@
     width: 10rem;
     box-sizing: border-box;
     border-style: none;
-    background-color: white;
+    background-color: var(--base-bg-color)
 }
 
 #promotetop {

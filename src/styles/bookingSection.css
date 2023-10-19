@@ -14,7 +14,7 @@
 #travelpartner ul {
     grid-column: 2 / span 2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
     align-items: center;
@@ -24,6 +24,26 @@
     list-style: none;    
 }
 
-#travelpartner ul li img {
+#travelpartner ul li a.mainroom > img {
     width: 6rem;
+}
+
+#travelpartner ul li a.secondary {
+    text-decoration: none;
+    color: var(--base-bg-color);
+    font-weight: 600;
+    font-size: 0.6rem;
+}
+
+#travelpartner ul li a.secondary > img {
+    width: 4rem;
+}
+
+#travelpartner ul li a.secondary > span {
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgb(255, 67, 67); ;
 }
