@@ -1,10 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./components/app";
 import "./styles/main.css";
 import "./styles/headerSection.css";
 import "./styles/bookingSection.css";
 import "./styles/contactUs.css";
-import "./styles/screenSize.css";
+import "./styles/screenMediumSize.css";
+import "./styles/screenSmallSize.css";
+import "./styles/screenXSmallSize.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);

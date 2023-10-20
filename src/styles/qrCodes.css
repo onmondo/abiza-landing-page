@@ -1,0 +1,30 @@
+/* @keyframes slideaway {
+    from { display: none; }
+    to { transform: translateY(5rem); opacity: 1;}
+  } */
+
+#qrcodes {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    background-color: var(--base-bg-color);
+    /* border-style: solid;
+    border-color: var(--base-color);
+    border-radius: 1rem;
+    border-width: 0.15rem; */
+    /* animation: slideaway 1s;
+    display: none;
+    opacity: 0; */
+}
+
+#qrcodes svg {
+    width: 25rem;
+}
+
+#airBnBQRcode, #agodaQRcode, #bookingDotComQRcode {
+    /* top: 50%; */
+    /* position: fixed; */
+    display: none;
+    /* opacity: 0; */
+    /* animation: slideaway 1s; */
+    /* right: 50%;     */
+}
