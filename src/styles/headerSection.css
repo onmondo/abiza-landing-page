@@ -74,11 +74,11 @@
     font-size: 0.7rem;
 }
 
-.homestayreview header p {
+.homestayreview header h5 {
     margin: 0.4rem 0;
 }
 
-.homestayreview header p aside {
+.homestayreview header h5 aside {
     margin: 0.4rem 0;
     display: inline;
     color: black;

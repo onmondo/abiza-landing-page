@@ -1,0 +1,6 @@
+#qrcodes {
+    top: 50%;
+    position: fixed;
+    display: none;
+    right: 50%;    
+}

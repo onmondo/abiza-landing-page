@@ -2,6 +2,7 @@ import React from "react";
 import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
+import qrIcon from '../assets/qr-icon.svg';
 
 function BookingSection() {
     return (
@@ -11,29 +12,40 @@ function BookingSection() {
             </header>
             <ul>
                 <li>
+
                     <a className="mainroom" href="https://airbnb.com/h/abiza" target="blank">
                         <img src={airbnb} />
                     </a>
+                    <a href="#"><img className="qrcode" src={qrIcon} /></a>
                 </li>
-                <li>
+                {/* <li>
+                    <h6>new room</h6>
+                    <a><img className="qrcodes" src={qrIcon} /></a>
                     <a className="secondary" href="https://airbnb.com/h/abiza2" target="blank">
-                        <img src={airbnb} /><span>new</span>
+                        <img src={airbnb} />
                     </a>
-                </li>
+                </li> */}
                 <li>
+
                     <a className="mainroom" href="https://www.agoda.com/en-us/pages/agoda/default/page_hotel.aspx?hotel_id=42077085" target="blank">
-                        <img src={agoda}></img>
+                        <img src={agoda} />
                     </a>
+                    <a href="#"><img className="qrcode" src={qrIcon} /></a>
                 </li>
-                <li>
+                {/* <li>
+                    <h6>new room</h6>
+                    <a><img className="qrcodes" src={qrIcon} /></a>
                     <a className="secondary" href="https://www.agoda.com/abiza-homestay/hotel/matnog-ph.html?hotel_id=35077109" target="blank">
-                        <img src={agoda}></img><span>new</span>
+                        <img src={agoda} />
                     </a>
-                </li>
+
+                </li> */}
                 <li>
+
                     <a className="mainroom" href="https://www.booking.com/hotel/ph/abiza-homestay.en-gb.html?aid=304142" target="blank">
-                        <img src={bookingDotCom}></img>
+                        <img src={bookingDotCom} />
                     </a>
+                    <a href="#"><img className="qrcode" src={qrIcon} /></a>
                 </li>
             </ul>
         </section>
