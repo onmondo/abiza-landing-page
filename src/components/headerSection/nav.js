@@ -7,10 +7,10 @@ function Navigation() {
             <img src={logo}></img>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Partners</li>
-                    <li>Contact Us</li>
-                    <li>FAQ</li>
+                    <li><a href="#aboutme">Home</a></li>
+                    <li><a href="#travelpartner">Partners</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                    {/* <li>FAQ</li> */}
                 </ul>
             </nav>
         </section>

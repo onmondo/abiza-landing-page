@@ -1,0 +1,43 @@
+@media screen and (max-width: 535px) {
+    main {
+        justify-items: center;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    #promote {
+        display: block;
+        margin: 4rem 0;
+    }
+
+    .homestayreview {
+        margin: 0;
+    }
+
+    #promote img.backgroundimg {
+        display: none; 
+    }
+
+    #promotelogo {
+        display: none;
+    }
+
+    #travelpartner ul {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #travelpartner ul li {
+        margin-bottom: 4rem;
+    }
+
+    #travelpartner ul li a.mainroom > img {
+        width: 10rem;
+    }
+
+    img.qrcode {
+        width: 4rem;
+    }
+}

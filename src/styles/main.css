@@ -25,6 +25,10 @@ main > * {
     grid-column: 2;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover, a:focus, a:visited, a:not(a:visited) {
     color: rgb(0, 0, 0);
 }
