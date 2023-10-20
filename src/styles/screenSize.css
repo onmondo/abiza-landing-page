@@ -49,6 +49,10 @@
         grid-column: 2 / span 3;
     }
 
+    .homestayreview {
+        margin: 1.4rem 1.4rem 1.4rem 0;
+    }
+
     #promote span {
         width: 10rem;
     }
