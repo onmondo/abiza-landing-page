@@ -5,19 +5,21 @@ import logo from '../../assets/logo-transparent.png';
 import homestay from '../../assets/homestay.png';
 
 function HeaderSection() {
-    const phoneNumber = {
-        areaCode: '+63',
-        number: '9177053956'
-    }
+    const phoneNumbers = [
+        {
+            areaCode: '+63',
+            number: '9177053956'
+        },
+        {
+            areaCode: '+63',
+            number: '9204754533'
+        }
+    ]
 
-    const copyToClipboardHandler = (event) => {
+    const copyToClipboardHandler = (event, phoneNumber) => {
         event.preventDefault();
-        console.log(event)
-        navigator.clipboard.writeText(getPhoneNumber())
+        navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
     }
-
-    const getPhoneNumber = () =>
-        `${phoneNumber.areaCode}-${phoneNumber.number}`
 
     return (
         <>
@@ -29,16 +31,24 @@ function HeaderSection() {
                 <section id="contactus">
                     <address>
                         <dl>
-                            <dt>&#128241; Phone</dt>
-                            <dd><a href="#" onClick={copyToClipboardHandler}>{getPhoneNumber()}</a></dd>
+                            <dt>📱 Phone</dt>
+                            {
+                                phoneNumbers.map((phoneNumber, index) =>
+                                    <dd key={index}>
+                                        <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                            {`${phoneNumber.areaCode}-${phoneNumber.number}`}
+                                        </a>
+                                    </dd>
+                                )
+                            }
                         </dl>
                         <dl>
-                            <dt>&#128231; Email Address</dt>
+                            <dt>📧 Email Address</dt>
                             <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
                         </dl>
                         <dl>
-                            <dt>&#128231; Location Pin</dt>
-                            <dd><a href={process.env.GMAP_LOCATION} target="blank">Map</a></dd>
+                            <dt>🗺️ Location</dt>
+                            <dd><a href={process.env.GMAP_LOCATION} target="blank">Hidhid Matnog Sorsogon</a></dd>
                         </dl>
                     </address>
                 </section>
@@ -46,14 +56,14 @@ function HeaderSection() {
             <section id="promote">
                 <section className="homestayreview">
                     <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
-                        <img className="profilepic" src={homestay} loading="lazy" />
+                        <img className="profilepic" src={homestay} loading="lazy" alt="Glimpse of the homestay" />
                     </a>
                     <header>
                         <h4><a href={process.env.AIRBNB_ROOM1}>Abiza Homestay</a> <aside>&#127775; (4.5)</aside></h4>
                         <blockquote className="description">Starts from <aside>Php 999.00</aside></blockquote>
                     </header>
                 </section>
-                <img className="backgroundimg" src={beachImage} loading="lazy"></img>
+                <img className="backgroundimg" src={beachImage} loading="lazy" alt="One of the travel destinations - Subic Beach"></img>
                 <img id="promotelogo" src={logo} loading="lazy"></img>
             </section>
         </>

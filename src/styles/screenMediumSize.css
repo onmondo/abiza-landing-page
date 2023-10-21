@@ -88,4 +88,9 @@
         grid-column: 1 / span 2;
         grid-row: 2;
     }
+
+    #qrcodes {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
 }

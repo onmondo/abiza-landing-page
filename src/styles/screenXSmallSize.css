@@ -40,4 +40,9 @@
     img.qrcode {
         width: 4rem;
     }
+
+    #airBnBQRcode, #agodaQRcode, #bookingDotComQRcode {
+        flex-direction: column;
+        align-items: center
+    }
 }
