@@ -8,6 +8,7 @@ import "./styles/contactUs.css";
 import "./styles/screenMediumSize.css";
 import "./styles/screenSmallSize.css";
 import "./styles/screenXSmallSize.css";
+import "./styles/destinationSection.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -3,7 +3,7 @@ import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import qrIcon from '../assets/qr-icon.svg';
-import QRCodes from "./qrCodes.js";
+import QRCodes from "./qrCodes/index.js";
 
 function BookingSection() {
     const [state, dispatch] = React.useReducer((state, action) => {

@@ -11,7 +11,7 @@
     margin: 1rem;
     padding: 1rem;
     background-color: white;
-    box-shadow: 1px 6px 20px;
+    box-shadow: inset 0px 0px 5px 0px;
 }
 
 #qrcodes article > section img {
