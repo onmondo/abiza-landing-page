@@ -2,7 +2,8 @@
     background-image: url(../../src/assets/vecteezy_blue-watercolor-stain-watercolor-background_21971438_505.png);
     background-repeat: no-repeat;
     /* background-size: contain; */
-    background-position: bottom right;
+    background-position: top left;
+    padding: 3.5rem 0;
 }
 
 #destination header {
@@ -21,7 +22,7 @@
 }
 
 #destination ul li {
-    margin: 2rem 2rem;
+    margin: 1rem;
     
 }
 
@@ -44,9 +45,10 @@
 
 #destination ul li address dl dd p.videos {
     text-indent: 1rem;
+    color: #181818;
 }
 
-#destination dd iframe {
+#destination ul li address dl dd iframe {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 27rem;

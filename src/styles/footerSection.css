@@ -1,0 +1,38 @@
+#aboutus {
+    background-color: #181818;
+    color: var(--base-color);
+    padding: 3rem 0;
+}
+
+#aboutus header {
+    grid-column: 2;
+}
+
+#aboutus header p {
+    text-align: left;
+}
+
+#aboutus address {
+    grid-column: 3;
+    font-style: normal;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#aboutus address dl {
+    margin: 0 2rem;
+}
+
+#aboutus address dd {
+    margin: 0;
+}
+
+#aboutus address dd ul {
+    list-style: none;
+    line-height: 1.4rem;
+    padding: 0;
+}
+
+#aboutus a {
+    color: var(--base-color);
+}

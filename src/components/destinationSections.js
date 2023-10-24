@@ -21,7 +21,7 @@ function DestinationSection() {
                             </dd>
                             <dt>Video</dt>
                             <dd>
-                                <iframe src="https://www.youtube.com/embed/Z7-pPssBQbw?si=LOjiSL72yz3201qv&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/Z7-pPssBQbw?si=LOjiSL72yz3201qv&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </dd>
                         </dl>
                     </address>
@@ -39,7 +39,7 @@ function DestinationSection() {
                             </dd>
                             <dt>Video</dt>
                             <dd>
-                                <iframe src="https://www.youtube.com/embed/9Y9v1PrrLG8?si=w_E2xqLsdSCyiM1l&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/9Y9v1PrrLG8?si=w_E2xqLsdSCyiM1l&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </dd>
                         </dl>
                     </address>
@@ -57,7 +57,7 @@ function DestinationSection() {
                             </dd>
                             <dt>Video</dt>
                             <dd>
-                                <iframe src="https://www.youtube.com/embed/bcfnuDQgjUg?si=O5liTRCFiZWjUl_i&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/bcfnuDQgjUg?si=O5liTRCFiZWjUl_i&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </dd>
                         </dl>
                     </address>

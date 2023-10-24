@@ -5,10 +5,12 @@ import "./styles/main.css";
 import "./styles/headerSection.css";
 import "./styles/bookingSection.css";
 import "./styles/contactUs.css";
+import "./styles/screenLargeSize.css";
 import "./styles/screenMediumSize.css";
 import "./styles/screenSmallSize.css";
 import "./styles/screenXSmallSize.css";
 import "./styles/destinationSection.css";
+import "./styles/footerSection.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
