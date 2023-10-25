@@ -64,6 +64,14 @@ function FooterSection() {
                     </dd>
                 </dl>
             </address>
+            <section>
+                <label>2023 Abiza Homestay. All rights reserved.</label>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Cookies Settings</li>
+                </ul>
+            </section>
         </footer>
     )
 }

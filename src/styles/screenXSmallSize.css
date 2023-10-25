@@ -51,6 +51,10 @@
         text-align: center;
     }
 
+    section#destination ul li address dl dd {
+        width: 27rem;
+    }
+
     section#destination ul li address dl dd iframe {
         width: 27rem;
         height: 15.2rem;
@@ -62,7 +66,7 @@
 
     footer#aboutus header p {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     #aboutus address {

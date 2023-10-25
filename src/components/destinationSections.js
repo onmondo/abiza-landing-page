@@ -16,7 +16,7 @@ function DestinationSection() {
                             <dt>Description</dt>
                             <dd>
                                 <p className="description videos">
-                                    Lorem ipsum dolor sit amet.
+                                    📹 <a href="https://www.youtube.com/watch?v=Z7-pPssBQbw" target="_blank">Beautiful waters and sceneries of Sorsogon (Full episode) | Biyahe ni Drew</a> by <a href="https://www.youtube.com/@gmapublicaffairs" target="_blank">GMA Public Affairs</a>
                                 </p>
                             </dd>
                             <dt>Video</dt>
@@ -34,7 +34,7 @@ function DestinationSection() {
                             <dt>Description</dt>
                             <dd>
                                 <p className="description videos">
-                                    Sit amet tellus cras adipiscing enim eu turpis.
+                                    📹 <a href="https://www.youtube.com/watch?v=9Y9v1PrrLG8" target="_blank">Biyahe ni Drew: Relaxing trip in Sorsogon | Full Episode</a> by <a href="https://www.youtube.com/@gmapublicaffairs" target="_blank">GMA Public Affairs</a>
                                 </p>
                             </dd>
                             <dt>Video</dt>
@@ -52,7 +52,7 @@ function DestinationSection() {
                             <dt>Description</dt>
                             <dd>
                                 <p className="description videos">
-                                    Habitant morbi tristique senectus et.
+                                    📹 <a href="https://www.youtube.com/watch?v=bcfnuDQgjUg" target="_blank">Nature spring sa Sorsogon, puwedeng paliguan at inumin?! | Biyahe ni Drew</a> by <a href="https://www.youtube.com/@gmapublicaffairs" target="_blank">GMA Public Affairs</a>
                                 </p>
                             </dd>
                             <dt>Video</dt>

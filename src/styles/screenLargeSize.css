@@ -1,4 +1,8 @@
 @media screen and (max-width: 1385px) {
+    section#destination ul li address dl dd {
+        width: 40rem;
+    }
+
     section#destination ul li address dl dd iframe {
         width: 40rem;
         height: 22.5rem;

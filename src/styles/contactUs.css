@@ -31,6 +31,7 @@
     font-size: 0.7rem;
     margin: 0;
     color: var(--base-color);
+    text-indent: 1.4rem;
 }
 
 #aboutme section address dd a {

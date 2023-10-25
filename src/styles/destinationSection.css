@@ -30,6 +30,7 @@
     margin: 0;
     display: flex;
     flex-direction: column-reverse;
+    flex-wrap: wrap;
     box-shadow: 1px 6px 20px;
     border-radius: 1rem;
 }
@@ -41,11 +42,13 @@
 #destination ul li address dl dd {
     font-style: normal;
     margin: 0;
+    width: 27rem;
 }
 
 #destination ul li address dl dd p.videos {
-    text-indent: 1rem;
+    /* text-indent: 1rem; */
     color: #181818;
+    margin: 1rem;
 }
 
 #destination ul li address dl dd iframe {
