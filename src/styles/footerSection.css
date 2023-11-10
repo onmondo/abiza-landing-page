@@ -37,11 +37,32 @@
     color: var(--base-color);
 }
 
+#aboutus ul#qrCodes {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#aboutus ul#qrCodes li {
+    padding: 0 1rem;
+}
+
+#aboutus ul#qrCodes li>svg, #aboutus ul#qrCodes li>img {
+    height: 4rem;
+    width: 4rem;
+}
+
 #aboutus section {
     border-top-style: solid;
     border-width: 1px;
     grid-column: 2 / span 2;
-    grid-row: 2;
+    grid-row: 3;
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 0 0 ;

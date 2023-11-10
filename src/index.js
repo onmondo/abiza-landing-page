@@ -11,6 +11,7 @@ import "./styles/screenSmallSize.css";
 import "./styles/screenXSmallSize.css";
 import "./styles/destinationSection.css";
 import "./styles/footerSection.css"
+import "./styles/reviews.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

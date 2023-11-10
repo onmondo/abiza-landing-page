@@ -1,4 +1,8 @@
 import React from "react";
+import QRCode from "react-qr-code";
+import airbnb from '../assets/airbnb-logo-transparent.svg';
+import agoda from '../assets/agoda-logo-transparent.svg';
+import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 
 function FooterSection() {
     return (
@@ -64,7 +68,24 @@ function FooterSection() {
                     </dd>
                 </dl>
             </address>
-            <section>
+            <ul id="qrCodes">
+                <li>
+                    <img src={airbnb} alt="AirBnB Logo" />
+                </li>
+                <li><QRCode value={process.env.AIRBNB_ROOM1} /></li>
+                <li><QRCode value={process.env.AIRBNB_ROOM2} /></li>
+                <li>
+                    <img src={agoda} alt="Agoda Logo" />
+                </li>
+                <li><QRCode value={process.env.AGODA_ROOM1} /></li>
+                <li><QRCode value={process.env.AGODA_ROOM2} /></li>
+                <li>
+
+                    <img src={bookingDotCom} alt="Booking.com Logo" />
+                </li>
+                <li><QRCode value={process.env.BOOKING_DOT_COM_ROOMS} /></li>
+            </ul>
+            <section className="rights">
                 <label>2023 Abiza Homestay. All rights reserved.</label>
                 <ul>
                     <li>Privacy Policy</li>

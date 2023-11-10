@@ -1,0 +1,39 @@
+#reviews {
+    grid-column: 2 / span 2;
+}
+
+#reviews ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#reviews ul li {
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 9px 0px #8888;
+    margin: 1rem;
+}
+
+#reviews ul dt {
+    display: none;
+}
+
+#reviews address {
+    width: 18rem;
+    font-style: normal;
+}
+
+#reviews dd {
+    margin: 1rem;
+}
+
+#reviews dd.reviewprofile {
+    margin: 0 1rem;
+}
+
+.comments {
+    font-size: 0.8rem;
+    color: var(--base-color);
+    font-weight: 500;
+}

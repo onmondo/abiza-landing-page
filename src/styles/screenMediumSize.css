@@ -117,4 +117,25 @@
         grid-column: 2 / span 2;
         grid-row: 2;
     }
+
+    footer#aboutus ul#qrCodes {
+        grid-column: 2 / span 2;
+        grid-row: 3;
+        justify-content: flex-start;
+    }
+
+    footer#aboutus section.rights {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
+
+    footer#aboutus ul#qrCodes li {
+        padding: 1rem;
+    }
+    
+
+    footer#aboutus ul#qrCodes li>svg, footer#aboutus ul#qrCodes li>img {
+        height: 5rem;
+        width: 5rem;
+    }
 }
