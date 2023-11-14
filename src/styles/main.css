@@ -33,7 +33,7 @@ a {
 .fullbleed {
     grid-column: 1 / span 4;
     display: grid;
-    grid-template-columns: 0.5fr 2.5fr 2.5fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr 2.5fr 0.5fr;
     /* background-color: var(--base-bg-color); */
     
 }
