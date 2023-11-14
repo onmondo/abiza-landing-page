@@ -12,7 +12,7 @@
 }
 
 #navigation img {
-    width: 3.1rem;
+    width: 6rem;
 }
 
 #navigation ul {
@@ -28,14 +28,105 @@
 
 #aboutme {
     margin: 2rem 0;
+    padding-right: 2rem;
 }
 
-#aboutme h1 {
+#aboutme header h1 {
     font-size: 2.7rem;
 }
 
-#aboutme p {
+.description {
     font-size: 0.8rem;
     color: var(--base-color);
     font-weight: 500;
+}
+
+#promote {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.homestayreview {
+    width: 18rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 0.8rem;
+    box-shadow: 1px 6px 20px;
+    z-index: 1;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    background-color: rgb(252 244 238 / 59%);
+    padding: 0.6rem;
+    margin: 1.1rem 1rem 2rem 1rem;
+}
+
+.homestayreview header h4 {
+    font-size: 1.1rem;
+    margin: 0.4rem 0;
+    text-align:justify;
+}
+
+.homestayreview header h4 aside {
+    display: inline;
+    font-size: 0.7rem;
+}
+
+.homestayreview header blockquote {
+    margin: 0.4rem 0;
+}
+
+.homestayreview header blockquote aside {
+    margin: 0.4rem 0;
+    display: inline;
+    color: black;
+    font-weight: 700;
+}
+
+.homestayreview img {
+    float: left;
+    width: 4rem;
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 1rem;
+}
+
+#promote img.backgroundimg {
+    width: 36rem;
+    box-sizing: border-box;
+    border-style: none;
+    /* border-radius: 2rem; */
+    border-width: 1rem;
+    border-color: rgb(250, 243, 243);
+    border-style: solid;
+    box-shadow: 1px 6px 20px;
+    transform: rotate(2deg);
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 3;
+    z-index: -1;
+}
+
+#promote span {
+    width: 10rem;
+    box-sizing: border-box;
+    border-style: none;
+    background-color: var(--base-bg-color)
+}
+
+/* #promotetop {
+    border-bottom-right-radius: 2rem;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+} */
+
+#promotelogo {
+    grid-column: 6 / span 2 ;
+    grid-row: 3;
+    text-align: center;
+    width: 7.2rem;
+    transform: rotate(2deg);
 }

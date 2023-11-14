@@ -1,22 +1,21 @@
-import React, { Component } from "react";
-import logo from '../../assets/logo.png';
+import React from "react";
+import logo from '../../assets/logo-transparent.png';
 
-class Navigation extends Component {
-    render() {
-        return (
-            <section id="navigation">
-                <img src={logo}></img>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Packages</li>
-                        <li>FAQ</li>
-                    </ul>
-                </nav>
-            </section>
+function Navigation(props) {
+    return (
+        <section id="navigation">
+            <img src={logo} onClick={() => { props.openPage(event, 'goToHome') }}></img>
+            <nav>
+                <ul>
+                    <li><a href="#aboutme" onClick={() => { props.openPage(event, 'goToHome') }}>Home</a></li>
+                    <li><a href="#travelpartner" onClick={() => { props.openPage(event, 'goToHome') }}>Partners</a></li>
+                    <li><a href="#contactus" onClick={() => { props.openPage(event, 'goToHome') }}>Contact Us</a></li>
+                    {/* <li>FAQ</li> */}
+                </ul>
+            </nav>
+        </section>
 
-        )
-    }
+    )
 }
 
 export default Navigation;

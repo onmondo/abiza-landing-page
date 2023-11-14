@@ -1,0 +1,140 @@
+@media screen and (max-width: 1013px) {
+    #navigation {
+        top: 0;
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 600;
+        grid-column: 2 / span 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center
+    }
+    
+    #navigation img {
+        width: 10rem;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    #navigation nav {
+        grid-column: 1 / span 3;
+        grid-row: 2
+    }
+
+    #navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-left: 0;
+        width: 20rem;
+    }
+
+    #aboutme {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    #aboutme header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #promote {
+        grid-row: 3;
+        grid-column: 2 / span 2;
+    }
+
+    .homestayreview {
+        margin: 1.4rem 1.4rem 1.4rem 0;
+    }
+
+    #promote span {
+        grid-column: 1 / span 8;
+        width: 10rem;
+    }
+
+    #promote img.backgroundimg {
+        width: 45rem; 
+    }
+
+    #promotelogo {
+        width: 10.2rem;
+    }
+
+    #travelpartner {
+        grid-column: 2 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 4rem 0;
+    }
+
+    #travelpartner header {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    #travelpartner ul {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    #qrcodes {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+
+    section#destination ul li address dl dd {
+        width: 27rem;
+    }
+
+    section#destination ul li address dl dd iframe {
+        width: 27rem;
+        height: 15.2rem;
+    }
+
+    footer#aboutus header {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+
+    footer#aboutus header p {
+        /* text-align: center; */
+        margin-bottom: 3rem;
+    }
+
+    footer#aboutus address {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+
+    footer#aboutus ul#qrCodes {
+        grid-column: 3 / span 2;
+        grid-row: 3;
+        justify-content: flex-start;
+    }
+
+    footer#aboutus section.rights {
+        grid-column: 2 / span 3;
+        grid-row: 4;
+    }
+
+    footer#aboutus ul#qrCodes li {
+        padding: 1rem;
+    }
+    
+    footer#aboutus ul#qrCodes li>svg, footer#aboutus ul#qrCodes li>img {
+        height: 5rem;
+        width: 5rem;
+    }
+}

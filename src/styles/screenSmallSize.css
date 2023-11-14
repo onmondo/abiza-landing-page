@@ -1,0 +1,45 @@
+@media screen and (max-width: 799px) {
+    #promote img.backgroundimg {
+        width: 30rem; 
+    }
+
+    #promotelogo {
+        width: 5rem;
+    }
+
+    #qrcodes article > section svg {
+        width: 10rem;
+    }
+
+    section#destination ul li address dl dd {
+        width: 40rem;
+    }
+
+    section#destination ul li address dl dd iframe {
+        width: 40rem;
+        height: 22.5rem;
+    }
+
+    #aboutus header {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    footer#aboutus header p {
+        /* text-align: center; */
+        margin-bottom: 3rem;
+    }
+
+    footer#aboutus ul#qrCodes {
+        grid-column: 2 / span 3;
+    }
+    
+    #aboutus address {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    section#termsandcondition {
+        grid-column: 2 / span 2;
+    }
+}

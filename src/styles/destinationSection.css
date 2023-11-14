@@ -1,0 +1,59 @@
+#destination {
+    background-image: url(../../src/assets/vecteezy_blue-watercolor-stain-watercolor-background_21971438_505.png);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: top left;
+    padding: 3.5rem 0;
+}
+
+#destination header {
+    grid-column: 2 / span 2;
+}
+
+#destination ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+
+#destination ul li {
+    margin: 1rem;
+    
+}
+
+#destination ul li address dl {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    box-shadow: 1px 6px 20px;
+    border-radius: 1rem;
+}
+
+#destination ul li address dl dt {
+    display: none;
+}
+
+#destination ul li address dl dd {
+    font-style: normal;
+    margin: 0;
+    width: 27rem;
+}
+
+#destination ul li address dl dd p.videos {
+    /* text-indent: 1rem; */
+    color: #181818;
+    margin: 1rem;
+}
+
+#destination ul li address dl dd iframe {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 27rem;
+    height: 15.2rem;
+}

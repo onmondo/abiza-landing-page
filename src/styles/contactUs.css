@@ -1,0 +1,40 @@
+#aboutme section {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0.15rem;
+    border-color: var(--base-border-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    min-width: 20rem;
+    max-width: 25rem;
+}
+
+#aboutme section address {
+    font-style: normal;
+}
+
+#aboutme section address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutme section address dt, dd {
+    font-size: 0.8rem;
+}
+
+#aboutme section address dt {
+    font-weight: 600;
+}
+
+#aboutme section address dd {
+    font-style: normal;
+    font-size: 0.7rem;
+    margin: 0;
+    color: var(--base-color);
+    text-indent: 1.4rem;
+}
+
+#aboutme section address dd a {
+    text-decoration: none;
+    color: var(--base-color);
+}

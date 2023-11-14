@@ -1,0 +1,76 @@
+@media screen and (max-width: 535px) {
+    main {
+        justify-items: center;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    #promote {
+        display: block;
+        margin: 4rem 0;
+    }
+
+    .homestayreview {
+        margin: 0;
+    }
+
+    #promote img.backgroundimg {
+        display: none; 
+    }
+
+    #promotelogo {
+        display: none;
+    }
+
+    #travelpartner ul {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #travelpartner ul li {
+        margin-bottom: 4rem;
+    }
+
+    #travelpartner ul li a.mainroom > img {
+        width: 10rem;
+    }
+
+    img.qrcode {
+        width: 4rem;
+    }
+
+    #airBnBQRcode, #agodaQRcode, #bookingDotComQRcode {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #destination {
+        grid-column: 1 / span 4;
+        text-align: center;
+    }
+
+    section#destination ul li address dl dd {
+        width: 27rem;
+    }
+
+    section#destination ul li address dl dd iframe {
+        width: 27rem;
+        height: 15.2rem;
+    }
+
+    #aboutus header {
+        grid-column: 2 / span 2;
+    }
+
+    footer#aboutus header p {
+        /* text-align: center; */
+        margin-bottom: 4rem;
+    }
+
+    #aboutus address {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+}
