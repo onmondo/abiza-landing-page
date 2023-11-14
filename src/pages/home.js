@@ -7,7 +7,10 @@ import Reviews from "../components/reviews.js";
 function Home(props) {
     return (
         <>
-            <HeaderSection phoneNumbers={props.phoneNumbers} />
+            <HeaderSection
+                phoneNumbers={props.phoneNumbers}
+                copyToClipboardHandler={props.copyToClipboardHandler}
+            />
             <BookingSection />
             <DestinationSection />
             <Reviews />

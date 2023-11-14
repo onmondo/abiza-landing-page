@@ -1,15 +1,10 @@
 import React from "react";
 import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
-import logo from '../../assets/logo-transparent.png';
+// import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
 
 function HeaderSection(props) {
-    const copyToClipboardHandler = (event, phoneNumber) => {
-        event.preventDefault();
-        navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
-    }
-
     return (
         <>
             <article id="aboutme">
@@ -25,7 +20,7 @@ function HeaderSection(props) {
                             {
                                 props.phoneNumbers.map((phoneNumber, index) =>
                                     <dd key={index}>
-                                        <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                        <a href="#" id={phoneNumber.number} onClick={() => { props.copyToClipboardHandler(event, phoneNumber) }}>
                                             {`${phoneNumber.areaCode}-${phoneNumber.number}`}
                                         </a>
                                     </dd>

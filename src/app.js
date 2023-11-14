@@ -17,6 +17,11 @@ function App() {
         }
     ]
 
+    const copyToClipboardHandler = (event, phoneNumber) => {
+        event.preventDefault();
+        navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
+    }
+
     const [state, dispatch] = React.useReducer((state, action) => {
         switch (action.type) {
             case 'openTermsAndCondition':
@@ -41,8 +46,16 @@ function App() {
             <Navigation openPage={openPage} />
             {
                 (state.isTermsAndConditionPageOpen)
-                    ? <TermsAndCondition phoneNumbers={phoneNumbers} websiteName={websiteName} />
-                    : <Home openPage={openPage} phoneNumbers={phoneNumbers} />
+                    ? <TermsAndCondition
+                        phoneNumbers={phoneNumbers}
+                        websiteName={websiteName}
+                        copyToClipboardHandler={copyToClipboardHandler}
+                    />
+                    : <Home
+                        openPage={openPage}
+                        phoneNumbers={phoneNumbers}
+                        copyToClipboardHandler={copyToClipboardHandler}
+                    />
             }
             <FooterSection openPage={openPage} websiteName={websiteName} />
         </>
