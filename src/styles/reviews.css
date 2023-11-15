@@ -1,5 +1,6 @@
 #reviews {
     grid-column: 2 / span 2;
+    margin: 2rem 0;
 }
 
 #reviews ul {

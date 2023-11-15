@@ -13,6 +13,7 @@ import "./styles/destinationSection.css";
 import "./styles/footerSection.css"
 import "./styles/reviews.css"
 import "./styles/termsAndCondition.css"
+import "./styles/amenities.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

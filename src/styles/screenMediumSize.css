@@ -46,7 +46,6 @@
 
     .description {
         font-size: 0.9rem;
-        text-align: center;
     }
 
     #promote {
@@ -102,6 +101,27 @@
         width: 27rem;
         height: 15.2rem;
     }
+
+    section#amenities {
+        grid-column: 2 / span 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#amenities header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    section#amenities ul {
+        width: 50rem;
+        padding: 0;
+        grid-column: 1;
+        grid-row: 2;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }    
 
     footer#aboutus header {
         grid-column: 2 / span 3;

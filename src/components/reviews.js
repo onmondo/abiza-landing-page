@@ -51,9 +51,6 @@ function Reviews() {
                         <li key={index}>
                             <address>
                                 <dl>
-                                    {/* <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
-                                        {`${phoneNumber.areaCode}-${phoneNumber.number}`}
-                                    </a> */}
                                     <dt>Stars</dt>
                                     <dd>{renderStars(review.stars)}</dd>
                                     <dt>Review</dt>

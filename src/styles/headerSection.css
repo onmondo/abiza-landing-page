@@ -1,7 +1,8 @@
 #navigation {
+    background-color: var(--base-bg-color);
     top: 0;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     font-size: 0.7rem;
     font-weight: 600;
     grid-column: 2 / span 2;
@@ -55,7 +56,7 @@
     box-sizing: border-box;
     border-style: none;
     border-radius: 0.8rem;
-    box-shadow: 1px 6px 20px;
+    box-shadow: 0px 3px 9px 0px #8888;
     z-index: 1;
     grid-column: 1 / span 4;
     grid-row: 2;
@@ -103,7 +104,7 @@
     border-width: 1rem;
     border-color: rgb(250, 243, 243);
     border-style: solid;
-    box-shadow: 1px 6px 20px;
+    box-shadow: 0px 3px 9px 0px #8888;
     transform: rotate(2deg);
     grid-column: 1 / span 8;
     grid-row: 1 / span 3;

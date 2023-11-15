@@ -60,6 +60,10 @@
         height: 15.2rem;
     }
 
+    section#amenities {
+        display: none;
+    }
+
     #aboutus header {
         grid-column: 2 / span 2;
     }

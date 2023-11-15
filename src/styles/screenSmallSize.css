@@ -20,6 +20,20 @@
         height: 22.5rem;
     }
 
+    section#amenities li.feature img {
+        width: 30rem;
+        height: inherit;
+    }
+
+    section#amenities .viewamenity img {
+        width: 30rem;
+        height: inherit;
+    }
+
+    section#amenities img {
+        height: 4rem;
+    }
+
     #aboutus header {
         grid-column: 2 / span 2;
         grid-row: 1;

@@ -3,6 +3,7 @@ import HeaderSection from "../components/headerSection/index.js";
 import BookingSection from "../components/bookingSection.js";
 import DestinationSection from "../components/destinationSections.js";
 import Reviews from "../components/reviews.js";
+import Amenities from "../components/amenities.js";
 
 function Home(props) {
     return (
@@ -12,6 +13,7 @@ function Home(props) {
                 copyToClipboardHandler={props.copyToClipboardHandler}
             />
             <BookingSection />
+            <Amenities websiteName={props.websiteName} />
             <DestinationSection />
             <Reviews />
         </>

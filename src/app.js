@@ -55,6 +55,7 @@ function App() {
                         openPage={openPage}
                         phoneNumbers={phoneNumbers}
                         copyToClipboardHandler={copyToClipboardHandler}
+                        websiteName={websiteName}
                     />
             }
             <FooterSection openPage={openPage} websiteName={websiteName} />
