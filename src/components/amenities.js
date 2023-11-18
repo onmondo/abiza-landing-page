@@ -1,4 +1,5 @@
 import React from 'react'
+import homestay from '../assets/homestay.png';
 import room1A from '../assets/room1A.jpeg';
 import room1B from '../assets/room1B.jpeg';
 import room2A from '../assets/room2A.jpeg';
@@ -8,21 +9,60 @@ import crB from '../assets/crB.jpeg';
 import parking from '../assets/parking.jpg';
 
 function Amenities(props) {
+    const amenities = [
+        {
+            src: homestay,
+            alt: 'The house'
+        },
+        {
+            src: room1A,
+            alt: 'Room 1 A'
+        },
+        {
+            src: room1B,
+            alt: 'Room 1 B'
+        },
+        {
+            src: room2A,
+            alt: 'Room 2 A'
+        },
+        {
+            src: room2B,
+            alt: 'Room 2 B'
+        },
+        {
+            src: crA,
+            alt: 'Rest Room A'
+        },
+        {
+            src: crB,
+            alt: 'Rest Room B'
+        },
+        {
+            src: parking,
+            alt: 'Parking'
+        }
+    ]
     const [state, dispatch] = React.useReducer((state, action) => {
         switch (action.type) {
             case 'viewAmenity':
                 return {
                     selectedAmenity: action.amenity,
-                    isAmenityViewed: true
+                    selectedAlt: action.alt,
+                    // isAmenityViewed: true
                 };
-            case 'closeAmenities':
-                return {
-                    isAmenityViewed: false
-                }
+            // case 'closeAmenities':
+            //     return {
+            //         isAmenityViewed: false
+            //     }
             default:
                 throw new Error();
         }
-    }, { selectedAmenity: '', isAmenityViewed: false });
+    }, {
+        selectedAmenity: amenities[0].src,
+        selectedAlt: amenities[0].alt,
+        // isAmenityViewed: false 
+    });
 
     const viewImage = (event, type, amenity) => {
         event.preventDefault()
@@ -40,65 +80,38 @@ function Amenities(props) {
             <ul>
                 <li className='feature'>
                     <img
-                        src={room1A}
-                        className='amenityselection'
-                        alt="Room 1 A"
-                        onClick={() => { viewImage(event, 'viewAmenity', room1A) }}
+                        src={state.selectedAmenity}
+                        loading="lazy"
+                        alt={state.selectedAlt}
                     />
                 </li>
                 <li className='otherpic'>
                     <ul>
-                        <li>
-                            <img src={parking}
-                                className='amenityselection'
-                                alt="Parking"
-                                onClick={() => { viewImage(event, 'viewAmenity', parking) }}
-                            />
-                        </li>
-                        <li>
-                            <img src={crA} className='amenityselection'
-                                alt="Rest Room A"
-                                onClick={() => { viewImage(event, 'viewAmenity', crA) }}
-                            />
-                        </li>
-                        <li>
-                            <img src={crB} className='amenityselection'
-                                alt="Rest Room B"
-                                onClick={() => { viewImage(event, 'viewAmenity', crB) }}
-                            />
-                        </li>
-                        <li>
-                            <img src={room1B}
-                                className='amenityselection'
-                                alt="Room 1 B"
-                                onClick={() => { viewImage(event, 'viewAmenity', room1B) }}
-                            />
-                        </li>
-                        <li>
-                            <img src={room2A}
-                                className='amenityselection'
-                                alt="Room 2 A"
-                                onClick={() => { viewImage(event, 'viewAmenity', room2A) }}
-                            />
-                        </li>
-                        <li>
-                            <img src={room2B}
-                                className='amenityselection'
-                                alt="Room 2 B"
-                                onClick={() => { viewImage(event, 'viewAmenity', room2B) }}
-                            />
-                        </li>
+                        {
+                            amenities.map((amenity, index) => {
+                                return (
+                                    <li key={index}>
+                                        <img src={amenity.src}
+                                            className='amenityselection'
+                                            alt={amenity.alt}
+                                            loading="lazy"
+                                            onClick={() => { viewImage(event, 'viewAmenity', amenity.src, amenity.alt) }}
+                                        />
+                                    </li>
+                                )
+                            })
+                        }
                     </ul>
                 </li>
             </ul>
-            {
+            {/* {
                 (state.isAmenityViewed && state.selectedAmenity)
                     ? <section className='viewamenity'>
                         <header><h5><a href='#' onClick={() => { viewImage(event, 'closeAmenities') }}>Close</a></h5></header>
                         <img src={state.selectedAmenity} />
                     </section>
                     : <></>
-            }
+            } */}
 
         </section>
     )

@@ -1,7 +1,7 @@
 #amenities {
     grid-column: 2 / span 2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.5fr 1.5fr;
 }
 
 #amenities header {
@@ -10,7 +10,7 @@
 }
 
 #amenities ul {
-    width: 50rem;
+    /* width: 41rem; */
     padding: 0;
     grid-column: 1;
     grid-row: 1;
@@ -23,20 +23,20 @@
     width: 27rem;
     height: inherit;
 } */
-
+/* 
 #amenities li.feature {
     grid-column: 1;
     grid-row: 1 / span 2;
-}
+} */
 
-#amenities li.feature ul {
+/* #amenities li.feature ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-}
+} */
 
 #amenities li.feature img {
-    width: 40rem;
+    width: 41rem;
     height: inherit;
 }
 
@@ -61,7 +61,7 @@
     opacity: 0.5;
 }
 
-#amenities .viewamenity {
+/* #amenities .viewamenity {
     position: absolute;
     z-index: 1;
     background-color: white;
@@ -83,4 +83,4 @@
 #amenities .viewamenity img {
     width: 45rem;
     height: inherit;
-}
+} */

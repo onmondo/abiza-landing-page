@@ -51,30 +51,30 @@
         text-align: center;
     }
 
+    section#amenities li.feature img {
+        width: 22rem;
+        height: inherit;
+    }
+
+    section#amenities img {
+        height: 3rem;
+    }
+
     section#destination ul li address dl dd {
-        width: 27rem;
+        width: 24rem;
     }
 
     section#destination ul li address dl dd iframe {
-        width: 27rem;
-        height: 15.2rem;
-    }
-
-    section#amenities {
-        display: none;
-    }
-
-    #aboutus header {
-        grid-column: 2 / span 2;
+        width: 24rem;
+        height: 13.6rem;
     }
 
     footer#aboutus header p {
         /* text-align: center; */
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
-    #aboutus address {
-        grid-column: 2 / span 2;
-        grid-row: 2;
+    footer#aboutus address dl {
+        margin: 0 0.5rem;
     }
 }
