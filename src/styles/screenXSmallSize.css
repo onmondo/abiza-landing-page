@@ -1,20 +1,16 @@
 @media screen and (max-width: 535px) {
-    main {
-        justify-items: center;
-    }
-
     .description {
         font-size: 0.8rem;
     }
 
     #promote {
-        display: block;
-        margin: 4rem 0;
+        display: none;
+        /* margin: 4rem 0; */
     }
 
-    .homestayreview {
+    /* .homestayreview {
         margin: 0;
-    }
+    } */
 
     #promote img.backgroundimg {
         display: none; 
@@ -58,6 +54,11 @@
 
     section#amenities img {
         height: 3rem;
+    }
+
+    section#destination ul {
+        grid-column: 1 / span 5;
+        justify-content: center;
     }
 
     section#destination ul li address dl dd {

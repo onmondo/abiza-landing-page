@@ -31,10 +31,10 @@ function HeaderSection(props) {
                             <dt>📧 Email Address</dt>
                             <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
                         </dl>
-                        <dl>
+                        {/* <dl>
                             <dt>🗺️ Location</dt>
                             <dd><a href={process.env.GMAP_LOCATION} target="blank">Hidhid Matnog Sorsogon</a></dd>
-                        </dl>
+                        </dl> */}
                     </address>
                 </section>
             </article>

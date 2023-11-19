@@ -65,6 +65,19 @@ function FooterSection(props) {
                                     Vecteezy
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.vecteezy.com/free-vector/map" target="blank">
+                                    Map Vectors
+                                </a>
+                                &#160;by&#160;
+                                <a href="https://www.vecteezy.com/members/illustration4stock224427">
+                                    Ovidiu Timplaru
+                                </a>
+                                &#160;/&#160;
+                                <a href="https://www.vecteezy.com/">
+                                    Vecteezy
+                                </a>
+                            </li>
                         </ul>
                     </dd>
                 </dl>
@@ -87,7 +100,7 @@ function FooterSection(props) {
                 <li><QRCode value={process.env.BOOKING_DOT_COM_ROOMS} /></li>
             </ul>
             <section className="rights">
-                <label>2023 Abiza Homestay. All rights reserved.</label>
+                <label>© 2023 Abiza Homestay. All rights reserved.</label>
                 <ul>
                     <li><a href="#privacypolicy" onClick={() => { props.openPage(event, 'openTermsAndCondition') }}>Privacy Policy</a></li>
                     <li><a href="#termsandcondition" onClick={() => { props.openPage(event, 'openTermsAndCondition') }}>Terms of Service</a></li>

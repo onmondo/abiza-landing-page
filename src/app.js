@@ -3,13 +3,15 @@ import Navigation from "./components/headerSection/nav.js";
 import Home from "./pages/home.js";
 import TermsAndCondition from "./pages/termsAndCondition.js";
 import FooterSection from "./components/footerSection.js";
+import Partners from "./pages/partners.js";
 
 function App() {
     const websiteName = 'Abiza Homestay';
     const phoneNumbers = [
         {
             areaCode: '+63',
-            number: '9177053956'
+            number: '9177053956',
+            viberName: 'Aiza Blando'
         },
         {
             areaCode: '+63',
@@ -26,16 +28,36 @@ function App() {
         switch (action.type) {
             case 'openTermsAndCondition':
                 return {
-                    isTermsAndConditionPageOpen: true
+                    componentDisplayed: <TermsAndCondition
+                        phoneNumbers={phoneNumbers}
+                        websiteName={websiteName}
+                        copyToClipboardHandler={copyToClipboardHandler}
+                    />,
                 };
+            case 'openPartners':
+                return {
+                    componentDisplayed: <Partners />
+                }
             case 'goToHome':
                 return {
-                    isTermsAndConditionPageOpen: false
+                    componentDisplayed: <Home
+                        openPage={openPage}
+                        phoneNumbers={phoneNumbers}
+                        copyToClipboardHandler={copyToClipboardHandler}
+                        websiteName={websiteName}
+                    />
                 }
             default:
                 throw new Error();
         }
-    }, { isTermsAndConditionPageOpen: false });
+    }, {
+        componentDisplayed: <Home
+            openPage={openPage}
+            phoneNumbers={phoneNumbers}
+            copyToClipboardHandler={copyToClipboardHandler}
+            websiteName={websiteName}
+        />
+    });
 
     const openPage = (event, type) => {
         dispatch({ type });
@@ -44,7 +66,8 @@ function App() {
     return (
         <>
             <Navigation openPage={openPage} />
-            {
+            {state.componentDisplayed}
+            {/* {
                 (state.isTermsAndConditionPageOpen)
                     ? <TermsAndCondition
                         phoneNumbers={phoneNumbers}
@@ -52,12 +75,11 @@ function App() {
                         copyToClipboardHandler={copyToClipboardHandler}
                     />
                     : <Home
-                        openPage={openPage}
                         phoneNumbers={phoneNumbers}
                         copyToClipboardHandler={copyToClipboardHandler}
                         websiteName={websiteName}
                     />
-            }
+            } */}
             <FooterSection openPage={openPage} websiteName={websiteName} />
         </>
     )
