@@ -67,19 +67,6 @@ function App() {
         <>
             <Navigation openPage={openPage} />
             {state.componentDisplayed}
-            {/* {
-                (state.isTermsAndConditionPageOpen)
-                    ? <TermsAndCondition
-                        phoneNumbers={phoneNumbers}
-                        websiteName={websiteName}
-                        copyToClipboardHandler={copyToClipboardHandler}
-                    />
-                    : <Home
-                        phoneNumbers={phoneNumbers}
-                        copyToClipboardHandler={copyToClipboardHandler}
-                        websiteName={websiteName}
-                    />
-            } */}
             <FooterSection openPage={openPage} websiteName={websiteName} />
         </>
     )
