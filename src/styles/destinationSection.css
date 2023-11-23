@@ -1,6 +1,6 @@
 #destination {
     box-shadow: 0px 10px 10px 0px #8888;
-    background-image: url(../../src/assets/vecteezy_blue-watercolor-stain-watercolor-background_21971438_505.png);
+    background: rgb(252, 244, 238) url(../../src/assets/vecteezy_blue-watercolor-stain-watercolor-background_21971438_505.png);
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-position: top left;

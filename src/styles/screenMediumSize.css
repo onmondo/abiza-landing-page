@@ -123,6 +123,10 @@
         flex-direction: column;
     }    
 
+    section#reviews ul {
+        height: 100rem;
+    }
+
     footer#aboutus header {
         grid-column: 2 / span 3;
         grid-row: 3;
