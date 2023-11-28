@@ -1,4 +1,6 @@
 import React from 'react';
+import isEmpty from 'lodash/isEmpty';
+import ReviewCard from './reviewCard';
 
 function Reviews() {
 
@@ -70,38 +72,26 @@ function Reviews() {
         }
     ]
 
-    const renderStars = (stars) => {
-        let printedStars = '';
-        while (stars > 0) {
-            printedStars += '⭐';
-            stars--;
+    const renderReviewCards = (review, index) => {
+        if (isEmpty(review)) {
+            return (
+                <li key={index} className='reviewspacer'>
+                    <ReviewCard review={review} />
+                </li>
+            )
         }
-        return printedStars;
+        return (
+            <li key={index}>
+                <ReviewCard review={review} />
+            </li>
+        )
     }
 
     return (
         <section id='reviews' >
             <ul>
                 {
-                    reviews.map((review, index) =>
-                        <li key={index}>
-                            <address>
-                                <dl>
-                                    <dt>Stars</dt>
-                                    <dd>{renderStars(review.stars)}</dd>
-                                    <dt>Review</dt>
-                                    <dd className="comments">"{review.review}"</dd>
-                                    <dt>Name</dt>
-                                    <dd className="reviewprofile">{review.name}</dd>
-                                    <dt>Location</dt>
-                                    <dd className="reviewprofile comments">{review.location}</dd>
-                                    {/* <dt>Date</dt>
-                                    <dd>{review.date}</dd> */}
-
-                                </dl>
-                            </address>
-                        </li>
-                    )
+                    reviews.map((review, index) => renderReviewCards(review, index))
                 }
             </ul>
         </section >

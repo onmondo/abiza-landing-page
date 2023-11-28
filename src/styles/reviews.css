@@ -1,10 +1,10 @@
 #reviews {
     grid-column: 2 / span 2;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     height: 35rem;
     display: grid;
     grid-template-columns: 0.5fr 4fr 0.5fr;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 #reviews ul {
@@ -27,6 +27,10 @@
     margin: 1rem;
 }
 
+#reviews ul li.reviewspacer {
+    visibility: hidden;
+}
+
 #reviews ul dt {
     display: none;
 }
@@ -34,6 +38,10 @@
 #reviews address {
     width: 18rem;
     font-style: normal;
+}
+
+#reviews address dl {
+    margin-bottom: 1rem;
 }
 
 #reviews dd {

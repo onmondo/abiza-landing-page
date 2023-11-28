@@ -2,7 +2,7 @@ import React from "react";
 import HeaderSection from "../components/headerSection/index.js";
 import BookingSection from "../components/bookingSection.js";
 import DestinationSection from "../components/destinationSections.js";
-import Reviews from "../components/reviews.js";
+import Reviews from "../components/reviewSection/index.js";
 import Amenities from "../components/amenities.js";
 import PinLocation from "../components/location.js";
 
