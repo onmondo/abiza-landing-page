@@ -3,6 +3,8 @@ import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-backgroun
 // import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
+import "../../styles/headerSection.css";
+import "../../styles/contactUs.css";
 
 function HeaderSection(props) {
     return (

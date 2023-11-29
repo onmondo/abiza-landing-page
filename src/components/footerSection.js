@@ -3,6 +3,7 @@ import QRCode from "react-qr-code";
 import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
+import "../styles/footerSection.css";
 
 function FooterSection(props) {
     return (

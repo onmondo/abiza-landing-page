@@ -1,6 +1,7 @@
 import React from 'react';
 import isEmpty from 'lodash/isEmpty';
 import ReviewCard from './reviewCard';
+import "../../styles/reviews.css";
 
 function Reviews() {
 

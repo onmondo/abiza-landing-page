@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/partners.css";
 
 function Partners(props) {
     return (

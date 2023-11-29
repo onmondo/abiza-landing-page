@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/destinationSection.css";
 
 function DestinationSection() {
     return (

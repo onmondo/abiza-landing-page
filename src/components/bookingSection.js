@@ -5,6 +5,7 @@ import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 // import qrIcon from '../assets/qr-icon.svg';
 // import QRCodes from "./qrCodes/index.js";
 // import QRCode from "react-qr-code";
+import "../styles/bookingSection.css";
 
 function BookingSection() {
     const [state, dispatch] = React.useReducer((state, action) => {

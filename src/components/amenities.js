@@ -7,6 +7,7 @@ import room2B from '../assets/room2B.jpeg';
 import crA from '../assets/crA.jpeg';
 import crB from '../assets/crB.jpeg';
 import parking from '../assets/parking.jpg';
+import "../styles/amenities.css";
 
 function Amenities(props) {
     const amenities = [

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/location.css";
 
 function PinLocation() {
     return (
