@@ -1,12 +1,26 @@
 import React from "react";
+import head from "lodash/head";
+import axios from "axios";
 import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
 // import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
+import copyIcon from '../../assets/icons8-copy-24.png';
+import refreshIcon from '../../assets/icons8-refresh-30.png';
 import "../../styles/headerSection.css";
 import "../../styles/contactUs.css";
 
 function HeaderSection(props) {
+    const [data, setData] = React.useState({});
+
+    const updateWeather = (event) => {
+        event.preventDefault();
+        const weatherURL = `${process.env.OPEN_WEATHER_RESOURCE_URL}/weather?lat=${process.env.LAT}&lon=${process.env.LONG}&units=metric&appid=${process.env.OPEN_WEATHER_API_KEY}`
+        axios.get(weatherURL).then((response) => {
+            setData(response.data)
+        })
+    }
+
     return (
         <>
             <article id="aboutme">
@@ -18,21 +32,43 @@ function HeaderSection(props) {
                 <section id="contactus">
                     <address>
                         <dl>
-                            <dt>📱 Phone</dt>
+                            <dt>Phone</dt>
                             {
                                 props.phoneNumbers.map((phoneNumber, index) =>
                                     <dd key={index}>
+                                        {`${phoneNumber.areaCode}-${phoneNumber.number}`}
+                                        &#160;
                                         <a href="#" id={phoneNumber.number} onClick={() => { props.copyToClipboardHandler(event, phoneNumber) }}>
-                                            {`${phoneNumber.areaCode}-${phoneNumber.number}`}
+                                            <img src={copyIcon} alt="Copy icon" />
                                         </a>
                                     </dd>
                                 )
                             }
                         </dl>
-                        <dl>
+                        <dl className="weather">
+                            <dt>Weather <a href="#" onClick={() => { updateWeather(event) }}><img src={refreshIcon} alt="Refresh icon to get current weather" /></a></dt>
+                            {
+                                (head(data.weather)?.icon)
+                                    ?
+                                    <>
+                                        <dd id="temp">{data.main?.feels_like}°C</dd>
+                                        <dd id="weatherIcon">
+                                            <img
+                                                src={`${process.env.OPEN_WEATHER_IMG_URL}/wn/${head(data.weather)?.icon}@2x.png`}
+                                                alt="Current weather icon"
+                                                className="weather"
+                                                loading="lazy"
+                                            />
+                                        </dd>
+                                    </>
+                                    : <dd><a className="weatherButton" href="#" onClick={() => { updateWeather(event) }}>Check current weather</a></dd>
+                            }
+
+                        </dl>
+                        {/* <dl>
                             <dt>📧 Email Address</dt>
                             <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
-                        </dl>
+                        </dl> */}
                         {/* <dl>
                             <dt>🗺️ Location</dt>
                             <dd><a href={process.env.GMAP_LOCATION} target="blank">Hidhid Matnog Sorsogon</a></dd>

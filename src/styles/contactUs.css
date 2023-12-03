@@ -18,6 +18,40 @@
     grid-template-columns: 1fr 1fr;
 }
 
+#aboutme section address dl.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutme section address dl.weather dd#temp {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1.8rem;
+}
+
+#aboutme section address dl.weather dt img {
+    width: 0.8rem;
+}
+
+#aboutme section address dl.weather dd {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+#aboutme section address dl.weather dd a.weatherButton {
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+}
+
+#aboutme section address dl.weather dd#weatherIcon {
+    grid-column: 2;
+    grid-row: 2;
+}
+
 #aboutme section address dt, dd {
     font-size: 0.8rem;
 }
@@ -28,13 +62,24 @@
 
 #aboutme section address dd {
     font-style: normal;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin: 0;
     color: var(--base-color);
-    text-indent: 1.4rem;
 }
 
 #aboutme section address dd a {
     text-decoration: none;
     color: var(--base-color);
+}
+
+#aboutme section address dd > a > img {
+    width: 0.7rem
+}
+
+#aboutme section address dt > img {
+    width: 0.8rem
+}
+
+#aboutme section img.weather {
+    width: 2.2rem;
 }

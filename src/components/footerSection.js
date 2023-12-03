@@ -37,7 +37,7 @@ function FooterSection(props) {
                     </dd>
                 </dl>
                 <dl>
-                    <dt>Attribution</dt>
+                    <dt>Thanks</dt>
                     <dd>
                         <ul>
                             <li>
@@ -78,6 +78,23 @@ function FooterSection(props) {
                                 <a href="https://www.vecteezy.com/">
                                     Vecteezy
                                 </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://icons8.com/icon/86206/copy">Copy</a>
+                                &#160;icon by&#160;
+                                <a target="_blank" href="https://icons8.com">Icons8</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://icons8.com/icon/heLnIpSDWOWE/external-link">
+                                    open in new window
+                                </a>
+                                &#160;icon by&#160;
+                                <a target="_blank" href="https://icons8.com">Icons8</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://icons8.com/icon/59872/refresh">Refresh</a>
+                                &#160;icon by&#160;
+                                <a target="_blank" href="https://icons8.com">Icons8</a>
                             </li>
                         </ul>
                     </dd>

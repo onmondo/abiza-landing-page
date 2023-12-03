@@ -8,8 +8,6 @@ import "../../styles/reviews.css";
 function Reviews() {
     // const isMobile = useMediaQuery({ query: `(max-width: 535px)` });
 
-    console.log(reviews.length, reviews)
-
     const renderReviewCards = (review, index) => {
         if (isEmpty(review)) {
             return (
