@@ -1,20 +1,12 @@
 import React from 'react';
 import isEmpty from 'lodash/isEmpty';
 import ReviewCard from './reviewCard';
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 import reviews from './reviews.json'
 import "../../styles/reviews.css";
 
 function Reviews() {
-    const isMobile = useMediaQuery({ query: `(max-width: 535px)` });
-
-    if (isMobile) {
-        let reviewCountToRemove = 3;
-        do {
-            reviews.pop()
-            reviewCountToRemove -= 1;
-        } while (reviewCountToRemove);
-    }
+    // const isMobile = useMediaQuery({ query: `(max-width: 535px)` });
 
     console.log(reviews.length, reviews)
 

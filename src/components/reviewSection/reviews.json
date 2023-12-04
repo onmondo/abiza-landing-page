@@ -22,13 +22,6 @@
         "stars": 5
     },
     {
-        "name": "Mary",
-        "location": "Philippines",
-        "date": "May 2023",
-        "review": "Very accomodating.. had a great stay",
-        "stars": 4
-    },
-    {
         "name": "Janice",
         "location": "Philippines",
         "date": "May 2023",
@@ -43,14 +36,6 @@
         "stars": 5
     },
     {
-        "name": "Vacal",
-        "location": "Philippines",
-        "date": "October 2023",
-        "review": "Perfect for travelers to spend the night with and take a quick rest from a long trip. Good location and spacious",
-        "stars": 4
-    },
-    {},
-    {
         "name": "Brian",
         "location": "Philippines",
         "date": "June 2023",
@@ -58,17 +43,24 @@
         "stars": 5
     },
     {
-        "name": "Olivier",
-        "location": "Singapore",
-        "date": "December 2022",
-        "review": "Very welcoming hosts ! We arrived late, around 1am and they waited for us :) Location is excellent if you plan to catch the RORO in the next morning at 6-7am",
-        "stars": 4
-    },
-    {
         "name": "Josielyn",
         "location": "Bacoor, Philippines",
         "date": "August 2023",
         "review": "Decent place to stay at. Near Matnog port, convenient for those who wanna do island hopping like we did! Sorsogon is such a beautiful and underrated destination. The locals are very nice. We arrived late at night but Aiza and Yvonne still accommodated us kindly.",
+        "stars": 4
+    },
+    {
+        "name": "Vacal",
+        "location": "Philippines",
+        "date": "October 2023",
+        "review": "Perfect for travelers to spend the night with and take a quick rest from a long trip. Good location and spacious",
+        "stars": 4
+    },
+    {
+        "name": "Olivier",
+        "location": "Singapore",
+        "date": "December 2022",
+        "review": "Very welcoming hosts ! We arrived late, around 1am and they waited for us :) Location is excellent if you plan to catch the RORO in the next morning at 6-7am",
         "stars": 4
     }
 ]
