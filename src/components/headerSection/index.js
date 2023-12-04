@@ -17,7 +17,8 @@ function HeaderSection(props) {
         event.preventDefault();
         const weatherURL = `${process.env.OPEN_WEATHER_RESOURCE_URL}/weather?lat=${process.env.LAT}&lon=${process.env.LONG}&units=metric&appid=${process.env.OPEN_WEATHER_API_KEY}`
         axios.get(weatherURL).then((response) => {
-            setData(response.data)
+            console.log('response.data', response.data);
+            setData(response.data);
         })
     }
 
@@ -31,7 +32,7 @@ function HeaderSection(props) {
                 </header>
                 <section id="contactus">
                     <address>
-                        <dl>
+                        <dl className="phonenumber">
                             <dt>Phone</dt>
                             {
                                 props.phoneNumbers.map((phoneNumber, index) =>
@@ -46,12 +47,14 @@ function HeaderSection(props) {
                             }
                         </dl>
                         <dl className="weather">
-                            <dt>Weather <a href="#" onClick={() => { updateWeather(event) }}><img src={refreshIcon} alt="Refresh icon to get current weather" /></a></dt>
+                            {/* <dt>Weather <a href="#" onClick={() => { updateWeather(event) }}><img src={refreshIcon} alt="Refresh icon to get current weather" /></a></dt> */}
+                            <dt>Weather</dt>
                             {
-                                (head(data.weather)?.icon)
+                                (data?.weather && head(data.weather)?.icon)
                                     ?
                                     <>
-                                        <dd id="temp">{data.main?.feels_like}°C</dd>
+                                        <dd id="weatherlocation">{data?.name}</dd>
+                                        <dd id="temp">{data?.main?.feels_like}°C</dd>
                                         <dd id="weatherIcon">
                                             <img
                                                 src={`${process.env.OPEN_WEATHER_IMG_URL}/wn/${head(data.weather)?.icon}@2x.png`}
@@ -61,7 +64,7 @@ function HeaderSection(props) {
                                             />
                                         </dd>
                                     </>
-                                    : <dd><a className="weatherButton" href="#" onClick={() => { updateWeather(event) }}>Check current weather</a></dd>
+                                    : <dd id="weatherButton"><a className="weatherButton" href="#" onClick={() => { updateWeather(event) }}>Matnog weather update</a></dd>
                             }
 
                         </dl>
