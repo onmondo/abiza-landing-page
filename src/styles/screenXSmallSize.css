@@ -29,8 +29,12 @@
         margin-bottom: 4rem;
     }
 
-    #travelpartner ul li a.mainroom > img {
+    #travelpartner ul li a.mainroom > img.bookingLogo {
         width: 10rem;
+    }
+
+    #travelpartner ul li a.mainroom > img {
+        width: 2rem;
     }
 
     img.qrcode {

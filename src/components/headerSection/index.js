@@ -1,12 +1,18 @@
 import React from "react";
+
 import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
 // import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
+// import copyIcon from '../../assets/icons8-copy-24.png';
+// import refreshIcon from '../../assets/icons8-refresh-30.png';
+import WeatherWidget from "./weatherWidget";
+import ClockWidget from "./clockWidget";
 import "../../styles/headerSection.css";
 import "../../styles/contactUs.css";
 
-function HeaderSection(props) {
+function HeaderSection() {
+    console.count('component HeaderSection rendered!');
     return (
         <>
             <article id="aboutme">
@@ -17,22 +23,14 @@ function HeaderSection(props) {
                 </header>
                 <section id="contactus">
                     <address>
-                        <dl>
-                            <dt>📱 Phone</dt>
-                            {
-                                props.phoneNumbers.map((phoneNumber, index) =>
-                                    <dd key={index}>
-                                        <a href="#" id={phoneNumber.number} onClick={() => { props.copyToClipboardHandler(event, phoneNumber) }}>
-                                            {`${phoneNumber.areaCode}-${phoneNumber.number}`}
-                                        </a>
-                                    </dd>
-                                )
-                            }
+                        <dl className="phoneNtime">
+                            <ClockWidget />
                         </dl>
-                        <dl>
+                        <WeatherWidget />
+                        {/* <dl>
                             <dt>📧 Email Address</dt>
                             <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
-                        </dl>
+                        </dl> */}
                         {/* <dl>
                             <dt>🗺️ Location</dt>
                             <dd><a href={process.env.GMAP_LOCATION} target="blank">Hidhid Matnog Sorsogon</a></dd>
