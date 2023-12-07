@@ -27,6 +27,10 @@
     list-style: none;    
 }
 
+#navigation ul li img {
+    width: 1rem; 
+}
+
 #aboutme {
     margin: 2rem 0;
     padding-right: 2rem;

@@ -53,8 +53,8 @@ function App() {
     }, {
         componentDisplayed: <Home
             openPage={openPage}
-            phoneNumbers={phoneNumbers}
-            copyToClipboardHandler={copyToClipboardHandler}
+            // phoneNumbers={phoneNumbers}
+            // copyToClipboardHandler={copyToClipboardHandler}
             websiteName={websiteName}
         />
     });
@@ -65,9 +65,18 @@ function App() {
 
     return (
         <>
-            <Navigation openPage={openPage} />
+            <Navigation
+                openPage={openPage}
+                phoneNumbers={phoneNumbers}
+                copyToClipboardHandler={copyToClipboardHandler}
+            />
             {state.componentDisplayed}
-            <FooterSection openPage={openPage} websiteName={websiteName} />
+            <FooterSection
+                openPage={openPage}
+                websiteName={websiteName}
+                phoneNumbers={phoneNumbers}
+                copyToClipboardHandler={copyToClipboardHandler}
+            />
         </>
     )
 }

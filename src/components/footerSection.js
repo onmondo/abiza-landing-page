@@ -6,19 +6,20 @@ import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import "../styles/footerSection.css";
 
 function FooterSection(props) {
+    const { websiteName, openPage, phoneNumbers, copyToClipboardHandler } = props
     return (
         <footer id="aboutus" className="fullbleed">
             <header>
-                <p className="description">Thank you for visiting {props.websiteName}. We invite you to explore our cozy retreat and experience the warmth of a home away from home. Whether you're seeking relaxation or adventure, our homestay is your gateway to a memorable stay.</p>
+                <p className="description">Thank you for visiting {websiteName}. We invite you to explore our cozy retreat and experience the warmth of a home away from home. Whether you're seeking relaxation or adventure, our homestay is your gateway to a memorable stay.</p>
                 <p className="description">Book your stay now and embark on a journey where comfort meets hospitality. We look forward to hosting you and making your stay truly special.</p>
-                <p className="description">{props.websiteName} - Where Every Stay Feels Like Coming Home.</p>
+                <p className="description">{websiteName} - Where Every Stay Feels Like Coming Home.</p>
             </header>
             <address>
                 <dl>
                     <dt>Company</dt>
                     <dd>
                         <ul>
-                            <li><a href="#aboutme" onClick={() => { props.openPage(event, 'goToHome') }}>About Us</a></li>
+                            <li><a href="#aboutme" onClick={() => { openPage(event, 'goToHome') }}>About Us</a></li>
                             {/* <li>Blog</li> */}
                             {/* <li>Customers</li> */}
                             {/* <li>Packages</li> */}
@@ -30,7 +31,15 @@ function FooterSection(props) {
                     <dt>Help</dt>
                     <dd>
                         <ul>
-                            {/* <li><a href="#contactus">Support</a></li> */}
+                            {
+                                phoneNumbers.map((phoneNumber, index) =>
+                                    <li>
+                                        <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                            {`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)}`}
+                                        </a>
+                                    </li>
+                                )
+                            }
                             {/* <li>FAQs</li> */}
                             <li><a href="#refundpolicy" onClick={() => { props.openPage(event, 'openTermsAndCondition') }}>Refund Policy</a></li>
                         </ul>
@@ -79,11 +88,11 @@ function FooterSection(props) {
                                     Vecteezy
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a target="_blank" href="https://icons8.com/icon/86206/copy">Copy</a>
                                 &#160;icon by&#160;
                                 <a target="_blank" href="https://icons8.com">Icons8</a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a target="_blank" href="https://icons8.com/icon/heLnIpSDWOWE/external-link">
                                     open in new window
@@ -91,11 +100,11 @@ function FooterSection(props) {
                                 &#160;icon by&#160;
                                 <a target="_blank" href="https://icons8.com">Icons8</a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a target="_blank" href="https://icons8.com/icon/59872/refresh">Refresh</a>
                                 &#160;icon by&#160;
                                 <a target="_blank" href="https://icons8.com">Icons8</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </dd>
                 </dl>
@@ -120,8 +129,8 @@ function FooterSection(props) {
             <section className="rights">
                 <label>© 2023 Abiza Homestay. All rights reserved.</label>
                 <ul>
-                    <li><a href="#privacypolicy" onClick={() => { props.openPage(event, 'openTermsAndCondition') }}>Privacy Policy</a></li>
-                    <li><a href="#termsandcondition" onClick={() => { props.openPage(event, 'openTermsAndCondition') }}>Terms of Service</a></li>
+                    <li><a href="#privacypolicy" onClick={() => { openPage(event, 'openTermsAndCondition') }}>Privacy Policy</a></li>
+                    <li><a href="#termsandcondition" onClick={() => { openPage(event, 'openTermsAndCondition') }}>Terms of Service</a></li>
                     {/* <li>Cookies Settings</li> */}
                 </ul>
             </section>
