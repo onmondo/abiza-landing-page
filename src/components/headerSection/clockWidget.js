@@ -3,7 +3,7 @@ import moment from 'moment';
 
 function ClockWidget() {
     let now = moment();
-    let currentDayNumber = now.format('d');
+    let currentDayNumber = now.format('D');
     let currentDayText = now.format('dddd');
     let time = now.format('h:mm A');
     const [currentTime, setCurrentTime] = useState(time);
@@ -14,11 +14,11 @@ function ClockWidget() {
     }
 
     useEffect(() => {
-        console.count('ClockWidget useEffect runs!');
+        // console.count('ClockWidget useEffect runs!');
         setInterval(updateTime, 1000);
     });
 
-    console.count('component ClockWidget rendered!');
+    // console.count('component ClockWidget rendered!');
 
     return (
         <>

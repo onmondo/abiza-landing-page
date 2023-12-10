@@ -11,14 +11,14 @@ function WeatherWidget() {
     const updateWeather = () => {
         const weatherURL = `${process.env.OPEN_WEATHER_RESOURCE_URL}/weather?lat=${process.env.LAT}&lon=${process.env.LONG}&units=metric&appid=${process.env.OPEN_WEATHER_API_KEY}`
         axios.get(weatherURL).then((response) => {
-            console.log('response.data', response.data);
+            // console.log('response.data', response.data);
             setWithExpiry('matnogweather', response.data, 14400000)
             setData(response.data);
         })
     }
 
     useEffect(() => {
-        console.count('WeatherWidget useEffect runs!');
+        // console.count('WeatherWidget useEffect runs!');
         if (lsWeather) {
             setData(lsWeather)
         } else {
@@ -26,7 +26,7 @@ function WeatherWidget() {
         }
     }, [])
 
-    console.count('component WeatherWidget rendered!');
+    // console.count('component WeatherWidget rendered!');
 
     return (
         <dl className="weather">

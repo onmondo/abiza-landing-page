@@ -12,7 +12,7 @@ import "../../styles/headerSection.css";
 import "../../styles/contactUs.css";
 
 function HeaderSection() {
-    console.count('component HeaderSection rendered!');
+    // console.count('component HeaderSection rendered!');
     return (
         <>
             <article id="aboutme">
