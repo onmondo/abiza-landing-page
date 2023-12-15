@@ -49,6 +49,24 @@ function DestinationSection() {
                     <address>
                         <dl>
                             {/* <dt>Title</dt>
+                            <dd>Sit amet tellus</dd> */}
+                            <dt>Description</dt>
+                            <dd>
+                                <p className="description videos">
+                                    Ad
+                                </p>
+                            </dd>
+                            <dt>Video</dt>
+                            <dd>
+                                <div id="container-1f431b9e246d1bdd442126a4f6549222"></div>
+                            </dd>
+                        </dl>
+                    </address>
+                </li>
+                <li>
+                    <address>
+                        <dl>
+                            {/* <dt>Title</dt>
                             <dd>Habitant morbi</dd> */}
                             <dt>Description</dt>
                             <dd>
