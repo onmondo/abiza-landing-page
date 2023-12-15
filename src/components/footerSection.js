@@ -121,7 +121,6 @@ function FooterSection(props) {
                 <li><QRCode value={process.env.AGODA_ROOM1} /></li>
                 <li><QRCode value={process.env.AGODA_ROOM2} /></li>
                 <li>
-
                     <img src={bookingDotCom} alt="Booking.com Logo" />
                 </li>
                 <li><QRCode value={process.env.BOOKING_DOT_COM_ROOMS} /></li>

@@ -54,7 +54,7 @@
 #amenities img {
     height: 8rem;
     transition: 300ms opacity;
-    /* margin: 0.2rem; */
+    margin: 0 0.1rem;
 }
 
 #amenities img.amenityselection:hover {

@@ -24,11 +24,29 @@
 }
 
 #navigation ul li {
-    list-style: none;    
+    list-style: none;
 }
 
 #navigation ul li img {
     width: 1rem; 
+}
+
+#navigation ul li em > a {
+    color: black;
+}
+
+
+#navigation ul li a {
+    color: var(--base-color);
+}
+
+#navigation ul li a:hover {
+    color: black;
+}
+
+#navigation ul li span {
+    font-weight: 800; 
+    color: #facd08;
 }
 
 #aboutme {

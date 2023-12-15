@@ -15,9 +15,11 @@ function Navigation(props) {
                             phoneNumbers.map((phoneNumber, index) =>
                                 <>
                                     &#160;
-                                    <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
-                                        {`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)}`}
-                                    </a>
+                                    <em>
+                                        <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                            <span>|</span>{`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)} `}
+                                        </a>
+                                    </em>
                                     &#160;
                                 </>
                             )

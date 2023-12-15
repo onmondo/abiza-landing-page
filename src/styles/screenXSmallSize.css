@@ -46,13 +46,8 @@
         align-items: center
     }
 
-    #destination {
-        grid-column: 1 / span 4;
-        text-align: center;
-    }
-
     section#amenities li.feature img {
-        width: 25.4rem;
+        width: 22.6rem;
         height: inherit;
     }
 
