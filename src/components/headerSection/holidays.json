@@ -1,5 +1,17 @@
 [
     {
+        "date": "Dec 25, 2023",
+        "description": "Christmas"
+    },
+    {
+        "date": "Dec 26, 2023",
+        "description": "Special Non-working Holiday"
+    },
+    {
+        "date": "Dec 30, 2023",
+        "description": "Rizal Day"
+    },
+    {
         "date": "Jan 1, 2024",
         "description": "New Year's Day"
     },
