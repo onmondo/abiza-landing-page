@@ -34,7 +34,7 @@ function FooterSection(props) {
                             {
                                 phoneNumbers.map((phoneNumber, index) =>
                                     <li>
-                                        <a href="#" id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                        <a href="#" key={index} id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
                                             {`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)}`}
                                         </a>
                                     </li>

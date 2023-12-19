@@ -8,6 +8,12 @@ import "../../styles/reviews.css";
 function Reviews() {
     // const isMobile = useMediaQuery({ query: `(max-width: 535px)` });
 
+    const filteredReviews = (reviews) =>
+        reviews.filter((review) =>
+            review.active === true
+        )
+
+
     const renderReviewCards = (review, index) => {
         if (isEmpty(review)) {
             return (
@@ -27,7 +33,7 @@ function Reviews() {
         <section id='reviews' >
             <ul>
                 {
-                    reviews.map((review, index) => renderReviewCards(review, index))
+                    filteredReviews(reviews).map((review, index) => renderReviewCards(review, index))
                 }
             </ul>
         </section >

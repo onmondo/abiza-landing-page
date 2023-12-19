@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
+import holidays from './holidays.json'
 
 function ClockWidget() {
     let now = moment();
@@ -20,12 +21,18 @@ function ClockWidget() {
 
     // console.count('component ClockWidget rendered!');
 
+    const currentDate = now.format("MMM D, YYYY")
+
+    const currentHoliday = holidays.find((holiday) =>
+        holiday.date === currentDate
+    )
     return (
         <>
             <dt>Current time</dt>
             <dd id="currentDayText">{currentDayText}</dd>
             <dd id="currentDayNumber">{currentDayNumber}</dd>
             <dd id="currentTime">{currentTime}</dd>
+            <dd id="currentHoliday"><span>|</span>{currentHoliday?.description}</dd>
         </>
     )
 }

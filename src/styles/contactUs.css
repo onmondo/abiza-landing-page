@@ -26,7 +26,7 @@
 #aboutme section address dl.phoneNtime {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
     border-width: 0.1rem;
     border-style: solid;
     border-radius: 0.8rem;
@@ -51,6 +51,16 @@
 #aboutme section address dl.phoneNtime dd#currenttime {
     grid-column: 1 / span 2;
     grid-row: 3;
+}
+
+#aboutme section address dl.phoneNtime dd#currentHoliday {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+#aboutme section address dl.phoneNtime dd#currentHoliday > span {
+    font-weight: 800;
+    color: #facd08;
 }
 
 #aboutme section address > dl.weather {
