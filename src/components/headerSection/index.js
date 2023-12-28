@@ -45,7 +45,7 @@ function HeaderSection() {
                     </a>
                     <header>
                         <h4><a href={process.env.AIRBNB_ROOM1} target="blank">Abiza Homestay</a> <aside>⭐ (4.5)</aside></h4>
-                        <blockquote >Starts from <aside>Php 953.00</aside></blockquote>
+                        <blockquote >Starts from <aside>₱ 953.00</aside></blockquote>
                     </header>
                 </section>
                 <img className="backgroundimg" src={beachImage} loading="lazy" alt="One of the travel destinations - Subic Beach"></img>

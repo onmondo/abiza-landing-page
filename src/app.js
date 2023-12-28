@@ -24,6 +24,10 @@ function App() {
         navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
     }
 
+    const openPage = (event, type) => {
+        dispatch({ type });
+    };
+
     const [state, dispatch] = React.useReducer((state, action) => {
         switch (action.type) {
             case 'openTermsAndCondition':
@@ -58,10 +62,6 @@ function App() {
             websiteName={websiteName}
         />
     });
-
-    const openPage = (event, type) => {
-        dispatch({ type });
-    };
 
     return (
         <>

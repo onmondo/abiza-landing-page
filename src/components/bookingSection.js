@@ -2,15 +2,16 @@ import React from "react";
 import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
-import oneInNewWindowIcon from '../assets/icons8-open-in-new-window-25.png'
+import oneInNewWindowIcon from '../assets/icons8-open-in-new-window-25.png';
 import "../styles/bookingSection.css";
 
-function BookingSection() {
+function BookingSection(props) {
+    const { openPage } = props;
     return (
         <>
             <section id="travelpartner">
                 <header>
-                    <h3>Our Travel Partner</h3>
+                    <h3><a href="#travelpartner" onClick={() => { openPage(event, 'openPartners') }}>Our Partners</a></h3>
                 </header>
                 <ul>
                     <li>
