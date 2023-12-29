@@ -6,7 +6,7 @@ import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import "../styles/footerSection.css";
 
 function FooterSection(props) {
-    const { websiteName, openPage, phoneNumbers, copyToClipboardHandler } = props
+    const { websiteName, openPage, phoneNumbers } = props
     return (
         <footer id="aboutus" className="fullbleed">
             <header>
@@ -34,7 +34,7 @@ function FooterSection(props) {
                             {
                                 phoneNumbers.map((phoneNumber, index) =>
                                     <li>
-                                        <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} key={index} id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                        <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} key={index} id={phoneNumber.number}>
                                             {`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)}`}
                                         </a>
                                     </li>

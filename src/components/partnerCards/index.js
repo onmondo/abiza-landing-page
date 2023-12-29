@@ -3,7 +3,6 @@ import PartnerCard from "./card";
 
 function PartnerCards(props) {
     const { partners } = props
-    console.log('process.env', process.env)
     return (
         <address>
             {partners.map((partner, index) => {

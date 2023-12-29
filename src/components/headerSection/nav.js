@@ -2,13 +2,16 @@ import React from "react";
 import logo from '../../assets/logo-transparent.png';
 
 function Navigation(props) {
-    const { openPage, phoneNumbers, copyToClipboardHandler } = props;
+    const { openPage, phoneNumbers } = props;
     return (
         <section id="navigation">
-            <img src={logo} onClick={() => { openPage(event, 'goToHome') }}></img>
+            <a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>
+                <img src={logo} alt="Abiza Homestay Logo"></img>
+            </a>
+
             <nav>
                 <ul>
-                    <li><a href="#aboutme" onClick={() => { openPage(event, 'goToHome') }}>Home</a></li>
+                    <li><a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>Home</a></li>
                     <li><a href="#travelpartner" onClick={() => { openPage(event, 'openPartners') }}>Partners</a></li>
                     <li>
                         {

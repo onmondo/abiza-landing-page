@@ -19,10 +19,10 @@ function App() {
         }
     ]
 
-    const copyToClipboardHandler = (event, phoneNumber) => {
-        event.preventDefault();
-        navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
-    }
+    // const copyToClipboardHandler = (event, phoneNumber) => {
+    //     event.preventDefault();
+    //     navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
+    // }
 
     const openPage = (event, type) => {
         dispatch({ type });
@@ -35,7 +35,6 @@ function App() {
                     componentDisplayed: <TermsAndCondition
                         phoneNumbers={phoneNumbers}
                         websiteName={websiteName}
-                        copyToClipboardHandler={copyToClipboardHandler}
                     />,
                 };
             case 'openPartners':
@@ -47,7 +46,6 @@ function App() {
                     componentDisplayed: <Home
                         openPage={openPage}
                         phoneNumbers={phoneNumbers}
-                        copyToClipboardHandler={copyToClipboardHandler}
                         websiteName={websiteName}
                     />
                 }
@@ -68,14 +66,12 @@ function App() {
             <Navigation
                 openPage={openPage}
                 phoneNumbers={phoneNumbers}
-                copyToClipboardHandler={copyToClipboardHandler}
             />
             {state.componentDisplayed}
             <FooterSection
                 openPage={openPage}
                 websiteName={websiteName}
                 phoneNumbers={phoneNumbers}
-                copyToClipboardHandler={copyToClipboardHandler}
             />
         </>
     )

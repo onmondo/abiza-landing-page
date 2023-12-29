@@ -7,7 +7,6 @@ import Amenities from "../components/amenities.js";
 import PinLocation from "../components/location.js";
 
 function Home(props) {
-    console.log('props', props);
     return (
         <>
             <HeaderSection
