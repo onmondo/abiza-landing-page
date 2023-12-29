@@ -98,7 +98,12 @@
 
 #aboutme section address dl.weather dd#weatherButton {
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: 1 / span 3;
+}
+
+#aboutme section address dl.weather dd#weatherButton img {
+    height: 5rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 #aboutme section address dt, dd {

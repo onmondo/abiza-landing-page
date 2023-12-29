@@ -14,6 +14,10 @@
     color: var(--base-color);
 }
 
+#travelpartner header a:hover {
+    color: rgb(0, 0, 0);
+}
+
 #travelpartner ul {
     grid-column: 3 / span 2;
     grid-row: 1;
