@@ -21,7 +21,7 @@
     } */
 
     section#amenities li.feature img {
-        width: 30rem;
+        width: 26.6rem;
         height: inherit;
     }
 
@@ -31,7 +31,38 @@
     } */
 
     section#amenities img {
-        height: 3rem;
+        height: 5.2rem;
+    }
+
+    section#amenities li.otherpic ul li.lastAmenityItem a {
+        padding: 0;
+        font-size: 0.7rem;
+    }
+
+    section#amenitiesModal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#amenitiesModal header {
+        grid-column: 2;
+        text-align: right;
+    }
+
+    section#amenitiesModal ul {
+        align-items: center;
+        margin: 0;
+    }
+
+    section#amenitiesModal ul#firstAmenities {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    section#amenitiesModal ul#secondAmenities {
+        grid-column: 2;
+        grid-row: 2;
     }
 
     section#reviews ul {
