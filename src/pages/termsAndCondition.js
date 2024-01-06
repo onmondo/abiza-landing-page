@@ -86,7 +86,7 @@ function TermsAndCondition(props) {
                             For any questions or clarifications, please contact us at these numbers
                             {
                                 props.phoneNumbers.map((phoneNumber, index) =>
-                                    <a key={index} href="#" id={phoneNumber.number} onClick={() => { props.copyToClipboardHandler(event, phoneNumber) }}>
+                                    <a key={index} href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} id={phoneNumber.number}>
                                         {`${phoneNumber.areaCode}-${phoneNumber.number} `}
                                     </a>
                                 )

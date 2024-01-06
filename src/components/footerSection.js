@@ -6,7 +6,7 @@ import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import "../styles/footerSection.css";
 
 function FooterSection(props) {
-    const { websiteName, openPage, phoneNumbers, copyToClipboardHandler } = props
+    const { websiteName, openPage, phoneNumbers } = props
     return (
         <footer id="aboutus" className="fullbleed">
             <header>
@@ -34,7 +34,7 @@ function FooterSection(props) {
                             {
                                 phoneNumbers.map((phoneNumber, index) =>
                                     <li>
-                                        <a href="#" key={index} id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                        <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} key={index} id={phoneNumber.number}>
                                             {`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)}`}
                                         </a>
                                     </li>
@@ -95,7 +95,7 @@ function FooterSection(props) {
                             </li> */}
                             <li>
                                 <a target="_blank" href="https://icons8.com/icon/heLnIpSDWOWE/external-link">
-                                    open in new window
+                                    Open in new window
                                 </a>
                                 &#160;icon by&#160;
                                 <a target="_blank" href="https://icons8.com">Icons8</a>
@@ -105,6 +105,9 @@ function FooterSection(props) {
                                 &#160;icon by&#160;
                                 <a target="_blank" href="https://icons8.com">Icons8</a>
                             </li> */}
+                            <li>
+                                <a target="_blank" href="https://giphy.com/stickers/crearecreativita-loading-load-creare-creativita-L05HgB2h6qICDs5Sms">Loading GIF via GIPHY</a>
+                            </li>
                         </ul>
                     </dd>
                 </dl>

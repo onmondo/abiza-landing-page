@@ -121,7 +121,20 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-    }    
+        align-items: center;
+    }  
+    
+    section#amenities li.feature img {
+        width: 40.6rem;
+    }
+
+    section#amenities li.otherpic ul {
+        align-items: stretch;
+    }
+
+    section#amenitiesModal img {
+        width: 24rem;
+    }
 
     section#reviews ul {
         height: 100rem;

@@ -41,3 +41,15 @@ a {
 a:hover, a:focus, a:visited, a:not(a:visited) {
     color: rgb(0, 0, 0);
 }
+
+.modal {
+    position: absolute;
+    width: 100%;
+    margin: 10rem 0;
+    padding: 10rem 0;
+    background-color: #161616e3;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 1fr;
+}

@@ -2,6 +2,10 @@
     section#amenities {
         grid-template-columns: 1.5fr 0.5fr 1.5fr;
     }
+
+    section#amenitiesModal img {
+        width: 30rem;
+    }
     
     /* section#destination ul li address dl dd {
         width: 27rem;

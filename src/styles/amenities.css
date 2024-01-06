@@ -1,7 +1,7 @@
 #amenities {
     grid-column: 2 / span 2;
     display: grid;
-    grid-template-columns: 2fr 0.5fr 1.5fr;
+    grid-template-columns: 4fr 0.5fr 5fr;
 }
 
 #amenities header {
@@ -38,12 +38,46 @@
 #amenities li.feature img {
     width: 41rem;
     height: inherit;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 #amenities li.otherpic ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#amenities li.otherpic ul li.firstAmenityItem img {
+    border-bottom-left-radius: 1rem;
+}
+
+/* #amenities li.otherpic ul li.lastAmenityItem {
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    opacity: 0.8;
+} */
+
+#amenities li.otherpic ul li.lastAmenityItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#amenities li.otherpic ul li.lastAmenityItem img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    border-bottom-right-radius: 1rem;
+}
+#amenities li.otherpic ul li.lastAmenityItem a {
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-right-radius: 1rem;
+    color: var(--base-bg-color);
+    padding: 0.6rem;
+    z-index: 1;
 }
 
 #amenities li.feature ul .secondpic img, #amenities li.feature ul .thirdpic img {
@@ -61,26 +95,44 @@
     opacity: 0.5;
 }
 
-/* #amenities .viewamenity {
-    position: absolute;
-    z-index: 1;
-    background-color: white;
+#amenitiesModal {
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    visibility: hidden;
+}
+
+#amenitiesModal ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#amenitiesModal header {
+    grid-column: 3;
     text-align: right;
-    padding: 1rem;
-    box-shadow: 0px 3px 9px 0px #8888;
 }
 
-#amenities .viewamenity h5 {
-    border-bottom: solid;
-    border-width: 0.1rem;
-    border-color: #a0dde2;
+#amenitiesModal header a {
+    padding: 1rem 0;
 }
 
-#amenities .viewamenity h5 a {
-    color: #58dce7;
+#amenitiesModal header a:hover {
+    color: var(--base-bg-color);
 }
 
-#amenities .viewamenity img {
-    width: 45rem;
-    height: inherit;
-} */
+#amenitiesModal li {
+    padding: 0 0.1rem;
+}
+
+#amenitiesModal img {
+    width: 40rem;
+}
+
+#firstAmenities {
+    grid-column: 2;
+    /* align-items: flex-end; */
+}
+
+#secondAmenities {
+    grid-column: 3;
+}

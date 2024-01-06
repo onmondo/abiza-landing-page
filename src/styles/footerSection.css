@@ -8,6 +8,10 @@
     grid-column: 2;
 }
 
+#aboutus a:hover {
+    color: #facd08;
+}
+
 #aboutus header p {
     text-align: left;
     margin-bottom: 2rem;
