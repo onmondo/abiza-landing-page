@@ -125,7 +125,7 @@
     border-radius: 1rem;
 }
 
-#promote img.backgroundimg {
+#promote img.backgroundimg, div.backgroundimg {
     width: 36rem;
     box-sizing: border-box;
     border-style: none;

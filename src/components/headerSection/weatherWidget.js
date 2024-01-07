@@ -52,12 +52,7 @@ function WeatherWidget() {
                         </dd>
                     </>
                     : <dd id="weatherButton">
-                        <a className="weatherButton" href="#" onClick={() => { updateWeather(event) }}>
-                            <dd id="weatherButton">
-                                <img src={loading} alt="Loading GIF from Giphy" />
-                                {/* <iframe src="https://giphy.com/embed/L05HgB2h6qICDs5Sms" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/crearecreativita-loading-load-creare-creativita-L05HgB2h6qICDs5Sms">via GIPHY</a></p> */}
-                            </dd>
-                        </a>
+                        <img src={loading} alt="Loading GIF from Giphy" />
                     </dd>
             }
 

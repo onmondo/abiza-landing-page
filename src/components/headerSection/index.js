@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import { Blurhash } from "react-blurhash";
 import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
 // import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
@@ -13,6 +13,15 @@ import "../../styles/contactUs.css";
 
 function HeaderSection() {
     // console.count('component HeaderSection rendered!');
+    const [beachImageLoaded, setBeachImageLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.onload = () => {
+            setBeachImageLoaded(true)
+        }
+        img.src = beachImage
+    }, [beachImage])
     return (
         <>
             <article id="aboutme">
@@ -23,9 +32,7 @@ function HeaderSection() {
                 </header>
                 <section id="contactus">
                     <address>
-                        <dl className="phoneNtime">
-                            <ClockWidget />
-                        </dl>
+                        <ClockWidget />
                         <WeatherWidget />
                         {/* <dl>
                             <dt>📧 Email Address</dt>
@@ -48,7 +55,21 @@ function HeaderSection() {
                         <blockquote >Starts from <aside>₱ 953.00</aside></blockquote>
                     </header>
                 </section>
-                <img className="backgroundimg" src={beachImage} loading="lazy" alt="One of the travel destinations - Subic Beach"></img>
+                <>
+                    <Blurhash className="backgroundimg"
+                        hash="LBK.VG004m$y1U^Yn0$^05%g-inK"
+                        punch={1}
+                        style={{ display: beachImageLoaded ? "none" : "inline" }}
+                        width={589.46}
+                        height={415.53}
+                    />
+                    <img className="backgroundimg"
+                        src={beachImage}
+                        loading="lazy"
+                        alt="One of the travel destinations - Subic Beach"
+                        style={{ display: !beachImageLoaded ? "none" : "inline" }}
+                    />
+                </>
                 {/* <img id="promotelogo" src={logo} loading="lazy"></img> */}
             </section>
         </>

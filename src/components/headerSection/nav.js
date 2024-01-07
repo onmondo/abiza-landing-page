@@ -16,18 +16,16 @@ function Navigation(props) {
                     <li>
                         {
                             phoneNumbers.map((phoneNumber, index) =>
-                                <>
+                                <em key={index}>
                                     &#160;
-                                    <em>
-                                        {/* <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
+                                    {/* <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} id={phoneNumber.number} onClick={() => { copyToClipboardHandler(event, phoneNumber) }}>
                                             <span>|</span>{`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)} `}
                                         </a> */}
-                                        <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} id={phoneNumber.number}>
-                                            <span>|</span>{`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)} `}
-                                        </a>
-                                    </em>
+                                    <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} id={phoneNumber.number}>
+                                        <span>|</span>{`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)} `}
+                                    </a>
                                     &#160;
-                                </>
+                                </em>
                             )
                         }
 

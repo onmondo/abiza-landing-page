@@ -5,8 +5,12 @@
         width: 100%;
     }
 
-    #promote img.backgroundimg {
+    /* #promote img.backgroundimg {
         width: 30rem; 
+    } */
+
+    #promote img.backgroundimg {
+        display: none; 
     }
 
     #promotelogo {

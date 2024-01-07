@@ -33,7 +33,7 @@ function FooterSection(props) {
                         <ul>
                             {
                                 phoneNumbers.map((phoneNumber, index) =>
-                                    <li>
+                                    <li key={index}>
                                         <a href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} key={index} id={phoneNumber.number}>
                                             {`(0${phoneNumber.number.substring(0, 3)}) ${phoneNumber.number.substring(3, 6)} ${phoneNumber.number.substring(6, 10)}`}
                                         </a>

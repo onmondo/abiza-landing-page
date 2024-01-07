@@ -23,7 +23,7 @@
     visibility: hidden;
 }
 
-#aboutme section address dl.phoneNtime {
+#aboutme section address dl.timetoday {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
@@ -36,29 +36,29 @@
     border-color: var(--base-border-color);
 }
 
-#aboutme section address dl.phoneNtime dd#currentDayText {
+#aboutme section address dl.timetoday dd#currentDayText {
     grid-column: 1 / span 2;
     grid-row: 1;
 }
 
-#aboutme section address dl.phoneNtime dd#currentDayNumber {
+#aboutme section address dl.timetoday dd#currentDayNumber {
     grid-column: 1;
     grid-row: 2;
     font-size: 2rem;
     color: #e58787
 }
 
-#aboutme section address dl.phoneNtime dd#currenttime {
+#aboutme section address dl.timetoday dd#currenttime {
     grid-column: 1 / span 2;
     grid-row: 3;
 }
 
-#aboutme section address dl.phoneNtime dd#currentHoliday {
+#aboutme section address dl.timetoday dd#currentHoliday {
     grid-column: 1 / span 2;
     grid-row: 4;
 }
 
-#aboutme section address dl.phoneNtime dd#currentHoliday > span {
+#aboutme section address dl.timetoday dd#currentHoliday > span {
     font-weight: 800;
     color: #facd08;
 }

@@ -27,13 +27,13 @@ function ClockWidget() {
         holiday.date === currentDate
     )
     return (
-        <>
+        <dl className="timetoday">
             <dt>Current time</dt>
             <dd id="currentDayText">{currentDayText}</dd>
             <dd id="currentDayNumber">{currentDayNumber}</dd>
             <dd id="currentTime">{currentTime}</dd>
             <dd id="currentHoliday"><span>|</span>{currentHoliday?.description}</dd>
-        </>
+        </dl>
     )
 }
 
