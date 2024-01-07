@@ -6,23 +6,35 @@
         font-weight: 600;
         grid-column: 2 / span 2;
         grid-row: 1;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        display: flex;
+        flex-direction: column;
         justify-items: center
     }
-    
+
     #navigation img {
-        width: 10rem;
+        width: 20rem;
+    }
+    
+    section#navigation a {
         grid-column: 2;
         grid-row: 1;
     }
     
-    #navigation nav {
-        grid-column: 1 / span 3;
-        grid-row: 2
+    section#navigation nav {
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%;
     }
 
-    #navigation ul {
+    section#navigation nav ul {
+        width: 100%;
+    }
+
+    section#navigation nav ul a {
+        padding: 0.8rem;
+    }
+
+    section#navigation ul {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;

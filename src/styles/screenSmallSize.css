@@ -1,4 +1,10 @@
 @media screen and (max-width: 799px) {
+    section#navigation nav {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        width: 100%;
+    }
+
     #promote img.backgroundimg {
         width: 30rem; 
     }

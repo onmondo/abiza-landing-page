@@ -20,6 +20,12 @@
         display: none;
     }
 
+    section#navigation nav ul li a:hover {
+        color: var(--base-bg-color);
+        background-color: var(--base-color);
+        transition: 300ms background-color;
+    }
+
     #travelpartner ul {
         justify-content: space-evenly;
         flex-direction: column;

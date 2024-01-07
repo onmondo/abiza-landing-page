@@ -15,18 +15,18 @@ function FooterSection(props) {
                 <p className="description">{websiteName} - Where Every Stay Feels Like Coming Home.</p>
             </header>
             <address>
-                <dl>
+                {/* <dl>
                     <dt>Company</dt>
                     <dd>
                         <ul>
                             <li><a href="#aboutme" onClick={() => { openPage(event, 'goToHome') }}>About Us</a></li>
-                            {/* <li>Blog</li> */}
-                            {/* <li>Customers</li> */}
-                            {/* <li>Packages</li> */}
-                            {/* <li>Community</li> */}
+                            <li>Blog</li>
+                            <li>Customers</li>
+                            <li>Packages</li>
+                            <li>Community</li>
                         </ul>
                     </dd>
-                </dl>
+                </dl> */}
                 <dl>
                     <dt>Help</dt>
                     <dd>
