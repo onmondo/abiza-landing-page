@@ -27,19 +27,12 @@
     }
 
     section#navigation nav ul {
-        width: 100%;
-    }
-
-    section#navigation nav ul a {
-        padding: 0.8rem;
-    }
-
-    section#navigation ul {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
         padding-left: 0;
-        width: 20rem;
+        /* width: 20rem; */
+        width: 100%;
     }
 
     #aboutme {
@@ -105,25 +98,10 @@
         grid-row: 1 / span 2;
     }
 
-    /* section#destination ul li address dl dd {
-        width: 27rem;
-    }
-
-    section#destination ul li address dl dd iframe {
-        width: 27rem;
-        height: 15.2rem;
-    } */
-
     section#amenities {        
         display: flex;
         flex-direction: column;
     }
-    
-
-    /* section#amenities header {
-        grid-column: 1;
-        grid-row: 1;
-    } */
     
     section#amenities ul {
         /* width: 50rem; */

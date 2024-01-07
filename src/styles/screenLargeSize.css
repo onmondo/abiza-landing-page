@@ -1,20 +1,7 @@
 @media screen and (max-width: 1385px) {
-    section#amenities {
-        grid-template-columns: 1.5fr 0.5fr 1.5fr;
-    }
-
     section#amenitiesModal img {
         width: 30rem;
     }
-    
-    /* section#destination ul li address dl dd {
-        width: 27rem;
-    }
-
-    section#destination ul li address dl dd iframe {
-        width: 27rem;
-        height: 15.2rem;
-    } */
 
     section#termsandcondition {
         grid-template-columns: 1fr 3fr 1fr;

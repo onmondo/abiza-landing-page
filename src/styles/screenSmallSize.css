@@ -17,24 +17,10 @@
         width: 10rem;
     }
 
-    /* section#destination ul li address dl dd {
-        width: 40rem;
-    }
-
-    section#destination ul li address dl dd iframe {
-        width: 27rem;
-        height: 15.2rem;
-    } */
-
     section#amenities li.feature img {
         width: 26.6rem;
         height: inherit;
     }
-
-    /* section#amenities .viewamenity img {
-        width: 30rem;
-        height: inherit;
-    } */
 
     section#amenities img {
         height: 5.2rem;

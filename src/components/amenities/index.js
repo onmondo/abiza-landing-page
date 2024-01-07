@@ -104,8 +104,8 @@ function Amenities(props) {
             <section id="amenities">
                 <header>
                     <h2>Intimate Comfort, Memorable Stay</h2>
-                    <p className="description">Step into a world of comfort at our homestay, where each detail is designed for your relaxation. Our cozy retreat boasts two inviting bedrooms, each generously accommodating up to three guests. Sink into plush bedding and enjoy a peaceful night's sleep in a space tailored for your utmost comfort.</p>
-                    <p className="description">Our spacious comfort room, featuring a refreshing shower, offers a tranquil escape after a day of exploration. Immerse yourself in the soothing ambiance, complete with all the amenities needed for a rejuvenating stay.</p>
+                    {/* <p className="description">Step into a world of comfort at our homestay, where each detail is designed for your relaxation. Our cozy retreat boasts two inviting bedrooms, each generously accommodating up to three guests. Sink into plush bedding and enjoy a peaceful night's sleep in a space tailored for your utmost comfort.</p> */}
+                    <p className="description">Discover comfort at our homestay with two inviting bedrooms for up to three guests each. Enjoy plush bedding and a peaceful night's sleep. Our spacious comfort room with a refreshing shower provides a tranquil escape and all amenities for a rejuvenating stay.</p>
                     <p className="description">At {props.websiteName}, we redefine hospitality, ensuring your visit is not just a stay but a collection of unforgettable moments. Welcome to a home where comfort meets charm.</p>
                 </header>
                 <ul>

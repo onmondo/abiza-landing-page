@@ -11,7 +11,7 @@ function Navigation(props) {
 
             <nav>
                 <ul>
-                    <li><a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>Home</a></li>
+                    {/* <li><a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>Home</a></li> */}
                     <li><a href="#travelpartner" onClick={() => { openPage(event, 'openPartners') }}>Partners</a></li>
                     <li>
                         {

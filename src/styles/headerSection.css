@@ -18,13 +18,14 @@
 
 #navigation ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     padding-left: 0;
 }
 
 #navigation ul li {
     list-style: none;
+    margin: 0.4rem 0;
 }
 
 #navigation ul li img {
@@ -32,17 +33,22 @@
 }
 
 #navigation ul li em > a {
-    color: black;
+    color: black; 
 }
-
 
 #navigation ul li a {
     color: var(--base-color);
+    padding: 0.4rem;
 }
 
 #navigation ul li a:hover {
-    color: black;
-}
+    background-color: var(--base-border-color);
+    transition: 300ms background-color;}
+
+/* section#navigation nav ul li a:hover {
+    background-color: var(--base-border-color);
+    transition: 300ms background-color;
+} */
 
 #navigation ul li span {
     font-weight: 800; 
