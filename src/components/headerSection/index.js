@@ -18,7 +18,7 @@ function HeaderSection() {
             <article id="aboutme">
                 <header>
                     <h1>Discover tranquility at <em>Abiza Homestay</em></h1>
-                    <p className="description">Explore the charm, savor the serenity, and make memories that linger long after you leave. Welcome to a place where every guest is family.</p>
+                    <p className="description">You can easily travel to Matnog Port because our location is just off the highway and 7 kilometers from the port. And since Sorsogon's beaches and tourist attractions are close to our place, you will surely enjoy and unwind while staying with us.</p>
                     <p className="description">Your Homestay Journey Begins Here.</p>
                 </header>
                 <section id="contactus">
