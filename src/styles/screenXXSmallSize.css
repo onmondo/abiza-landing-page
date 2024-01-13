@@ -1,5 +1,5 @@
 @media screen and (max-width: 414px) {
-    section#amenities li.feature img {
+    section#amenities li.feature img, #amenities li.feature div > canvas {
         width: 19.3rem;
         height: inherit;
     }

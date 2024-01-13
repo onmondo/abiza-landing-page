@@ -16,8 +16,20 @@
         "description": "New Year's Day"
     },
     {
+        "date": "Jan 21, 2024",
+        "description": "Sinulog Festival"
+    },
+    {
         "date": "Feb 10, 2024",
         "description": "Lunar New Year"
+    },
+    {
+        "date": "Feb 14, 2024",
+        "description": "Valentine's Day"
+    },
+    {
+        "date": "Feb 25, 2024",
+        "description": "EDSA Revolution Anniversary"
     },
     {
         "date": "Mar 28, 2024",

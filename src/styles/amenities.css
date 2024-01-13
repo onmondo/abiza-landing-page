@@ -17,7 +17,7 @@
     list-style: none;
 }
 
-#amenities li.feature img {
+#amenities li.feature img, #amenities li.feature div > canvas {
     width: 41rem;
     height: inherit;
     border-top-left-radius: 1rem;

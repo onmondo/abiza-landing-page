@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useReducer, useState, useEffect } from 'react'
 import homestay from '../../assets/homestay.png';
 import room1A from '../../assets/room1A.jpeg';
 import room1B from '../../assets/room1B.jpeg';
@@ -9,66 +9,79 @@ import crB from '../../assets/crB.jpeg';
 import parking from '../../assets/parking.jpg';
 import "../../styles/amenities.css";
 import AmenitiesModal from './modal';
+import { Blurhash } from "react-blurhash";
 
 function Amenities(props) {
     const amenities = [
         {
             src: homestay,
-            alt: 'The house'
+            alt: 'The house',
+            hash: 'LVFicG9FD%sS_NIoRQn$yXW;V?s.'
         },
         {
             src: room1A,
-            alt: 'Room 1 A'
+            alt: 'Room 1 A',
+            hash: 'LUKKyf~qD%RkM}-pt6oJ%1D%axt7'
         },
         {
             src: room1B,
-            alt: 'Room 1 B'
+            alt: 'Room 1 B',
+            hash: 'LPPPy89v~q-pyE$|?abI%Mo#t7bH',
         },
         {
             src: room2A,
-            alt: 'Room 2 A'
+            alt: 'Room 2 A',
+            hash: 'LTNTqC~p_N009a-;-;IU-;M_IU%M'
         },
         {
             src: room2B,
-            alt: 'Room 2 B'
+            alt: 'Room 2 B',
+            hash: 'LaLqIa~WM~M_S%xvaISP%2RObds,'
         },
         {
             src: crA,
-            alt: 'Rest Room A'
+            alt: 'Rest Room A',
+            hash: 'LIIhdHofxutR_NM{xuof%MM{xuof'
         },
         {
             src: crB,
-            alt: 'Rest Room B'
+            alt: 'Rest Room B',
+            hash: 'LKIX]hV@IUoe_NRjIUj[xaWBM{fQ',
         },
         {
             src: parking,
-            alt: 'Parking'
+            alt: 'Parking',
+            hash: 'LRI=iIVrxvR%tpoLWTxv?vxZofox'
         }
     ]
-    const [state, dispatch] = React.useReducer((state, action) => {
+    const [state, dispatch] = useReducer((state, action) => {
         switch (action.type) {
             case 'preViewAmenity':
                 return {
                     selectedAmenity: action.amenity,
                     selectedAlt: action.alt,
+                    selectedHash: action.hash,
                     visibility: 'hidden'
                 };
             case 'viewAmenities':
                 return {
                     selectedAmenity: action.amenity,
                     selectedAlt: action.alt,
+                    selectedHash: action.hash,
                     visibility: 'visible'
                 }
             case 'closeAmenities':
                 return {
                     selectedAmenity: action.amenity,
                     selectedAlt: action.alt,
+                    selectedHash: action.hash,
                     visibility: 'hidden'
                 }
             default:
                 throw new Error();
         }
     }, {
+        selectedHash: amenities[0].hash,
         selectedAmenity: amenities[0].src,
         selectedAlt: amenities[0].alt,
         visibility: 'hidden'
@@ -80,6 +93,16 @@ function Amenities(props) {
         dispatch({ type, amenity });
     };
 
+    const [featureImageLoaded, setFeatureImageLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.onload = () => {
+            setFeatureImageLoaded(true)
+        }
+        img.src = state.selectedAmenity
+    }, [state.selectedAmenity])
+
     const lastAmenityItem = () => {
         const amenity = amenities[4];
         const totalAmenities = amenities.length;
@@ -90,9 +113,9 @@ function Amenities(props) {
                     className="amenityselection"
                     alt={amenity.alt}
                     loading="lazy"
-                    onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt) }}
+                    onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                 />
-                <a href="#amenities" onClick={() => { viewImage(event, 'viewAmenities', amenity.src, amenity.alt) }}>
+                <a href="#amenities" onClick={() => { viewImage(event, 'viewAmenities', amenity.src, amenity.alt, amenity.hash) }}>
                     Show all photos ({remainingAmenities})
                 </a>
             </li>
@@ -110,11 +133,24 @@ function Amenities(props) {
                 </header>
                 <ul>
                     <li className="feature" autoFocus>
-                        <img
-                            src={state.selectedAmenity}
-                            loading="lazy"
-                            alt={state.selectedAlt}
-                        />
+                        <>
+                            <Blurhash
+                                hash={state.selectedHash}
+                                punch={1}
+                                src={state.selectedAmenity}
+                                style={{ display: featureImageLoaded ? "none" : "inline" }}
+                                loading="lazy"
+                                alt={state.selectedAlt}
+                                width={656}
+                                height={656}
+                            />
+                            <img
+                                src={state.selectedAmenity}
+                                loading="lazy"
+                                alt="Featured amenity - entire house"
+                                style={{ display: !featureImageLoaded ? "none" : "inline" }}
+                            />
+                        </>
                     </li>
                     <li className="otherpic">
                         <ul>
@@ -128,7 +164,7 @@ function Amenities(props) {
                                                         className="amenityselection"
                                                         alt={amenity.alt}
                                                         loading="lazy"
-                                                        onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt) }}
+                                                        onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                                                     />
                                                 </li>
                                             )
@@ -139,7 +175,7 @@ function Amenities(props) {
                                                     className="amenityselection"
                                                     alt={amenity.alt}
                                                     loading="lazy"
-                                                    onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt) }}
+                                                    onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                                                 />
                                             </li>
                                         )

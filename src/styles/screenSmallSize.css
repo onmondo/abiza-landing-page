@@ -21,7 +21,7 @@
         width: 10rem;
     }
 
-    section#amenities li.feature img {
+    section#amenities li.feature img, #amenities li.feature div > canvas {
         width: 26.6rem;
         height: inherit;
     }

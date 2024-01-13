@@ -1,6 +1,5 @@
 import React from "react";
 import logo from '../../assets/logo-transparent.png';
-import { motion } from "framer-motion";
 
 function Navigation(props) {
     const { openPage, phoneNumbers } = props;

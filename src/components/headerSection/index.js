@@ -23,6 +23,16 @@ function HeaderSection() {
         }
         img.src = beachImage
     }, [beachImage])
+
+    const [houseImageLoaded, setHouseImageLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.onload = () => {
+            setHouseImageLoaded(true)
+        }
+        img.src = homestay
+    }, [homestay])
     return (
         <>
             <article id="aboutme">
@@ -60,7 +70,26 @@ function HeaderSection() {
                     transition={{ delay: 0.2, duration: 3, type: "tween" }}
                 >
                     <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
-                        <img className="profilepic" src={homestay} loading="lazy" alt="Glimpse of the homestay" />
+                        <>
+                            <Blurhash
+                                className="profilepic"
+                                hash="LVFicG9FD%sS_NIoRQn$yXW;V?s."
+                                punch={1}
+                                src={homestay}
+                                style={{ display: houseImageLoaded ? "none" : "inline" }}
+                                loading="lazy"
+                                alt="Glimpse of the homestay"
+                                width={64}
+                                height={64}
+                            />
+                            <img
+                                className="profilepic"
+                                src={homestay}
+                                loading="lazy"
+                                alt="Glimpse of the homestay"
+                                style={{ display: !houseImageLoaded ? "none" : "inline" }}
+                            />
+                        </>
                     </a>
                     <header
 

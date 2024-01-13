@@ -45,7 +45,7 @@
         align-items: center
     }
 
-    section#amenities li.feature img {
+    section#amenities li.feature img, #amenities li.feature div > canvas {
         width: 22.1rem;
         height: inherit;
     }
