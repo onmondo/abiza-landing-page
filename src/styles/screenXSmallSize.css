@@ -69,12 +69,16 @@
     }
 
     section#destination ul li address dl dd {
-        width: 24rem;
+        width: 20rem;
     }
 
     section#destination ul li address dl dd iframe {
-        width: 24rem;
-        height: 13.6rem;
+        width: 20rem;
+        height: 12.6rem;
+    }
+
+    section#amenitiesModal img {
+        width: 20rem;
     }
 
     footer#aboutus header p {
@@ -83,5 +87,13 @@
 
     footer#aboutus address dl {
         margin: 0 0.5rem;
+    }
+
+    footer#aboutus section  {
+        flex-direction: column;
+    }
+
+    footer#aboutus section ul, footer#aboutus section li {
+        padding: 0 0.4rem;
     }
 }

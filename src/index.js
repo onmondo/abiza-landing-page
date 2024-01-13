@@ -6,6 +6,7 @@ import "./styles/screenLargeSize.css";
 import "./styles/screenMediumSize.css";
 import "./styles/screenSmallSize.css";
 import "./styles/screenXSmallSize.css";
+import "./styles/screenXXSmallSize.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
