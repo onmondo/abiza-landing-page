@@ -6,7 +6,7 @@ function Navigation(props) {
     const { openPage, phoneNumbers } = props;
     return (
         <section id="navigation">
-            <motion.a
+            {/* <motion.a
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2, type: "tween", duration: 3 }}
@@ -14,8 +14,13 @@ function Navigation(props) {
                 onClick={() => { openPage(event, 'goToHome') }}
             >
                 <img src={logo} alt="Abiza Homestay Logo"></img>
-            </motion.a>
-
+            </motion.a> */}
+            <a
+                href="#navigation"
+                onClick={() => { openPage(event, 'goToHome') }}
+            >
+                <img src={logo} alt="Abiza Homestay Logo"></img>
+            </a>
             <nav>
                 <ul>
                     {/* <li><a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>Home</a></li> */}
