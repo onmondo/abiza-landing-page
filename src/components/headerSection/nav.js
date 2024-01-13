@@ -1,14 +1,26 @@
 import React from "react";
 import logo from '../../assets/logo-transparent.png';
+import { motion } from "framer-motion";
 
 function Navigation(props) {
     const { openPage, phoneNumbers } = props;
     return (
         <section id="navigation">
-            <a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>
+            {/* <motion.a
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2, type: "tween", duration: 3 }}
+                href="#navigation"
+                onClick={() => { openPage(event, 'goToHome') }}
+            >
+                <img src={logo} alt="Abiza Homestay Logo"></img>
+            </motion.a> */}
+            <a
+                href="#navigation"
+                onClick={() => { openPage(event, 'goToHome') }}
+            >
                 <img src={logo} alt="Abiza Homestay Logo"></img>
             </a>
-
             <nav>
                 <ul>
                     {/* <li><a href="#navigation" onClick={() => { openPage(event, 'goToHome') }}>Home</a></li> */}
