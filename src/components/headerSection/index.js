@@ -10,6 +10,7 @@ import WeatherWidget from "./weatherWidget";
 import ClockWidget from "./clockWidget";
 import "../../styles/headerSection.css";
 import "../../styles/contactUs.css";
+import { motion } from "framer-motion";
 
 function HeaderSection() {
     // console.count('component HeaderSection rendered!');
@@ -26,7 +27,13 @@ function HeaderSection() {
         <>
             <article id="aboutme">
                 <header>
-                    <h1>Discover tranquility at <em>Abiza Homestay</em></h1>
+                    <motion.h1
+                        initial={{ opacity: 0.2 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2, duration: 3 }}
+                    >
+                        Discover tranquility at Abiza Homestay
+                    </motion.h1>
                     <p className="description">You can easily travel to Matnog Port because our location is just off the highway and 7 kilometers from the port. And since Sorsogon's beaches and tourist attractions are close to our place, you will surely enjoy and unwind while staying with us.</p>
                     <p className="description">Your Homestay Journey Begins Here.</p>
                 </header>
@@ -46,15 +53,22 @@ function HeaderSection() {
                 </section>
             </article>
             <section id="promote">
-                <section className="homestayreview">
+                <motion.section
+                    className="homestayreview"
+                    initial={{ x: "100vw", opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.2, duration: 3, type: "tween" }}
+                >
                     <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
                         <img className="profilepic" src={homestay} loading="lazy" alt="Glimpse of the homestay" />
                     </a>
-                    <header>
+                    <header
+
+                    >
                         <h4><a href={process.env.AIRBNB_ROOM1} target="blank">Abiza Homestay</a> <aside>⭐ (4.5)</aside></h4>
                         <blockquote >Starts from <aside>₱ 953.00</aside></blockquote>
                     </header>
-                </section>
+                </motion.section>
                 <>
                     <Blurhash className="backgroundimg"
                         hash="LBK.VG004m$y1U^Yn0$^05%g-inK"
