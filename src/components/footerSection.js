@@ -4,6 +4,7 @@ import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import "../styles/footerSection.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function FooterSection(props) {
     const { websiteName, openPage, phoneNumbers } = props
@@ -41,7 +42,7 @@ function FooterSection(props) {
                                 )
                             }
                             {/* <li>FAQs</li> */}
-                            <li><a href="#refundpolicy" onClick={() => { props.openPage(event, 'openTermsAndCondition') }}>Refund Policy</a></li>
+                            <li><Link to="/termsandcondition#refundpolicy">Refund Policy</Link></li>
                         </ul>
                     </dd>
                 </dl>
@@ -131,8 +132,8 @@ function FooterSection(props) {
             <section className="rights">
                 <label>© 2023 Abiza Homestay. All rights reserved.</label>
                 <ul>
-                    <li><a href="#privacypolicy" onClick={() => { openPage(event, 'openTermsAndCondition') }}>Privacy Policy</a></li>
-                    <li><a href="#termsandcondition" onClick={() => { openPage(event, 'openTermsAndCondition') }}>Terms of Service</a></li>
+                    <li><Link to="/termsandcondition#privacypolicy">Privacy Policy</Link></li>
+                    <li><Link to="/termsandcondition">Terms of Service</Link></li>
                     {/* <li>Cookies Settings</li> */}
                 </ul>
             </section>

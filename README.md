@@ -19,3 +19,5 @@ Execute command to install webpack loaders
 ```
 npm install --save-dev css-loader dotenv-webpack file-loader html-webpack-plugin style-loader
 ```
+
+For the React Router, I used the version 5 react-router-dom

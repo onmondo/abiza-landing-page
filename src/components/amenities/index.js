@@ -88,9 +88,9 @@ function Amenities(props) {
         // isAmenityViewed: false 
     });
 
-    const viewImage = (event, type, amenity) => {
+    const viewImage = (event, type, amenity, alt, hash) => {
         event.preventDefault()
-        dispatch({ type, amenity });
+        dispatch({ type, amenity, alt, hash });
     };
 
     const [featureImageLoaded, setFeatureImageLoaded] = useState(false);

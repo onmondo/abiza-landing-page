@@ -5,6 +5,7 @@ import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import oneInNewWindowIcon from '../assets/icons8-open-in-new-window-25.png';
 import "../styles/bookingSection.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function BookingSection(props) {
     const { openPage } = props;
@@ -12,7 +13,7 @@ function BookingSection(props) {
         <>
             <section id="travelpartner">
                 <header>
-                    <h3><a href="#travelpartner" onClick={() => { openPage(event, 'openPartners') }}>Our Partners</a></h3>
+                    <h3><Link to="/partners">Our Partners</Link></h3>
                 </header>
                 <ul>
                     <motion.li

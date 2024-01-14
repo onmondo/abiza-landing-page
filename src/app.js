@@ -4,6 +4,7 @@ import Home from "./pages/home.js";
 import TermsAndCondition from "./pages/termsAndCondition.js";
 import FooterSection from "./components/footerSection.js";
 import Partners from "./pages/partners.js";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
     const websiteName = 'Abiza Homestay';
@@ -24,56 +25,67 @@ function App() {
     //     navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
     // }
 
-    const openPage = (event, type) => {
-        dispatch({ type });
-    };
+    // const openPage = (event, type) => {
+    //     dispatch({ type });
+    // };
 
-    const [state, dispatch] = React.useReducer((state, action) => {
-        switch (action.type) {
-            case 'openTermsAndCondition':
-                return {
-                    componentDisplayed: <TermsAndCondition
-                        phoneNumbers={phoneNumbers}
+    // const [state, dispatch] = React.useReducer((state, action) => {
+    //     switch (action.type) {
+    //         case 'openTermsAndCondition':
+    //             return {
+    //                 componentDisplayed: <TermsAndCondition
+    //                     phoneNumbers={phoneNumbers}
+    //                     websiteName={websiteName}
+    //                 />,
+    //             };
+    //         case 'openPartners':
+    //             return {
+    //                 componentDisplayed: <Partners />
+    //             }
+    //         case 'goToHome':
+    //             return {
+    //                 componentDisplayed: <Home
+    //                     openPage={openPage}
+    //                     websiteName={websiteName}
+    //                 />
+    //             }
+    //         default:
+    //             throw new Error();
+    //     }
+    // }, {
+    //     componentDisplayed: <Home
+    //         openPage={openPage}
+    //         websiteName={websiteName}
+    //     />
+    // });
+
+    return (
+        <Router>
+            <Navigation
+                phoneNumbers={phoneNumbers}
+            />
+            {/* {state.componentDisplayed} */}
+            <Switch>
+                <Route exact path="/">
+                    <Home
                         websiteName={websiteName}
-                    />,
-                };
-            case 'openPartners':
-                return {
-                    componentDisplayed: <Partners />
-                }
-            case 'goToHome':
-                return {
-                    componentDisplayed: <Home
-                        openPage={openPage}
+                    />
+                </Route>
+                <Route path="/partners">
+                    <Partners />
+                </Route>
+                <Route path="/termsandcondition">
+                    <TermsAndCondition
                         phoneNumbers={phoneNumbers}
                         websiteName={websiteName}
                     />
-                }
-            default:
-                throw new Error();
-        }
-    }, {
-        componentDisplayed: <Home
-            openPage={openPage}
-            // phoneNumbers={phoneNumbers}
-            // copyToClipboardHandler={copyToClipboardHandler}
-            websiteName={websiteName}
-        />
-    });
-
-    return (
-        <>
-            <Navigation
-                openPage={openPage}
-                phoneNumbers={phoneNumbers}
-            />
-            {state.componentDisplayed}
+                </Route>
+            </Switch>
             <FooterSection
-                openPage={openPage}
                 websiteName={websiteName}
                 phoneNumbers={phoneNumbers}
             />
-        </>
+        </Router>
     )
 }
 

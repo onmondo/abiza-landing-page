@@ -7,7 +7,7 @@ function AmenitiesModal(props) {
     return (
         <section className="modal" id="amenitiesModal" style={{ visibility: state.visibility }}>
             <header>
-                <a href="#amenities" onClick={() => { viewImage(event, 'closeAmenities', state.selectedAmenity, state.selectedAlt) }}>
+                <a href="#amenities" onClick={() => { viewImage(event, 'closeAmenities', state.selectedAmenity, state.selectedAlt, state.selectedHash) }}>
                     Close [X]
                 </a>
             </header>
