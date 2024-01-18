@@ -1,11 +1,17 @@
 #location {
     padding: 6rem 0;
     background-image: url(../../src/assets/GPS_MAP26.jpg);
-    background-position: top right;
+    background-position: bottom left;
+    box-shadow: 0px 3px 9px 0px #8888;
 }
 
 #location header {
+    grid-row: 3;
     grid-column: 2 / span 3;
+}
+
+#location header h3 {
+    margin: 4rem 0;
 }
 
 #location iframe {
@@ -13,4 +19,96 @@
     grid-column: 2 / span 3;
     width: 100%;
     height: 40rem;
+    border-radius: 1rem;
+}
+
+#location address {
+    font-style: normal;
+}
+
+#location address ul {
+    list-style: none;
+    padding: 0 0 0 1rem
+}
+
+#location address.destinations {
+    margin-top: 6rem;
+    grid-row: 4;
+    grid-column: 2 / span 3;
+    display: flex;
+    align-items: flex-start;
+}
+
+#location address.traveltime {
+    padding: 1rem 0 2rem 0;
+    grid-row: 4;
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#location address dl {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(251 248 248);
+    border-radius: 1rem;
+    border-color: rgb(251 248 248);
+    
+}
+
+#location address.destinations > dl {
+    width: 22rem;
+    margin-right: 1rem;
+    box-shadow: 0px 3px 9px 0px #8888;
+}
+
+#location address.traveltime dl {
+    width: inherit;
+}
+
+#location address.destinations dl dt {
+    display: none;
+}
+
+#location address.destinations dl dt, #location address dl dd {
+    margin: 0;
+}
+
+#location address dl dd {
+    padding: 0 1rem;
+}
+
+#location address.destinations dl dd:last-child {
+    padding: 0;
+}
+
+#location address.destinations dl dd a > img.startingpoint {
+    width: 22rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#location address.destinations dl > dd {
+    color: var(--base-color);
+}
+
+#location address.destinations dl > dd  h4, #location address.traveltime dl > dd {
+    color: black;
+}
+
+#location address.destinations dl dd a.directiontitle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+
+#location address.traveltime dl dd {
+    font-size: 1.2rem;
+}
+
+#location address.traveltime dl dt {
+    display: inline;
 }

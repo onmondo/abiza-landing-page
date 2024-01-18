@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../../assets/logo-transparent.png';
+// import { motion } from "framer-motion";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Navigation(props) {
@@ -17,6 +18,7 @@ function Navigation(props) {
             </motion.a> */}
 
             <Link to="/"><img src={logo} alt="Abiza Homestay Logo" /></Link>
+
             <nav>
                 <ul>
                     <li><Link to="/partners">Partners</Link></li>

@@ -130,6 +130,10 @@
         height: 100rem;
     }
 
+    section#location address.destinations {
+        flex-direction: column;
+    }
+
     footer#aboutus header {
         grid-column: 2 / span 3;
         grid-row: 3;
