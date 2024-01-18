@@ -1,4 +1,12 @@
 @media screen and (max-width: 1385px) {
+    main {
+        grid-template-columns: 0.5fr 2.5fr 2.5fr 0.5fr;
+    }
+
+    .fullbleed {
+        grid-template-columns: 0.5fr 2fr 0.5fr 2.5fr 0.5fr;    
+    }
+
     section#amenitiesModal img {
         width: 30rem;
     }
