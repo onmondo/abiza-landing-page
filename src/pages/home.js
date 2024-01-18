@@ -4,7 +4,7 @@ import BookingSection from "../components/bookingSection.js";
 import DestinationSection from "../components/destinationSections.js";
 import Reviews from "../components/reviewSection/index.js";
 import Amenities from "../components/amenities";
-import PinLocation from "../components/location.js";
+import PinLocation from "../components/location/index.js";
 
 function Home(props) {
     return (

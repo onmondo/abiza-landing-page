@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Blurhash } from "react-blurhash";
-import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
+// import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
 // import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 function HeaderSection() {
     // console.count('component HeaderSection rendered!');
     const [beachImageLoaded, setBeachImageLoaded] = useState(false);
-
+    const beachImage = 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Matnog_317.jpg';
     useEffect(() => {
         const img = new Image();
         img.onload = () => {
@@ -65,7 +65,7 @@ function HeaderSection() {
             <section id="promote">
                 <motion.section
                     className="homestayreview"
-                    initial={{ x: "100vw", opacity: 0 }}
+                    initial={{ x: "30vw", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 3, type: "tween" }}
                 >

@@ -53,3 +53,7 @@ a:hover, a:focus, a:visited, a:not(a:visited) {
     grid-template-columns: 0.5fr 3fr 0.5fr;
     grid-template-rows: 1fr;
 }
+
+.openWindowIcon {
+    width: 1.5rem;
+}

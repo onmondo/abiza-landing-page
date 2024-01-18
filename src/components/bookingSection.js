@@ -23,7 +23,7 @@ function BookingSection(props) {
                     >
                         <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
                             <img className="bookingLogo" src={airbnb} alt="AirBnB Logo" loading="lazy" />
-                            <img src={oneInNewWindowIcon} alt="Open in new window icon" />
+                            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
                         </a>
                     </motion.li>
                     <motion.li
@@ -33,7 +33,7 @@ function BookingSection(props) {
                     >
                         <a className="mainroom" href={process.env.AGODA_ROOM1} target="blank">
                             <img className="bookingLogo" src={agoda} alt="Agoda Logo" loading="lazy" />
-                            <img src={oneInNewWindowIcon} alt="Open in new window icon" />
+                            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
                         </a>
                     </motion.li>
                     <motion.li
@@ -44,7 +44,7 @@ function BookingSection(props) {
 
                         <a className="mainroom" href={process.env.BOOKING_DOT_COM_ROOMS} target="blank">
                             <img className="bookingLogo" src={bookingDotCom} alt="Booking.com Logo" loading="lazy" />
-                            <img src={oneInNewWindowIcon} alt="Open in new window icon" />
+                            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
                         </a>
                     </motion.li>
                 </ul>
