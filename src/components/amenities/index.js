@@ -113,6 +113,8 @@ function Amenities(props) {
                     className="amenityselection"
                     alt={amenity.alt}
                     loading="lazy"
+                    decoding="async"
+                    role="presentation"
                     onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                 />
                 <a href="#amenities" onClick={() => { viewImage(event, 'viewAmenities', amenity.src, amenity.alt, amenity.hash) }}>
@@ -140,6 +142,8 @@ function Amenities(props) {
                                 src={state.selectedAmenity}
                                 style={{ display: featureImageLoaded ? "none" : "inline" }}
                                 loading="lazy"
+                                decoding="async"
+                                role="presentation"
                                 alt={state.selectedAlt}
                                 width={656}
                                 height={656}
@@ -147,6 +151,8 @@ function Amenities(props) {
                             <img
                                 src={state.selectedAmenity}
                                 loading="lazy"
+                                decoding="async"
+                                role="presentation"
                                 alt="Featured amenity - entire house"
                                 style={{ display: !featureImageLoaded ? "none" : "inline" }}
                             />
@@ -164,6 +170,8 @@ function Amenities(props) {
                                                         className="amenityselection"
                                                         alt={amenity.alt}
                                                         loading="lazy"
+                                                        decoding="async"
+                                                        role="presentation"
                                                         onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                                                     />
                                                 </li>
@@ -175,6 +183,8 @@ function Amenities(props) {
                                                     className="amenityselection"
                                                     alt={amenity.alt}
                                                     loading="lazy"
+                                                    decoding="async"
+                                                    role="presentation"
                                                     onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                                                 />
                                             </li>

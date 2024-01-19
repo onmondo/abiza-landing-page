@@ -19,6 +19,9 @@ function AmenitiesModal(props) {
                                 <img src={amenity.src}
                                     alt={amenity.alt}
                                     loading="lazy"
+                                    decoding="async"
+                                    role="presentation"
+                                    fetchpriority="low"
                                 />
                             </li>
 
@@ -34,6 +37,9 @@ function AmenitiesModal(props) {
                                 <img src={amenity.src}
                                     alt={amenity.alt}
                                     loading="lazy"
+                                    decoding="async"
+                                    role="presentation"
+                                    fetchpriority="low"
                                 />
                             </li>
 

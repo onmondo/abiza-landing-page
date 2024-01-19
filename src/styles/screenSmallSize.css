@@ -97,12 +97,12 @@
         display: block;
     }
 
-    section#location {
+    /* section#location {
         padding: 3rem 0;
-    }
+    } */
 
     section#location iframe {
-        grid-row: 2;
+        /* grid-row: 1; */
         height: 40rem;
         
     }

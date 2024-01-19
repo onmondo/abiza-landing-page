@@ -17,7 +17,7 @@ function Navigation(props) {
                 <img src={logo} alt="Abiza Homestay Logo"></img>
             </motion.a> */}
 
-            <Link to="/"><img src={logo} alt="Abiza Homestay Logo" /></Link>
+            <Link to="/"><img src={logo} role="presentation" fetchpriority="high" alt="Abiza Homestay Logo" /></Link>
 
             <nav>
                 <ul>

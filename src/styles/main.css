@@ -19,7 +19,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
 }
 
 main > * {
@@ -33,7 +33,7 @@ a {
 .fullbleed {
     grid-column: 1 / span 5;
     display: grid;
-    grid-template-columns: 1fr 2fr 0.5fr 2fr 1fr;    
+    grid-template-columns: 1.5fr 2fr 0.5fr 2fr 1.5fr;
 }
 
 a:hover, a:focus, a:visited, a:not(a:visited) {

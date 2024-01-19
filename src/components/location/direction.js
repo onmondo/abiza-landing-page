@@ -22,7 +22,14 @@ function Direction(props) {
             <dt>Picture</dt>
             <dd>
                 <a href={direction.directionUrl} target="_blank">
-                    <img className="startingpoint" src={direction.imgSrc} alt={direction.imgAlt} loading="lazy" />
+                    <img
+                        className="startingpoint"
+                        src={direction.imgSrc}
+                        alt={direction.imgAlt}
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                    />
                 </a>
             </dd>
         </dl>
