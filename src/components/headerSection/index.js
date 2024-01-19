@@ -77,7 +77,6 @@ function HeaderSection() {
                                 punch={1}
                                 src={homestay}
                                 style={{ display: houseImageLoaded ? "none" : "inline" }}
-                                loading="lazy"
                                 alt="Glimpse of the homestay"
                                 width={64}
                                 height={64}
@@ -85,9 +84,9 @@ function HeaderSection() {
                             <img
                                 className="profilepic"
                                 src={homestay}
-                                loading="lazy"
                                 alt="Glimpse of the homestay"
                                 style={{ display: !houseImageLoaded ? "none" : "inline" }}
+                                fetchpriority="high"
                             />
                         </>
                     </a>
@@ -108,9 +107,10 @@ function HeaderSection() {
                     />
                     <img className="backgroundimg"
                         src={beachImage}
-                        loading="lazy"
                         alt="One of the travel destinations - Subic Beach"
                         style={{ display: !beachImageLoaded ? "none" : "inline" }}
+                        sizes="(max-width: 544px) 100vw, 50vw"
+                        fetchpriority="high"
                     />
                 </>
                 {/* <img id="promotelogo" src={logo} loading="lazy"></img> */}

@@ -77,6 +77,10 @@
         height: 12.6rem;
     }
 
+    section#location address.destinations > dl {
+        margin-right: 0;
+    }
+
     section#amenitiesModal img {
         width: 20rem;
     }
