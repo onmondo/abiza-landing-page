@@ -153,6 +153,7 @@ function Amenities(props) {
                                 loading="lazy"
                                 decoding="async"
                                 role="presentation"
+                                fetchpriority="low"
                                 alt="Featured amenity - entire house"
                                 style={{ display: !featureImageLoaded ? "none" : "inline" }}
                             />
@@ -172,6 +173,7 @@ function Amenities(props) {
                                                         loading="lazy"
                                                         decoding="async"
                                                         role="presentation"
+                                                        fetchpriority="low"
                                                         onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                                                     />
                                                 </li>
@@ -185,6 +187,7 @@ function Amenities(props) {
                                                     loading="lazy"
                                                     decoding="async"
                                                     role="presentation"
+                                                    fetchpriority="low"
                                                     onClick={() => { viewImage(event, 'preViewAmenity', amenity.src, amenity.alt, amenity.hash) }}
                                                 />
                                             </li>
@@ -196,15 +199,6 @@ function Amenities(props) {
                         </ul>
                     </li>
                 </ul>
-                {/* {
-                (state.isAmenityViewed && state.selectedAmenity)
-                    ? <section className='preViewAmenity'>
-                        <header><h5><a href='#' onClick={() => { viewImage(event, 'closeAmenities') }}>Close</a></h5></header>
-                        <img src={state.selectedAmenity} />
-                    </section>
-                    : <></>
-            } */}
-
             </section>
             <AmenitiesModal amenities={amenities} state={state} viewImage={viewImage} />
         </>

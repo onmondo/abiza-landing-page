@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Blurhash } from "react-blurhash";
-// import beachImage from '../../assets/vecteezy_beautiful-tropical-beach-background_2299654.jpg'
 // import logo from '../../assets/logo-transparent.png';
 // import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
@@ -40,7 +39,7 @@ function HeaderSection() {
                     <motion.h1
                         initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2, duration: 3 }}
+                        transition={{ delay: 0.2, duration: 1 }}
                     >
                         Discover tranquility at Abiza Homestay
                     </motion.h1>
@@ -67,7 +66,7 @@ function HeaderSection() {
                     className="homestayreview"
                     initial={{ x: "30vw", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 3, type: "tween" }}
+                    transition={{ delay: 0.2, duration: 1, type: "tween" }}
                 >
                     <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
                         <>

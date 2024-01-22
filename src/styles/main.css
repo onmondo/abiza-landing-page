@@ -33,7 +33,7 @@ a {
 .fullbleed {
     grid-column: 1 / span 5;
     display: grid;
-    grid-template-columns: 1.5fr 2fr 0.5fr 2fr 1.5fr;
+    grid-template-columns: 1.5fr 2fr 0.5fr 3fr 1.5fr;
 }
 
 a:hover, a:focus, a:visited, a:not(a:visited) {
@@ -52,6 +52,10 @@ a:hover, a:focus, a:visited, a:not(a:visited) {
     grid-template-rows: 1fr;
 }
 
-.openWindowIcon {
-    width: 1.5rem;
+#openWindowIcon {
+    /* width: 1.5rem; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
 }

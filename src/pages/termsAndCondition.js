@@ -1,9 +1,35 @@
 import React from "react";
 import "../styles/termsAndCondition.css";
+import { motion } from 'framer-motion';
+const containerVariants = {
+    hidden: {
+        x: '30vw',
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 1,
+            ease: 'easeInOut'
+        }
+    },
+    exit: {
+        x: '30vw',
+        opacity: 0,
+        transition: { duration: 1, ease: 'easeInOut' }
+    }
+}
 
 function TermsAndCondition(props) {
     return (
-        <section id="termsandcondition">
+        <motion.section
+            id="termsandcondition"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
             <header>
                 <h1>Terms and Condition</h1>
                 <p>Terms and Conditions for {props.websiteName} Website</p>
@@ -95,7 +121,7 @@ function TermsAndCondition(props) {
                     </li>
                 </ol>
             </article>
-        </section>
+        </motion.section>
     )
 }
 

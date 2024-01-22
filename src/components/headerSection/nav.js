@@ -1,27 +1,27 @@
 import React from "react";
 import logo from '../../assets/logo-transparent.png';
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Navigation(props) {
-    const { openPage, phoneNumbers } = props;
+    const { phoneNumbers } = props;
     return (
         <section id="navigation">
-            {/* <motion.a
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.2, type: "tween", duration: 3 }}
-                href="#navigation"
-                onClick={() => { openPage(event, 'goToHome') }}
-            >
-                <img src={logo} alt="Abiza Homestay Logo"></img>
-            </motion.a> */}
-
-            <Link to="/"><img src={logo} role="presentation" fetchpriority="high" alt="Abiza Homestay Logo" /></Link>
+            <Link to="/">
+                <motion.img
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.2, type: "tween", duration: 1 }}
+                    src={logo}
+                    role="presentation"
+                    fetchpriority="high"
+                    alt="Abiza Homestay Logo"
+                />
+            </Link>
 
             <nav>
                 <ul>
-                    <li><Link to="/partners">Partners</Link></li>
+                    <li><Link to="/partners">Book Now!</Link></li>
                     <li>
                         {
                             phoneNumbers.map((phoneNumber, index) =>

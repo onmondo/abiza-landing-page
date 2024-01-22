@@ -4,6 +4,7 @@ import "../styles/partners.css";
 import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
+import { motion } from 'framer-motion';
 // import partners from './partners.json'
 
 const partners = [
@@ -94,9 +95,35 @@ const partners = [
     }
 ]
 
-function Partners(props) {
+const containerVariants = {
+    hidden: {
+        x: '30vw',
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 1,
+            ease: 'easeInOut'
+        }
+    },
+    exit: {
+        x: '30vw',
+        opacity: 0,
+        transition: { duration: 1, ease: 'easeInOut' }
+    }
+}
+
+function Partners() {
     return (
-        <section id="partners">
+        <motion.section
+            id="partners"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
             <header>
                 <h2>Our Travel Partners</h2>
                 <p className="description">Step into a world of unparalleled hospitality with our curated selection of homestays on Airbnb, Agoda, and Booking.com.</p>
@@ -104,7 +131,7 @@ function Partners(props) {
                 <p className="description">Embrace the comfort of a home, the convenience of seamless booking, and the joy of discovering new destinations—all with Airbnb, Agoda, and Booking.com.</p>
             </header>
             <PartnerCards partners={partners} />
-        </section>
+        </motion.section>
     )
 }
 

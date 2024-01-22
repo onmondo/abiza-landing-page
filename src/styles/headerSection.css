@@ -42,13 +42,9 @@
 }
 
 #navigation ul li a:hover {
-    background-color: var(--base-border-color);
-    transition: 300ms background-color;}
-
-/* section#navigation nav ul li a:hover {
-    background-color: var(--base-border-color);
-    transition: 300ms background-color;
-} */
+    color: black;
+    transition: 300ms color;
+}
 
 #navigation ul li span {
     font-weight: 800; 

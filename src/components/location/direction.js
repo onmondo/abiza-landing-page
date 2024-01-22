@@ -1,6 +1,6 @@
 import React from "react";
 import Route from "./route";
-import oneInNewWindowIcon from '../../assets/icons8-open-in-new-window-25.png';
+import OpenNewWindowLink from '../openNewWindowLink'
 
 function Direction(props) {
     const { direction } = props;
@@ -14,10 +14,10 @@ function Direction(props) {
             </dd>
             <dt>Open map details</dt>
             <dd>
-                <a className="directiontitle" href={direction.directionUrl} target="_blank">
-                    {direction.title}
-                    <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
-                </a>
+                <OpenNewWindowLink
+                    url={direction.directionUrl}
+                    text={direction.title}
+                />
             </dd>
             <dt>Picture</dt>
             <dd>

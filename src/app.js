@@ -4,9 +4,11 @@ import Home from "./pages/home.js";
 import TermsAndCondition from "./pages/termsAndCondition.js";
 import FooterSection from "./components/footerSection.js";
 import Partners from "./pages/partners.js";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+    const location = useLocation();
     const websiteName = 'Abiza Homestay';
     const phoneNumbers = [
         {
@@ -20,72 +22,32 @@ function App() {
         }
     ]
 
-    // const copyToClipboardHandler = (event, phoneNumber) => {
-    //     event.preventDefault();
-    //     navigator.clipboard.writeText(`${phoneNumber.areaCode}${phoneNumber.number}`)
-    // }
-
-    // const openPage = (event, type) => {
-    //     dispatch({ type });
-    // };
-
-    // const [state, dispatch] = React.useReducer((state, action) => {
-    //     switch (action.type) {
-    //         case 'openTermsAndCondition':
-    //             return {
-    //                 componentDisplayed: <TermsAndCondition
-    //                     phoneNumbers={phoneNumbers}
-    //                     websiteName={websiteName}
-    //                 />,
-    //             };
-    //         case 'openPartners':
-    //             return {
-    //                 componentDisplayed: <Partners />
-    //             }
-    //         case 'goToHome':
-    //             return {
-    //                 componentDisplayed: <Home
-    //                     openPage={openPage}
-    //                     websiteName={websiteName}
-    //                 />
-    //             }
-    //         default:
-    //             throw new Error();
-    //     }
-    // }, {
-    //     componentDisplayed: <Home
-    //         openPage={openPage}
-    //         websiteName={websiteName}
-    //     />
-    // });
-
     return (
-        <Router>
+        <>
             <Navigation
                 phoneNumbers={phoneNumbers}
             />
-            {/* {state.componentDisplayed} */}
-            <Switch>
-                <Route exact path="/">
-                    <Home
-                        websiteName={websiteName}
-                    />
-                </Route>
-                <Route path="/partners">
-                    <Partners />
-                </Route>
-                <Route path="/termsandcondition">
-                    <TermsAndCondition
-                        phoneNumbers={phoneNumbers}
-                        websiteName={websiteName}
-                    />
-                </Route>
-            </Switch>
+            <AnimatePresence>
+                <Switch location={location} key={location.key}>
+                    <Route exact path="/">
+                        <Home websiteName={websiteName} />
+                    </Route>
+                    <Route path="/partners">
+                        <Partners />
+                    </Route>
+                    <Route path="/termsandcondition">
+                        <TermsAndCondition
+                            phoneNumbers={phoneNumbers}
+                            websiteName={websiteName}
+                        />
+                    </Route>
+                </Switch>
+            </AnimatePresence>
             <FooterSection
                 websiteName={websiteName}
                 phoneNumbers={phoneNumbers}
             />
-        </Router>
+        </>
     )
 }
 

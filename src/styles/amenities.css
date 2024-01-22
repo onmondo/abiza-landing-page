@@ -24,6 +24,10 @@
     border-top-right-radius: 1rem;
 }
 
+#amenities li.feature img {
+    transition: visibility 1s, opacity 2s linear;
+}
+
 #amenities li.otherpic ul {
     display: flex;
     flex-direction: row;

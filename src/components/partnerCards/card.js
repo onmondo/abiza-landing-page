@@ -1,7 +1,7 @@
 import React from "react";
 import QRCode from "react-qr-code";
-import oneInNewWindowIcon from '../../assets/icons8-open-in-new-window-25.png';
-
+// import oneInNewWindowIcon from '../../assets/icons8-open-in-new-window-25.png';
+import OpenNewWindowLink from "../openNewWindowLink"
 function PartnerCard(props) {
     const { partner } = props
     return (
@@ -10,10 +10,14 @@ function PartnerCard(props) {
             <dd><img src={partner.logo} loading="lazy" alt={partner.description} /></dd>
             <dt>Link</dt>
             <dd>
-                <a href={partner.url} target="blank">
+                <OpenNewWindowLink
+                    url={partner.url}
+                    text={partner.description}
+                />
+                {/* <a href={partner.url} target="blank">
                     {partner.description}
                     <img src={oneInNewWindowIcon} alt="Open in new window icon" />
-                </a>
+                </a> */}
             </dd>
             <dt>QR Code</dt>
             <dd>

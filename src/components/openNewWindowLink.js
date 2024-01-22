@@ -1,11 +1,12 @@
 import React from "react";
+import oneInNewWindowIcon from '../assets/icons8-open-in-new-window-25.png';
 
 function OpenNewWindowLink(props) {
-    const { assignedClassName, url } = props;
+    const { url, text } = props;
     return (
-        <a className={assignedClassName} href={url} target="blank">
-            {/* child component here... */}
-            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
+        <a id="openWindowIcon" href={url} target="blank">
+            {text}
+            <img src={oneInNewWindowIcon} alt="Open in new window icon" />
         </a>
     )
 }
