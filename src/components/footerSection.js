@@ -118,6 +118,11 @@ function FooterSection(props) {
                             <li>
                                 <a title="Lawrence Ruiz, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Legazpi_Airport_Terminal.JPG">Legazpi Airport Terminal by Lawrence Ruiz via Wikimedia Commons</a>
                             </li>
+                            <li>
+                                play-bold
+                                &#160;icon by&#160;
+                                <a target="_blank" href="https://www.figma.com/community/file/1166831539721848736">480 Design</a>
+                            </li>
                         </ul>
                     </dd>
                 </dl>
