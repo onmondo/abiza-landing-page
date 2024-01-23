@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import head from "lodash/head";
 import axios from "axios";
-import { getWithExpiry, setWithExpiry } from '../../util/localstorage';
-import loading from '../../assets/loading-giphy.gif'
+import { getWithExpiry, setWithExpiry } from "../../util/localstorage";
+import loading from "../../assets/loading-giphy.gif"
+import { motion } from "framer-motion";
+import { dashBoardVariant } from './animationVariants';
 
 function WeatherWidget() {
     const lsWeather = getWithExpiry('matnogweather');
@@ -31,7 +33,10 @@ function WeatherWidget() {
     // console.count('component WeatherWidget rendered!');
 
     return (
-        <dl className="weather">
+        <motion.dl
+            className="weather"
+            variants={dashBoardVariant}
+        >
             <dt>Weather</dt>
             {
                 (data?.weather && head(data.weather)?.icon)
@@ -55,19 +60,8 @@ function WeatherWidget() {
                         <img src={loading} alt="Loading GIF from Giphy" />
                     </dd>
             }
-
-        </dl>
+        </motion.dl>
     )
-    // return (
-    //     <dl className="weather">
-    //         <dt>Weather</dt>
-    //         <dd id="weatherButton">
-    //             <img src={loading} alt="Loading GIF from Giphy" />
-    //             {/* <iframe src="https://giphy.com/embed/L05HgB2h6qICDs5Sms" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/crearecreativita-loading-load-creare-creativita-L05HgB2h6qICDs5Sms">via GIPHY</a></p> */}
-    //         </dd>
-    //     </dl>
-
-    // )
 }
 
 export default WeatherWidget;

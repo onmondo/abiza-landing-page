@@ -10,6 +10,7 @@ import ClockWidget from "./clockWidget";
 import "../../styles/headerSection.css";
 import "../../styles/contactUs.css";
 import { motion } from "framer-motion";
+import { dashBoardVariant } from "./animationVariants";
 
 function HeaderSection() {
     // console.count('component HeaderSection rendered!');
@@ -39,7 +40,7 @@ function HeaderSection() {
                     <motion.h1
                         initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2, duration: 1 }}
+                        transition={{ delay: 0.2, duration: 1.2 }}
                     >
                         Discover tranquility at Abiza Homestay
                     </motion.h1>
@@ -47,7 +48,11 @@ function HeaderSection() {
                     <p className="description">Your Homestay Journey Begins Here.</p>
                 </header>
                 <section id="contactus">
-                    <address>
+                    <motion.address
+                        variants={dashBoardVariant}
+                        initial="hidden"
+                        animate="visible"
+                    >
                         <ClockWidget />
                         <WeatherWidget />
                         {/* <dl>
@@ -58,7 +63,7 @@ function HeaderSection() {
                             <dt>🗺️ Location</dt>
                             <dd><a href={process.env.GMAP_LOCATION} target="blank">Hidhid Matnog Sorsogon</a></dd>
                         </dl> */}
-                    </address>
+                    </motion.address>
                 </section>
             </article>
             <section id="promote">
@@ -66,7 +71,7 @@ function HeaderSection() {
                     className="homestayreview"
                     initial={{ x: "30vw", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 1, type: "tween" }}
+                    transition={{ delay: 0.2, duration: 1.2, type: "tween" }}
                 >
                     <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
                         <>

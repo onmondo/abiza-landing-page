@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import holidays from './holidays.json'
+import { motion } from "framer-motion";
+import { dashBoardVariant } from './animationVariants';
 
 function ClockWidget() {
     let now = moment();
@@ -27,13 +29,16 @@ function ClockWidget() {
         holiday.date === currentDate
     )
     return (
-        <dl className="timetoday">
+        <motion.dl
+            className="timetoday"
+            variants={dashBoardVariant}
+        >
             <dt>Current time</dt>
             <dd id="currentDayText">{currentDayText}</dd>
             <dd id="currentDayNumber">{currentDayNumber}</dd>
             <dd id="currentTime">{currentTime}</dd>
             <dd id="currentHoliday"><span>|</span>{currentHoliday?.description}</dd>
-        </dl>
+        </motion.dl>
     )
 }
 
