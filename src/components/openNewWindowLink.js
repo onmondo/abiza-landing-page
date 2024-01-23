@@ -1,5 +1,5 @@
 import React from "react";
-import oneInNewWindowIcon from '../assets/icons8-open-in-new-window-25.png';
+import oneInNewWindowIcon from '../assets/open-in-new-window.svg';
 
 function OpenNewWindowLink(props) {
     const { url, text } = props;

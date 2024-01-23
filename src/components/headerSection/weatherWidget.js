@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import head from "lodash/head";
 import axios from "axios";
 import { getWithExpiry, setWithExpiry } from "../../util/localstorage";
-import loading from "../../assets/loading-giphy.gif"
+import loading from "../../assets/loading-twotone-loop.svg"
 import { motion } from "framer-motion";
 import { dashBoardVariant } from './animationVariants';
 
@@ -57,7 +57,7 @@ function WeatherWidget() {
                         </dd>
                     </>
                     : <dd id="weatherButton">
-                        <img src={loading} alt="Loading GIF from Giphy" />
+                        <img src={loading} role="presentation" alt="Loading GIF from Giphy" />
                     </dd>
             }
         </motion.dl>

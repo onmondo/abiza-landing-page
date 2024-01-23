@@ -63,19 +63,6 @@ function FooterSection(props) {
                                     Vecteezy
                                 </a>
                             </li>
-                            {/* <li>
-                                <a href="https://www.vecteezy.com/photo/2299654-beautiful-tropical-beach-background" target="blank">
-                                    Free Stock photos
-                                </a>
-                                &#160;by&#160;
-                                <a href="https://www.vecteezy.com/members/siraphol-siricharattakul">
-                                    Siraphol Siricharattakul
-                                </a>
-                                &#160;/&#160;
-                                <a href="https://www.vecteezy.com/">
-                                    Vecteezy
-                                </a>
-                            </li> */}
                             <li>
                                 <a href="https://www.vecteezy.com/free-vector/map" target="blank">
                                     Map Vectors
@@ -88,26 +75,6 @@ function FooterSection(props) {
                                 <a href="https://www.vecteezy.com/">
                                     Vecteezy
                                 </a>
-                            </li>
-                            {/* <li>
-                                <a target="_blank" href="https://icons8.com/icon/86206/copy">Copy</a>
-                                &#160;icon by&#160;
-                                <a target="_blank" href="https://icons8.com">Icons8</a>
-                            </li> */}
-                            <li>
-                                <a target="_blank" href="https://icons8.com/icon/heLnIpSDWOWE/external-link">
-                                    Open in new window
-                                </a>
-                                &#160;icon by&#160;
-                                <a target="_blank" href="https://icons8.com">Icons8</a>
-                            </li>
-                            {/* <li>
-                                <a target="_blank" href="https://icons8.com/icon/59872/refresh">Refresh</a>
-                                &#160;icon by&#160;
-                                <a target="_blank" href="https://icons8.com">Icons8</a>
-                            </li> */}
-                            <li>
-                                <a target="_blank" href="https://giphy.com/stickers/crearecreativita-loading-load-creare-creativita-L05HgB2h6qICDs5Sms">Loading GIF via GIPHY</a>
                             </li>
                             <li>
                                 <a title="ramon garra, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/b/b0/Matnog_317.jpg">Matnog Beach by Ramon Garra via Wikimedia Commons</a>
