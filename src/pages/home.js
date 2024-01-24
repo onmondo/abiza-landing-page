@@ -14,7 +14,7 @@ function Home(props) {
                 copyToClipboardHandler={props.copyToClipboardHandler}
             />
             <BookingSection openPage={props.openPage} />
-            <Amenities websiteName={props.websiteName} />
+            <Amenities websiteName={props.websiteName} amenities={props.amenities} />
             <DestinationSection />
             <Reviews />
             <PinLocation />

@@ -35,28 +35,28 @@
         font-size: 0.7rem;
     }
 
-    section#amenitiesModal {
+    section#amenitiesPage {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    section#amenitiesModal header {
+    section#amenitiesPage header {
         grid-column: 2;
         text-align: right;
     }
 
-    section#amenitiesModal ul {
+    section#amenitiesPage ul {
         align-items: center;
         margin: 0;
     }
 
-    section#amenitiesModal ul#firstAmenities {
+    section#amenitiesPage ul#firstAmenities {
         grid-column: 2;
         grid-row: 1;
     }
     
-    section#amenitiesModal ul#secondAmenities {
+    section#amenitiesPage ul#secondAmenities {
         grid-column: 2;
         grid-row: 2;
     }

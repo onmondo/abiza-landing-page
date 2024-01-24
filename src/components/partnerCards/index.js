@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const cardVariants = {
     hover: {
-        scale: 1.1,
-        boxShadow: "0px 0px 10px rgb(250 205 8)",
-        borderColor: "rgb(250 205 8)",
+        scale: 1.2,
+        boxShadow: "0px 0px 12px 4px rgb(131 217 209)",
+        // borderColor: "rgb(131 217 209)",
         transition: {
             duration: 0.4,
             // yoyo: Infinity

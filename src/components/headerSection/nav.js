@@ -6,7 +6,11 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function Navigation(props) {
     const { phoneNumbers } = props;
     return (
-        <section id="navigation">
+        <motion.section
+            // drag
+            // dragConstraints={{ left: 0, right: 0, top: 0 }}
+            id="navigation"
+        >
             <Link to="/">
                 <motion.img
                     initial={{ y: -100, opacity: 0 }}
@@ -40,7 +44,7 @@ function Navigation(props) {
                     {/* <li>FAQ</li> */}
                 </ul>
             </nav>
-        </section>
+        </motion.section>
 
     )
 }

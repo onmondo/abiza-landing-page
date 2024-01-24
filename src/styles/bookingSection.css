@@ -16,6 +16,7 @@
 
 #travelpartner header a:hover {
     color: rgb(0, 0, 0);
+    transition: color 300ms;
 }
 
 #travelpartner ul {
