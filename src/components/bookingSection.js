@@ -9,9 +9,11 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const listVariants = {
     hidden: {
+        y: 20,
         opacity: 0
     },
     visible: {
+        y: 0,
         opacity: 1,
         transition: {
             duration: 1,

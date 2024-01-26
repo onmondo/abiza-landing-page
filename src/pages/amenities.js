@@ -1,25 +1,6 @@
 import React from "react";
-import { motion } from 'framer-motion';
-
-const containerVariants = {
-    hidden: {
-        x: '30vw',
-        opacity: 0
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 1,
-            ease: 'easeInOut'
-        }
-    },
-    exit: {
-        x: '30vw',
-        opacity: 0,
-        transition: { duration: 1, ease: 'easeInOut' }
-    }
-}
+import { motion } from "framer-motion";
+import { containerVariant, listVariants } from "./animationVariants"
 
 function Amenities(props) {
     const { amenities } = props;
@@ -29,16 +10,16 @@ function Amenities(props) {
     return (
         <motion.section
             id="amenitiesPage"
-            variants={containerVariants}
+            variants={containerVariant}
             initial="hidden"
             animate="visible"
             exit="exit"
         >
-            <ul id="firstAmenities">
+            <motion.ul variants={listVariants} initial="hidden" animate="visible" id="firstAmenities">
                 {
                     firstAmenities.map((amenity, index) => {
                         return (
-                            <li key={index}>
+                            <motion.li key={index} variants={listVariants}>
                                 <img src={amenity.src}
                                     alt={amenity.alt}
                                     loading="lazy"
@@ -46,17 +27,17 @@ function Amenities(props) {
                                     role="presentation"
                                     fetchpriority="low"
                                 />
-                            </li>
+                            </motion.li>
 
                         )
                     })
                 }
-            </ul>
-            <ul id="secondAmenities">
+            </motion.ul>
+            <motion.ul variants={listVariants} initial="hidden" animate="visible" id="secondAmenities">
                 {
                     secondAmenities.map((amenity, index) => {
                         return (
-                            <li key={index}>
+                            <motion.li key={index} variants={listVariants}>
                                 <img src={amenity.src}
                                     alt={amenity.alt}
                                     loading="lazy"
@@ -64,12 +45,12 @@ function Amenities(props) {
                                     role="presentation"
                                     fetchpriority="low"
                                 />
-                            </li>
+                            </motion.li>
 
                         )
                     })
                 }
-            </ul>
+            </motion.ul>
         </motion.section>
     )
 }

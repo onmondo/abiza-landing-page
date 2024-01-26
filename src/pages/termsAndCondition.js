@@ -1,31 +1,13 @@
 import React from "react";
 import "../styles/termsAndCondition.css";
-import { motion } from 'framer-motion';
-const containerVariants = {
-    hidden: {
-        x: '30vw',
-        opacity: 0
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 1,
-            ease: 'easeInOut'
-        }
-    },
-    exit: {
-        x: '30vw',
-        opacity: 0,
-        transition: { duration: 1, ease: 'easeInOut' }
-    }
-}
+import { motion } from "framer-motion";
+import { containerVariant } from "./animationVariants"
 
 function TermsAndCondition(props) {
     return (
         <motion.section
             id="termsandcondition"
-            variants={containerVariants}
+            variants={containerVariant}
             initial="hidden"
             animate="visible"
             exit="exit"

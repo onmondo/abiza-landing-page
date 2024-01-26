@@ -55,10 +55,18 @@
         grid-column: 2;
         grid-row: 1;
     }
+
+    section#amenitiesPage ul#firstAmenities li:last-child > img {
+        border-bottom-left-radius: 0;
+    }
     
     section#amenitiesPage ul#secondAmenities {
         grid-column: 2;
         grid-row: 2;
+    }
+
+    section#amenitiesPage ul#secondAmenities li:first-child > img {
+        border-top-right-radius: 0;
     }
 
     section#reviews ul {

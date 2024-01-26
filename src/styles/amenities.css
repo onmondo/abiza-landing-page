@@ -122,9 +122,25 @@
     align-items: flex-end;
 }
 
+#firstAmenities li:first-child > img {
+    border-top-left-radius: 5rem;
+}
+
+#firstAmenities li:last-child > img {
+    border-bottom-left-radius: 5rem;
+}
+
 #secondAmenities {
     grid-column: 3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#secondAmenities li:first-child > img {
+    border-top-right-radius: 5rem;
+}
+
+#secondAmenities li:last-child > img {
+    border-bottom-right-radius: 5rem;
 }

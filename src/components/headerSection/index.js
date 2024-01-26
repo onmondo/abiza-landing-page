@@ -11,6 +11,7 @@ import "../../styles/headerSection.css";
 import "../../styles/contactUs.css";
 import { motion } from "framer-motion";
 import { dashBoardVariant } from "./animationVariants";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function HeaderSection() {
     // console.count('component HeaderSection rendered!');
@@ -69,35 +70,31 @@ function HeaderSection() {
             <section id="promote">
                 <motion.section
                     className="homestayreview"
-                    initial={{ x: "30vw", opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 1.2, type: "tween" }}
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.8, type: "tween" }}
                 >
-                    <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
-                        <>
-                            <Blurhash
-                                className="profilepic"
-                                hash="LVFicG9FD%sS_NIoRQn$yXW;V?s."
-                                punch={1}
-                                src={homestay}
-                                style={{ display: houseImageLoaded ? "none" : "inline" }}
-                                alt="Glimpse of the homestay"
-                                width={64}
-                                height={64}
-                            />
-                            <img
-                                className="profilepic"
-                                src={homestay}
-                                alt="Glimpse of the homestay"
-                                style={{ display: !houseImageLoaded ? "none" : "inline" }}
-                                fetchpriority="high"
-                            />
-                        </>
-                    </a>
-                    <header
-
-                    >
-                        <h4><a href={process.env.AIRBNB_ROOM1} target="blank">Abiza Homestay</a> <aside>⭐ (4.5)</aside></h4>
+                    <Link to="/partners" className="mainroom">
+                        <Blurhash
+                            className="profilepic"
+                            hash="LVFicG9FD%sS_NIoRQn$yXW;V?s."
+                            punch={1}
+                            src={homestay}
+                            style={{ display: houseImageLoaded ? "none" : "inline" }}
+                            alt="Glimpse of the homestay"
+                            width={64}
+                            height={64}
+                        />
+                        <img
+                            className="profilepic"
+                            src={homestay}
+                            alt="Glimpse of the homestay"
+                            style={{ display: !houseImageLoaded ? "none" : "inline" }}
+                            fetchpriority="high"
+                        />
+                    </Link>
+                    <header>
+                        <h4><Link to="/partners">Abiza Homestay</Link> <aside>⭐ (4.5)</aside></h4>
                         <blockquote >Starts from <aside>₱ 953.00</aside></blockquote>
                     </header>
                 </motion.section>
@@ -109,7 +106,11 @@ function HeaderSection() {
                         width={589.46}
                         height={415.53}
                     />
-                    <img className="backgroundimg"
+                    <motion.img
+                        className="backgroundimg"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2, duration: 1.2, type: "tween" }}
                         src={beachImage}
                         alt="One of the travel destinations - Subic Beach"
                         style={{ display: !beachImageLoaded ? "none" : "inline" }}

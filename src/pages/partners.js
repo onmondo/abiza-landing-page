@@ -1,10 +1,11 @@
 import React from "react";
 import PartnerCards from "../components/partnerCards";
 import "../styles/partners.css";
-import airbnb from '../assets/airbnb-logo-transparent.svg';
-import agoda from '../assets/agoda-logo-transparent.svg';
-import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
-import { motion } from 'framer-motion';
+import airbnb from "../assets/airbnb-logo-transparent.svg";
+import agoda from "../assets/agoda-logo-transparent.svg";
+import bookingDotCom from "../assets/booking-dot-com-logo-transparent.svg";
+import { motion } from "framer-motion";
+import { containerVariant } from "./animationVariants"
 // import partners from './partners.json'
 
 const partners = [
@@ -95,31 +96,11 @@ const partners = [
     }
 ]
 
-const containerVariants = {
-    hidden: {
-        x: '30vw',
-        opacity: 0
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 1,
-            ease: 'easeInOut'
-        }
-    },
-    exit: {
-        x: '30vw',
-        opacity: 0,
-        transition: { duration: 1, ease: 'easeInOut' }
-    }
-}
-
 function Partners() {
     return (
         <motion.section
             id="partners"
-            variants={containerVariants}
+            variants={containerVariant}
             initial="hidden"
             animate="visible"
             exit="exit"
