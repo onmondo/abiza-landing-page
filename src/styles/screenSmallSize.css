@@ -26,8 +26,19 @@
         height: inherit;
     }
 
+    section#amenities {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     section#amenities img {
         height: 5.2rem;
+    }
+
+    section#amenities img#awards {
+        height: 22rem;
+        width: 22rem;
     }
 
     section#amenities li.otherpic ul li.lastAmenityItem a {

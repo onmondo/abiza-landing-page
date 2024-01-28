@@ -15,6 +15,7 @@ import room2B from './assets/room2B.jpeg';
 import crA from './assets/crA.jpeg';
 import crB from './assets/crB.jpeg';
 import parking from './assets/parking.jpg';
+import bookingDotComAward from "./assets/Digital-Award-TRA-2024.png"
 
 function App() {
     const location = useLocation();
@@ -37,6 +38,11 @@ function App() {
             alt: 'The house',
             hash: 'LVFicG9FD%sS_NIoRQn$yXW;V?s.'
         },
+        // {
+        //     src: bookingDotComAward,
+        //     alt: 'Booking.com award',
+        //     hash: null,
+        // },
         {
             src: room1A,
             alt: 'Room 1 A',

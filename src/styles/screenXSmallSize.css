@@ -58,10 +58,14 @@
     section#amenities img {
         height: 4.3rem;
     }
+    /* section#amenities img#awards {
+        height: 16rem;
+        width: 16rem;
+    } */
 
     section#reviews ul {
         height: 140rem;
-   }
+    }
 
     section#destination ul {
         grid-column: 1 / span 5;

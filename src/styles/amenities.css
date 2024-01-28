@@ -2,6 +2,8 @@
     grid-column: 2 / span 2;
     display: grid;
     grid-template-columns: 4fr 0.5fr 5fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
 }
 
 #amenities header {
@@ -9,11 +11,19 @@
     grid-row: 1;
 }
 
+#amenities img#awards {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    margin: 3rem 0;
+    height: 16rem;
+    width: 16rem;
+}
+
 #amenities ul {
     /* width: 41rem; */
     padding: 0;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / span 3;
     list-style: none;
 }
 
@@ -23,14 +33,6 @@
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-
-/* #amenities li.feature img {
-    transition: visibility 1s, opacity 2s linear;
-} */
-
-/* #amenities li.feature img {
-    scale: 0;
-} */
 
 #amenities li.otherpic ul {
     display: flex;

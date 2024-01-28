@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Blurhash } from "react-blurhash";
-// import logo from '../../assets/logo-transparent.png';
-// import mouse from '../../assets/mouse-scroll.svg';
 import homestay from '../../assets/homestay.png';
-// import copyIcon from '../../assets/icons8-copy-24.png';
-// import refreshIcon from '../../assets/icons8-refresh-30.png';
 import WeatherWidget from "./weatherWidget";
 import ClockWidget from "./clockWidget";
 import "../../styles/headerSection.css";
@@ -12,6 +8,23 @@ import "../../styles/contactUs.css";
 import { motion } from "framer-motion";
 import { dashBoardVariant } from "./animationVariants";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
+const promoteVariant = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0, opacity: 1,
+        transition: { duration: 0.8, type: "tween" }
+    },
+    hover: {
+        scale: 2.8,
+        boxShadow: "0px 0px 12px 4px rgb(249, 247, 222)",
+        // borderColor: "rgb(131 217 209)",
+        transition: {
+            duration: 0.4,
+            // yoyo: Infinity
+        }
+    }
+}
 
 function HeaderSection() {
     // console.count('component HeaderSection rendered!');
@@ -70,8 +83,9 @@ function HeaderSection() {
             <section id="promote">
                 <motion.section
                     className="homestayreview"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
+                    variants={promoteVariant}
+                    initial="hidden"
+                    animate="visible"
                     transition={{ duration: 0.8, type: "tween" }}
                 >
                     <Link to="/partners" className="mainroom">
@@ -118,7 +132,6 @@ function HeaderSection() {
                         fetchpriority="high"
                     />
                 </>
-                {/* <img id="promotelogo" src={logo} loading="lazy"></img> */}
             </section>
         </>
 

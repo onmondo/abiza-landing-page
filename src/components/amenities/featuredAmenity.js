@@ -12,7 +12,7 @@ const scaleVariants = {
         }
     },
     scaledown: {
-        y: 50,
+        y: 20,
         opacity: 0,
         display: "none",
         transition: {
@@ -37,7 +37,7 @@ function FeaturedAmenity(props) {
                             exit="scaledown"
                             key={index}
                         >
-                            <Blurhash
+                            {(state.selectedHash) ? <Blurhash
                                 hash={state.selectedHash}
                                 punch={1}
                                 src={state.selectedAmenity}
@@ -48,7 +48,8 @@ function FeaturedAmenity(props) {
                                 alt={state.selectedAlt}
                                 width={656}
                                 height={656}
-                            />
+                            /> : <></>}
+
                             <motion.img
                                 src={state.selectedAmenity}
                                 loading="lazy"
