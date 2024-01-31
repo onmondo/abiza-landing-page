@@ -1,6 +1,7 @@
 import React from "react";
 import Route from "./route";
-import OpenNewWindowLink from '../openNewWindowLink'
+import OpenNewWindowLink from "../openNewWindowLink";
+import { motion } from "framer-motion";
 
 function Direction(props) {
     const { direction } = props;
@@ -22,7 +23,8 @@ function Direction(props) {
             <dt>Picture</dt>
             <dd>
                 <a href={direction.directionUrl} target="_blank">
-                    <img
+                    <motion.img
+                        whileHover={{ opacity: 0.8 }}
                         className="startingpoint"
                         src={direction.imgSrc}
                         alt={direction.imgAlt}

@@ -5,13 +5,13 @@
         width: 100%;
     }
 
-    /* #promote img.backgroundimg {
-        width: 30rem; 
-    } */
-
     #promote img.backgroundimg {
-        display: none; 
+        width: 25rem; 
     }
+
+    /* #promote img.backgroundimg {
+        display: none; 
+    } */
 
     #promotelogo {
         width: 5rem;
@@ -82,7 +82,7 @@
 
     section#reviews ul {
          width: 18rem;
-         height: 120rem;
+         height: 140rem;
     }
 
     #aboutus header {
