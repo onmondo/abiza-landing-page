@@ -144,17 +144,23 @@ function Amenities(props) {
                 <p className="description">Discover comfort at our homestay with two inviting bedrooms for up to three guests each. Enjoy plush bedding and a peaceful night's sleep. Our spacious comfort room with a refreshing shower provides a tranquil escape and all amenities for a rejuvenating stay.</p>
                 <p className="description">At {props.websiteName}, we redefine hospitality, ensuring your visit is not just a stay but a collection of unforgettable moments. Welcome to a home where comfort meets charm.</p>
             </header>
-            <motion.img
+            <motion.a
                 id="awards"
-                src={bookingDotComAward}
-                loading="lazy"
-                decoding="async"
-                role="presentation"
-                fetchpriority="low"
                 variants={featureVariant}
                 initial="hidden"
                 animate="visible"
-            />
+                href="https://www.booking.com/traveller-review-awards"
+                target="_blank"
+            >
+                <img
+                    src={bookingDotComAward}
+                    loading="lazy"
+                    decoding="async"
+                    role="presentation"
+                    fetchpriority="low"
+                />
+            </motion.a>
+
             <ul>
                 <FeaturedAmenity amenities={amenities} shown={featureImageLoaded} state={state} />
                 <li className="otherpic">

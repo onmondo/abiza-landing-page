@@ -11,10 +11,13 @@
     grid-row: 1;
 }
 
-#amenities img#awards {
+#amenities a#awards {
     grid-column: 3;
     grid-row: 2 / span 2;
     margin: 3rem 0;
+}
+
+#amenities a#awards img {
     height: 16rem;
     width: 16rem;
 }

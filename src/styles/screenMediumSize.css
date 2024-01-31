@@ -110,9 +110,12 @@
         grid-row: 1;
     }
 
-    section#amenities img#awards {
+    section#amenities a#awards {
         grid-column: 2;
         grid-row: 1;
+    }
+
+    section#amenities a#awards img {
         height: 12rem;
         width: 12rem;
     }
