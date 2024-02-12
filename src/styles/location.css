@@ -3,11 +3,11 @@
     /* background-image: url(../../src/assets/GPS_MAP26.jpg);
     background-position: bottom left; */
     box-shadow: 0px 3px 9px 0px #8888;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
 }
 
 #location picture {
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 3;
     grid-column: 1 / span 5;
     background-color: var(--base-bg-color);
     z-index: -1;
@@ -55,6 +55,7 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 6rem;
+    flex-wrap: wrap;
 }
 
 #location address.traveltime {
@@ -103,6 +104,7 @@
 
 #location address.destinations dl dd a > img.startingpoint {
     width: 22rem;
+    min-height: 16.5rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
