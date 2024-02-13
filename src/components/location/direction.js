@@ -10,15 +10,11 @@ function Direction(props) {
             <dt>{direction.title}</dt>
             <dd>
                 {direction.routes.map((route, index) =>
-                    <Route key={index} route={route} />
+                    <>
+                        <Route key={index} route={route} />
+                        {(index === direction.routes.length - 1) ? <></> : <hr />}
+                    </>
                 )}
-            </dd>
-            <dt>Open map details</dt>
-            <dd>
-                <OpenNewWindowLink
-                    url={direction.directionUrl}
-                    text={direction.title}
-                />
             </dd>
             <dt>Picture</dt>
             <dd>
@@ -33,6 +29,10 @@ function Direction(props) {
                         fetchpriority="low"
                     />
                 </a>
+                <OpenNewWindowLink
+                    url={direction.directionUrl}
+                    text={direction.title}
+                />
             </dd>
         </dl>
     );

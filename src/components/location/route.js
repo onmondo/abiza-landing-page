@@ -8,12 +8,12 @@ function Route(props) {
             <header>
                 <h4>{route.id}</h4>
             </header>
-            <ul>
+            {/* <ul>
                 {route.details.map((detail, index) =>
                     <li key={index}><p>{detail}</p></li>
                 )}
-            </ul>
-            <hr />
+            </ul> */}
+            {/* <hr /> */}
             <address className="traveltime">
                 <dl>
                     <dt>Estimated time</dt>

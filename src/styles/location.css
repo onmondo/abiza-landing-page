@@ -3,7 +3,7 @@
     /* background-image: url(../../src/assets/GPS_MAP26.jpg);
     background-position: bottom left; */
     box-shadow: 0px 3px 9px 0px #8888;
-    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr;
 }
 
 #location picture {
@@ -58,8 +58,14 @@
     flex-wrap: wrap;
 }
 
+#location address.destinations article {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+}
+
 #location address.traveltime {
-    padding: 1rem 0 2rem 0;
+    /* padding: 1rem 0 2rem 0; */
     grid-row: 2;
     grid-column: 2 / span 3;
     display: grid;
@@ -73,7 +79,7 @@
     background-color: rgb(251 248 248);
     border-radius: 1rem;
     border-color: rgb(251 248 248);
-    
+    align-items: center;
 }
 
 #location address.destinations > dl {
@@ -100,6 +106,21 @@
 
 #location address.destinations dl dd:last-child {
     padding: 0;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+}
+
+#location address.destinations dl dd:last-child a {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+#location address.destinations dl dd:last-child a#openWindowIcon {
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 2;
+    color: var(--base-bg-color);
 }
 
 #location address.destinations dl dd a > img.startingpoint {
@@ -114,7 +135,16 @@
 }
 
 #location address.destinations dl > dd  h4, #location address.traveltime dl > dd {
+    color: var(--base-color);
+    font-weight: 500;
+}
+
+#location address.traveltime dl > dd {
     color: black;
+}
+
+#location address.traveltime dl > dt {
+    font-size: 0.6rem;
 }
 
 #location address.destinations dl dd a.directiontitle {
