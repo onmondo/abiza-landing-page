@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect, lazy, Suspense } from "react";
 import Navigation from "./components/headerSection/nav.js";
 import Home from "./pages/home.js";
-import TermsAndCondition from "./pages/termsAndCondition.js";
+// import TermsAndCondition from "./pages/termsAndCondition.js";
 import FooterSection from "./components/footerSection.js";
-import Partners from "./pages/partners.js";
+// import Partners from "./pages/partners.js";
 import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Amenities from "./pages/amenities.js";
+// import Amenities from "./pages/amenities.js";
 import homestay from './assets/homestay.png';
 import room1A from './assets/room1A.jpeg';
 import room1B from './assets/room1B.jpeg';
@@ -15,7 +15,10 @@ import room2B from './assets/room2B.jpeg';
 import crA from './assets/crA.jpeg';
 import crB from './assets/crB.jpeg';
 import parking from './assets/parking.jpg';
-import bookingDotComAward from "./assets/Digital-Award-TRA-2024.png"
+
+const TermsAndCondition = lazy(() => import("./pages/termsAndCondition.js"));
+const Partners = lazy(() => import("./pages/partners.js"));
+const Amenities = lazy(() => import("./pages/amenities.js"));
 
 function App() {
     const location = useLocation();
@@ -80,6 +83,12 @@ function App() {
         }
     ]
 
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }, [pathname])
+
     return (
         <>
             <Navigation
@@ -90,18 +99,20 @@ function App() {
                     <Route exact path="/">
                         <Home websiteName={websiteName} amenities={amenities} />
                     </Route>
-                    <Route path="/partners">
-                        <Partners />
-                    </Route>
-                    <Route path="/termsandcondition">
-                        <TermsAndCondition
-                            phoneNumbers={phoneNumbers}
-                            websiteName={websiteName}
-                        />
-                    </Route>
-                    <Route path="/amenities">
-                        <Amenities amenities={amenities} />
-                    </Route>
+                    <Suspense fallback={<h1>Loading...</h1>}>
+                        <Route path="/partners">
+                            <Partners />
+                        </Route>
+                        <Route path="/termsandcondition">
+                            <TermsAndCondition
+                                phoneNumbers={phoneNumbers}
+                                websiteName={websiteName}
+                            />
+                        </Route>
+                        <Route path="/amenities">
+                            <Amenities amenities={amenities} />
+                        </Route>
+                    </Suspense>
                 </Switch>
             </AnimatePresence>
             <FooterSection
