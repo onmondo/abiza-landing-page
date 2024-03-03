@@ -15,6 +15,7 @@ import room2B from './assets/room2B.jpeg';
 import crA from './assets/crA.jpeg';
 import crB from './assets/crB.jpeg';
 import parking from './assets/parking.jpg';
+import loading from "./assets/loading-twotone-loop.svg"
 
 const TermsAndCondition = lazy(() => import("./pages/termsAndCondition.js"));
 const Partners = lazy(() => import("./pages/partners.js"));
@@ -99,7 +100,7 @@ function App() {
                     <Route exact path="/">
                         <Home websiteName={websiteName} amenities={amenities} />
                     </Route>
-                    <Suspense fallback={<h1>Loading...</h1>}>
+                    <Suspense fallback={<img src={loading} role="presentation" alt="Loading GIF from Giphy" />}>
                         <Route path="/partners">
                             <Partners />
                         </Route>
