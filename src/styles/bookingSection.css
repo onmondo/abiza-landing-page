@@ -7,11 +7,16 @@
     margin: 5rem 0;
 }
 
-#travelpartner header {
+#travelpartner header a {
     grid-column: 1;
     grid-row: 1;
     font-weight: 500;
     color: var(--base-color);
+}
+
+#travelpartner header a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 300ms;
 }
 
 #travelpartner ul {
@@ -36,7 +41,16 @@ img.qrcode {
     color: var(--base-color);
 }
 
-#travelpartner ul li a.mainroom > img {
+#travelpartner ul li a.mainroom{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+#travelpartner ul li a.mainroom > img.bookingLogo {
+    grid-column: 1;
+    grid-row: 1;
     width: 6rem;
     grid-column: 1;
 }
@@ -50,6 +64,8 @@ img.qrcode {
 }
 
 #travelpartner ul li a.secondary > img {
+    grid-column: 2;
+    grid-row: 1;
     width: 4rem;
 }
 

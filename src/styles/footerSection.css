@@ -8,6 +8,10 @@
     grid-column: 2;
 }
 
+#aboutus a:hover {
+    color: #facd08;
+}
+
 #aboutus header p {
     text-align: left;
     margin-bottom: 2rem;
@@ -17,11 +21,10 @@
     grid-column: 4;
     font-style: normal;
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 #aboutus address dl {
-    margin: 0 2rem;
+    margin: 0 1rem 0 0;
 }
 
 #aboutus address dd {

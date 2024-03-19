@@ -1,7 +1,17 @@
 @media screen and (max-width: 799px) {
-    #promote img.backgroundimg {
-        width: 30rem; 
+    section#navigation nav {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        width: 100%;
     }
+
+    #promote img.backgroundimg {
+        width: 25rem; 
+    }
+
+    /* #promote img.backgroundimg {
+        display: none; 
+    } */
 
     #promotelogo {
         width: 5rem;
@@ -11,35 +21,108 @@
         width: 10rem;
     }
 
-    section#destination ul li address dl dd {
-        width: 40rem;
+    section#amenities li.feature img, #amenities li.feature div > canvas {
+        width: 26.6rem;
+        height: inherit;
     }
 
-    section#destination ul li address dl dd iframe {
-        width: 40rem;
-        height: 22.5rem;
+    section#amenities {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#amenities img {
+        height: 5.2rem;
+    }
+
+    section#amenities a#awards img {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    section#amenities li.otherpic ul li.lastAmenityItem a {
+        padding: 0;
+        font-size: 0.7rem;
+    }
+
+    section#amenitiesPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#amenitiesPage header {
+        grid-column: 2;
+        text-align: right;
+    }
+
+    section#amenitiesPage ul {
+        align-items: center;
+        margin: 0;
+    }
+
+    section#amenitiesPage ul#firstAmenities {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    section#amenitiesPage ul#firstAmenities li:last-child > img {
+        border-bottom-left-radius: 0;
+    }
+    
+    section#amenitiesPage ul#secondAmenities {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    section#amenitiesPage ul#secondAmenities li:first-child > img {
+        border-top-right-radius: 0;
+    }
+
+    section#reviews ul {
+         width: 18rem;
+         height: 140rem;
     }
 
     #aboutus header {
         grid-column: 2 / span 2;
-        grid-row: 1;
-    }
-
-    footer#aboutus header p {
-        /* text-align: center; */
-        margin-bottom: 3rem;
+        grid-row: 3;
     }
 
     footer#aboutus ul#qrCodes {
         grid-column: 2 / span 3;
+        grid-row: 2;
     }
     
-    #aboutus address {
-        grid-column: 2 / span 2;
-        grid-row: 2;
+    footer#aboutus address {
+        grid-column: 2 / span 3;
+        grid-row: 1;
     }
 
     section#termsandcondition {
-        grid-column: 2 / span 2;
+        grid-template-columns: 0.5fr 4fr 0.5fr;
+    }
+
+    section#termsandcondition header {
+        grid-column: 2;
+    }
+    
+    section#termsandcondition article {
+        grid-column: 2;
+    }
+
+    section#termsandcondition {
+        display: block;
+    }
+
+    /* section#location {
+        padding: 3rem 0;
+    } */
+
+    section#location iframe {
+        /* grid-row: 1; */
+        height: 40rem;
+        
     }
 }

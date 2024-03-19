@@ -1,0 +1,79 @@
+#partners {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    margin: 4rem 0;
+}
+
+#partners header {
+    grid-column: 1;
+    margin-bottom: 4rem;
+}
+
+#partners address {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#partners address dl {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 1rem;
+    border-color: var(--base-border-color);
+    background-color: var(--base-bg-color);
+    margin: 0.4rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--base-color);
+}
+
+#partners address dt {
+    visibility: hidden;
+}
+
+#partners address dd {
+    font-style: normal;
+    margin: 0 1rem;
+}
+
+#partners address a {
+    color: var(--base-color);
+    justify-content: center;
+}
+
+#partners address dd svg {
+    height: 8rem;
+}
+
+#partners address dd img {
+    height: 2rem;
+}
+
+#partners address a > img {
+    height: 1rem;
+}
+
+#partners address dd blockquote {
+    margin: 0;
+}
+
+#partners address dd.price blockquote {
+    font-size: 2rem;
+    color: black;
+}
+
+#partners address dt.extra {
+    visibility: visible;
+    font-style: normal;
+    font-size: 0.6rem;
+    padding-top: 1rem;
+}
+
+#partners address dd.extra blockquote {
+    font-size: 1rem;
+}
+
+#partners address dd aside {
+    display: inline;
+    font-size: 0.8rem;
+}

@@ -2,82 +2,58 @@ import React from "react";
 import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
-// import qrIcon from '../assets/qr-icon.svg';
-// import QRCodes from "./qrCodes/index.js";
-// import QRCode from "react-qr-code";
+import oneInNewWindowIcon from '../assets/open-in-new-window.svg';
+import "../styles/bookingSection.css";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
+const listVariants = {
+    hidden: {
+        y: 20,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            when: 'beforeChildren',
+            staggerChildren: 0.4
+        }
+    }
+}
 
 function BookingSection() {
-    const [state, dispatch] = React.useReducer((state, action) => {
-        switch (action.type) {
-            case 'openAirBnB':
-                return {
-                    isAirbnb: !state.isAirbnb
-                };
-            case 'openAgoda':
-                return {
-                    isAgoda: !state.isAgoda
-                };
-            case 'openBookingDotCom':
-                return {
-                    isBookingDotCom: !state.isBookingDotCom
-                };
-            case 'closeAllPartner':
-                return {
-                    isAirbnb: false,
-                    isAgoda: false,
-                    isBookingDotCom: false,
-                }
-            default:
-                throw new Error();
-        }
-    }, { isAirbnb: false, isAgoda: false, isBookingDotCom: false });
-
-    // console.log(state);
-
-    const openQRHandler = (event, type) => {
-        event.preventDefault();
-        dispatch({ type });
-    }
-
-    const closeQRHandler = (event) => {
-        event.preventDefault();
-        dispatch({ type: 'closeAllPartner' })
-    }
-
     return (
         <>
             <section id="travelpartner">
                 <header>
-                    <h3>Our Travel Partner</h3>
+                    <h3><Link to="/partners">Our Partners</Link></h3>
                 </header>
-                <ul>
-                    <li>
+                <motion.ul
+                    variants={listVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    <motion.li variants={listVariants}>
                         <a className="mainroom" href={process.env.AIRBNB_ROOM1} target="blank">
-                            <img src={airbnb} alt="AirBnB Logo" />
+                            <img className="bookingLogo" src={airbnb} alt="AirBnB Logo" loading="lazy" decoding="async" />
+                            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
                         </a>
-                        {/* <a href="#" onClick={() => { openQRHandler(event, 'openAirBnB') }}><img className="qrcode" src={qrIcon} />{state.isAirbnb}</a> */}
-
-                    </li>
-                    {/* <li><QRCode value={process.env.AIRBNB_ROOM1} /></li>
-                    <li><QRCode value={process.env.AIRBNB_ROOM2} /></li> */}
-                    <li>
+                    </motion.li>
+                    <motion.li variants={listVariants}>
                         <a className="mainroom" href={process.env.AGODA_ROOM1} target="blank">
-                            <img src={agoda} alt="Agoda Logo" />
+                            <img className="bookingLogo" src={agoda} alt="Agoda Logo" loading="lazy" decoding="async" />
+                            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
                         </a>
-                        {/* <a href="#" onClick={() => { openQRHandler(event, 'openAgoda') }}><img className="qrcode" src={qrIcon} /></a> */}
-                    </li>
-                    {/* <li><QRCode value={process.env.AGODA_ROOM1} /></li>
-                    <li><QRCode value={process.env.AGODA_ROOM2} /></li> */}
-                    <li>
-
+                    </motion.li>
+                    <motion.li variants={listVariants}>
                         <a className="mainroom" href={process.env.BOOKING_DOT_COM_ROOMS} target="blank">
-                            <img src={bookingDotCom} alt="Booking.com Logo" />
+                            <img className="bookingLogo" src={bookingDotCom} alt="Booking.com Logo" loading="lazy" decoding="async" />
+                            <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
                         </a>
-                        {/* <a href="#" onClick={() => { openQRHandler(event, 'openBookingDotCom') }}><img className="qrcode" src={qrIcon} /></a> */}
-                    </li>
-                    {/* <li><QRCode value={process.env.BOOKING_DOT_COM_ROOMS} /></li> */}
-                </ul>
-                {/* <QRCodes partners={state} closeQR={closeQRHandler} /> */}
+                    </motion.li>
+                </motion.ul>
             </section>
         </>
     )

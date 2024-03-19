@@ -1,0 +1,25 @@
+@media screen and (max-width: 414px) {
+    section#amenities li.feature img, #amenities li.feature div > canvas {
+        width: 19.3rem;
+        height: inherit;
+    }
+    section#amenities img {
+        height: 3.74rem
+    }
+    section#amenities li.otherpic ul li.lastAmenityItem a {
+        font-size: 0.5rem;
+    }
+
+    section#reviews ul li {
+        margin: 1rem 0;
+    }
+
+    footer#aboutus address {
+        flex-direction: column;
+    }
+
+    footer#aboutus ul#qrCodes li > svg, footer#aboutus ul#qrCodes li > img {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}

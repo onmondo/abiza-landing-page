@@ -1,8 +1,17 @@
 import React from "react";
+import "../styles/termsAndCondition.css";
+import { motion } from "framer-motion";
+import { containerVariant } from "./animationVariants"
 
 function TermsAndCondition(props) {
     return (
-        <section id="termsandcondition">
+        <motion.section
+            id="termsandcondition"
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
             <header>
                 <h1>Terms and Condition</h1>
                 <p>Terms and Conditions for {props.websiteName} Website</p>
@@ -85,7 +94,7 @@ function TermsAndCondition(props) {
                             For any questions or clarifications, please contact us at these numbers
                             {
                                 props.phoneNumbers.map((phoneNumber, index) =>
-                                    <a key={index} href="#" id={phoneNumber.number} onClick={() => { props.copyToClipboardHandler(event, phoneNumber) }}>
+                                    <a key={index} href={`tel:${phoneNumber.areaCode}${phoneNumber.number}`} id={phoneNumber.number}>
                                         {`${phoneNumber.areaCode}-${phoneNumber.number} `}
                                     </a>
                                 )
@@ -94,7 +103,7 @@ function TermsAndCondition(props) {
                     </li>
                 </ol>
             </article>
-        </section>
+        </motion.section>
     )
 }
 

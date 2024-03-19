@@ -1,0 +1,94 @@
+[
+    {
+        "date": "Dec 25, 2023",
+        "description": "Christmas"
+    },
+    {
+        "date": "Dec 26, 2023",
+        "description": "Special Non-working Holiday"
+    },
+    {
+        "date": "Dec 30, 2023",
+        "description": "Rizal Day"
+    },
+    {
+        "date": "Jan 1, 2024",
+        "description": "New Year's Day"
+    },
+    {
+        "date": "Jan 21, 2024",
+        "description": "Sinulog Festival"
+    },
+    {
+        "date": "Feb 9, 2024",
+        "description": "Chinese New Year"
+    },
+    {
+        "date": "Feb 10, 2024",
+        "description": "Lunar New Year"
+    },
+    {
+        "date": "Feb 14, 2024",
+        "description": "Valentine's Day"
+    },
+    {
+        "date": "Feb 25, 2024",
+        "description": "EDSA Revolution Anniversary"
+    },
+    {
+        "date": "Mar 28, 2024",
+        "description": "Maundy Thursday"
+    },
+    {
+        "date": "Mar 29, 2024",
+        "description": "Good Friday"
+    },
+    {
+        "date": "Apr 9, 2024",
+        "description": "Day of Valor"
+    },
+    {
+        "date": "Apr 10, 2024",
+        "description": "Eid al-Fitr"
+    },
+    {
+        "date": "May 1, 2024",
+        "description": "Labour Day"
+    },
+    {
+        "date": "Jun 12, 2024",
+        "description": "Independence Day"
+    },
+    {
+        "date": "Jun 16, 2024",
+        "description": "Eid al-Adha"
+    },
+    {
+        "date": "Aug 21, 2024",
+        "description": "Ninoy Aquino Day"
+    },
+    {
+        "date": "Aug 26, 2024",
+        "description": "National Heroes' Day"
+    },
+    {
+        "date": "Nov 1, 2024",
+        "description": "All Saints' Day"
+    },
+    {
+        "date": "Nov 30, 2024",
+        "description": "Bonifacio Day"
+    },
+    {
+        "date": "Dec 8, 2024",
+        "description": "Feast of the Immaculate Conception"
+    },
+    {
+        "date": "Dec 25, 2024",
+        "description": "Christmas"
+    },
+    {
+        "date": "Dec 30, 2024",
+        "description": "Rizal Day"
+    }
+]

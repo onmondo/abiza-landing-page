@@ -19,7 +19,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 0.5fr 2.5fr 2.5fr 0.5fr;
+    grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
 }
 
 main > * {
@@ -31,13 +31,31 @@ a {
 }
 
 .fullbleed {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr 2.5fr 0.5fr;
-    /* background-color: var(--base-bg-color); */
-    
+    grid-template-columns: 1.5fr 2fr 0.5fr 3fr 1.5fr;
 }
 
 a:hover, a:focus, a:visited, a:not(a:visited) {
     color: rgb(0, 0, 0);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 10rem 0;
+    padding: 10rem 0;
+    background-color: #161616e3;
+    z-index: 3;
+}
+
+#openWindowIcon {
+    /* width: 1.5rem; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
 }
