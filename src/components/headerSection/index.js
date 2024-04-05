@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { Blurhash } from "react-blurhash";
 import homestay from '../../assets/homestay.png';
 import WeatherWidget from "./weatherWidget";
@@ -8,6 +8,8 @@ import "../../styles/contactUs.css";
 import { motion } from "framer-motion";
 import { dashBoardVariant } from "./animationVariants";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import ErrorBoundary from "../errorHandling/ErrorBoundary";
+import WeatherWidgetError from "../errorHandling/weatherWidgetError";
 
 const promoteVariant = {
     hidden: { y: 20, opacity: 0 },
@@ -68,7 +70,9 @@ function HeaderSection() {
                         animate="visible"
                     >
                         <ClockWidget />
-                        <WeatherWidget />
+                        <ErrorBoundary fallback={<WeatherWidgetError />}>
+                            <WeatherWidget />
+                        </ErrorBoundary>
                         {/* <dl>
                             <dt>📧 Email Address</dt>
                             <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
