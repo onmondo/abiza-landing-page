@@ -131,8 +131,8 @@
 
 #aboutme section address dd img {
     height: 14rem;
-    border-radius: 1.5rem;
-    padding-right: 0.2rem;
+    border-radius: 1.2rem;
+    margin-right: 0.4rem;
 }
 
 #aboutme section address dd > a > img {
