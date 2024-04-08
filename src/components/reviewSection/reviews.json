@@ -48,6 +48,14 @@
         "date": "June 2023",
         "review": "A real home away from home .great host family 2ho makes you feel being a part of the family. Nice clean room good internet and a strategic location. Will stay here formsure more often in the future",
         "stars": 5,
+        "active": false
+    },
+    {
+        "name": "Russel",
+        "location": "Makati, Philippines",
+        "date": "March 2024",
+        "review": "Fantastic stay! The host was accommodating, and the place felt like a home away from home.",
+        "stars": 5,
         "active": true
     },
     {

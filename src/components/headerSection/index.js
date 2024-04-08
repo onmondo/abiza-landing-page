@@ -10,6 +10,8 @@ import { dashBoardVariant } from "./animationVariants";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import ErrorBoundary from "../errorHandling/ErrorBoundary";
 import WeatherWidgetError from "../errorHandling/weatherWidgetError";
+import bookingDotComAward from "../../assets/Digital-Award-TRA-2024.png"
+import airbnbSuperHost from "../../assets/airbnbsuperhost.gif"
 
 const promoteVariant = {
     hidden: { y: 20, opacity: 0 },
@@ -69,10 +71,34 @@ function HeaderSection() {
                         initial="hidden"
                         animate="visible"
                     >
-                        <ClockWidget />
+                        {/* <ClockWidget />
                         <ErrorBoundary fallback={<WeatherWidgetError />}>
                             <WeatherWidget />
-                        </ErrorBoundary>
+                        </ErrorBoundary> */}
+                        <dl>
+                            <dt>Booking.com awards</dt>
+                            <dd>
+                                <img
+                                    src={bookingDotComAward}
+                                    loading="lazy"
+                                    decoding="async"
+                                    role="presentation"
+                                    fetchpriority="low"
+                                />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Airbnb superhost</dt>
+                            <dd>
+                                <img
+                                    src={airbnbSuperHost}
+                                    loading="lazy"
+                                    decoding="async"
+                                    role="presentation"
+                                    fetchpriority="low"
+                                />
+                            </dd>
+                        </dl>
                         {/* <dl>
                             <dt>📧 Email Address</dt>
                             <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>

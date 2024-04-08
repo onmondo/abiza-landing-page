@@ -4,7 +4,7 @@ import "../../styles/amenities.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
 import FeaturedAmenity from "./featuredAmenity";
-import bookingDotComAward from "../../assets/Digital-Award-TRA-2024.png"
+// import bookingDotComAward from "../../assets/Digital-Award-TRA-2024.png"
 
 const featureVariant = {
     hidden: {
@@ -144,7 +144,7 @@ function Amenities(props) {
                 <p className="description">Discover comfort at our homestay with two inviting bedrooms for up to three guests each. Enjoy plush bedding and a peaceful night's sleep. Our spacious comfort room with a refreshing shower provides a tranquil escape and all amenities for a rejuvenating stay.</p>
                 <p className="description">At {props.websiteName}, we redefine hospitality, ensuring your visit is not just a stay but a collection of unforgettable moments. Welcome to a home where comfort meets charm.</p>
             </header>
-            <motion.a
+            {/* <motion.a
                 id="awards"
                 variants={featureVariant}
                 initial="hidden"
@@ -159,7 +159,7 @@ function Amenities(props) {
                     role="presentation"
                     fetchpriority="low"
                 />
-            </motion.a>
+            </motion.a> */}
 
             <ul>
                 <FeaturedAmenity amenities={amenities} shown={featureImageLoaded} state={state} />

@@ -9,10 +9,13 @@
 }
 
 #aboutme section address {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
+    flex-direction: row-reverse;
+    justify-content: center;
+    /* grid-column-gap: 0.2rem; */
 }
 
 #aboutme section address dl {
@@ -124,6 +127,12 @@
 #aboutme section address dd a {
     text-decoration: none;
     color: var(--base-color);
+}
+
+#aboutme section address dd img {
+    height: 14rem;
+    border-radius: 1.5rem;
+    padding-right: 0.2rem;
 }
 
 #aboutme section address dd > a > img {
