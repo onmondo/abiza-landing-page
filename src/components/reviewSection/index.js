@@ -3,7 +3,7 @@ import isEmpty from 'lodash/isEmpty';
 import ReviewCard from './reviewCard';
 // import { useMediaQuery } from 'react-responsive';
 import reviews from './reviews.json'
-import "../../styles/reviews.css";
+import "../../styles/reviews.scss";
 
 function Reviews() {
     // const isMobile = useMediaQuery({ query: `(max-width: 535px)` });

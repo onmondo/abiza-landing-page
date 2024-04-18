@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/destinationSection.css";
+import "../styles/destinationSection.scss";
 import playIcon from "../assets/play-bold.svg"
 
 function DestinationSection() {

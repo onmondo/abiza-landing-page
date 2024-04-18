@@ -1,5 +1,5 @@
 import React, { useReducer, useState, useEffect } from 'react'
-import "../../styles/amenities.css";
+import "../../styles/amenities.scss";
 // import AmenitiesModal from './modal';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
@@ -61,6 +61,7 @@ function Amenities(props) {
         switch (action.type) {
             case 'preViewAmenity':
                 return {
+                    ...state,
                     selectedAmenity: action.amenity,
                     selectedAlt: action.alt,
                     selectedHash: action.hash,
@@ -68,6 +69,7 @@ function Amenities(props) {
                 };
             case 'viewAmenities':
                 return {
+                    ...state,
                     selectedAmenity: action.amenity,
                     selectedAlt: action.alt,
                     selectedHash: action.hash,
@@ -75,6 +77,7 @@ function Amenities(props) {
                 }
             case 'closeAmenities':
                 return {
+                    ...state,
                     selectedAmenity: action.amenity,
                     selectedAlt: action.alt,
                     selectedHash: action.hash,

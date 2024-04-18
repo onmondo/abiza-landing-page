@@ -15,13 +15,14 @@ import room2B from './assets/room2B.jpeg';
 import crA from './assets/crA.jpeg';
 import crB from './assets/crB.jpeg';
 import parking from './assets/parking.jpg';
-import loading from "./assets/loading-twotone-loop.svg"
+import loading from "./assets/loading-twotone-loop.svg";
+import './App.scss';
 
 const TermsAndCondition = lazy(() => import("./pages/termsAndCondition.js"));
 const Partners = lazy(() => import("./pages/partners.js"));
 const Amenities = lazy(() => import("./pages/amenities.js"));
 
-function App() {
+export function App() {
     const location = useLocation();
     const websiteName = 'Abiza Homestay';
     const phoneNumbers = [
@@ -123,5 +124,3 @@ function App() {
         </>
     )
 }
-
-export default App;

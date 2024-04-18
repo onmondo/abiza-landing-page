@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/termsAndCondition.css";
+import "../styles/termsAndCondition.scss";
 import { motion } from "framer-motion";
 import { containerVariant } from "./animationVariants"
 

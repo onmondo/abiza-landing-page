@@ -1,5 +1,7 @@
+@import "variables";
+
 #navigation {
-    background-color: var(--base-bg-color);
+    background-color: $base-bg-color;
     top: 0;
     text-align: center;
     z-index: 2;
@@ -62,7 +64,7 @@
 
 .description {
     font-size: 0.8rem;
-    color: var(--base-color);
+    color: $base-font-color;
     font-weight: 500;
 }
 
@@ -84,7 +86,7 @@
     z-index: 1;
     grid-column: 1 / span 4;
     grid-row: 2;
-    background-color: rgb(252 244 238 / 59%);
+    background-color: $trans-base-bg-color;
     padding: 0.6rem;
     margin: 1rem;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/location.css";
+import "../../styles/location.scss";
 import Directions from "./directions";
 import mapBackground from "../../assets/GPS_MAP26.jpg"
 

@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app";
-import "./styles/main.css";
-import "./styles/screenLargeSize.css";
-import "./styles/screenMediumSize.css";
-import "./styles/screenSmallSize.css";
-import "./styles/screenXSmallSize.css";
-import "./styles/screenXXSmallSize.css";
+import { App } from "./App";
+// import "./styles/main.scss";
+// import "./styles/screenLargeSize.scss";
+// import "./styles/screenMediumSize.scss";
+// import "./styles/screenSmallSize.scss";
+// import "./styles/screenXSmallSize.scss";
+// import "./styles/screenXXSmallSize.scss";
 import { BrowserRouter as Router } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
