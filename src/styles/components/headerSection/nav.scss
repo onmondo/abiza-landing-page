@@ -1,0 +1,42 @@
+#navigation {
+    background-color: $base-bg-color;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+    font-size: $nav-font-size;
+    font-weight: 600;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    img {
+        width: 10rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            margin: 0.4rem 0;
+
+            img {
+                width: 1rem; 
+            }
+
+            a {
+                padding: 0.4rem;
+            }
+
+            span {
+                font-weight: 800; 
+                color: #facd08;
+            }
+        }
+    }
+}

@@ -1,17 +1,12 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { Blurhash } from "react-blurhash";
 import homestay from '../../assets/homestay.png';
-import WeatherWidget from "./weatherWidget";
-import ClockWidget from "./clockWidget";
-import "../../styles/headerSection.scss";
 import "../../styles/contactUs.scss";
 import { motion } from "framer-motion";
-import { dashBoardVariant } from "./animationVariants";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import ErrorBoundary from "../errorHandling/ErrorBoundary";
 import WeatherWidgetError from "../errorHandling/weatherWidgetError";
-import bookingDotComAward from "../../assets/Digital-Award-TRA-2024.png"
-import airbnbSuperHost from "../../assets/airbnbsuperhost.gif"
+import { ContactUs } from "./contactUs";
 
 const promoteVariant = {
     hidden: { y: 20, opacity: 0 },
@@ -65,50 +60,7 @@ function HeaderSection() {
                     <p className="description">You can easily travel to Matnog Port because our location is just off the highway and 7 kilometers from the port. And since Sorsogon's beaches and tourist attractions are close to our place, you will surely enjoy and unwind while staying with us.</p>
                     <p className="description">Your Homestay Journey Begins Here.</p>
                 </header>
-                <section id="contactus">
-                    <motion.address
-                        variants={dashBoardVariant}
-                        initial="hidden"
-                        animate="visible"
-                    >
-                        {/* <ClockWidget />
-                        <ErrorBoundary fallback={<WeatherWidgetError />}>
-                            <WeatherWidget />
-                        </ErrorBoundary> */}
-                        <dl>
-                            <dt>Booking.com awards</dt>
-                            <dd>
-                                <img
-                                    src={bookingDotComAward}
-                                    loading="lazy"
-                                    decoding="async"
-                                    role="presentation"
-                                    fetchpriority="low"
-                                />
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Airbnb superhost</dt>
-                            <dd>
-                                <img
-                                    src={airbnbSuperHost}
-                                    loading="lazy"
-                                    decoding="async"
-                                    role="presentation"
-                                    fetchpriority="low"
-                                />
-                            </dd>
-                        </dl>
-                        {/* <dl>
-                            <dt>📧 Email Address</dt>
-                            <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
-                        </dl> */}
-                        {/* <dl>
-                            <dt>🗺️ Location</dt>
-                            <dd><a href={process.env.GMAP_LOCATION} target="blank">Hidhid Matnog Sorsogon</a></dd>
-                        </dl> */}
-                    </motion.address>
-                </section>
+                <ContactUs />
             </article>
             <section id="promote">
                 <motion.section
