@@ -3,7 +3,6 @@ import airbnb from '../assets/airbnb-logo-transparent.svg';
 import agoda from '../assets/agoda-logo-transparent.svg';
 import bookingDotCom from '../assets/booking-dot-com-logo-transparent.svg';
 import oneInNewWindowIcon from '../assets/open-in-new-window.svg';
-import "../styles/bookingSection.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 

@@ -1,0 +1,43 @@
+#travelpartner {
+    grid-column: 2 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    margin: 5rem 0;
+
+    header a {
+        grid-column: 1;
+        grid-row: 1;
+        font-weight: 500;
+    }
+
+    ul {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-left: 0;
+        align-items: center;
+
+        li {
+            align-items: center;
+            justify-items: center;
+
+            a.mainroom{
+                display: grid;
+                grid-template-columns: 4fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+
+                img.bookingLogo {
+                    grid-column: 1;
+                    grid-row: 1;
+                    width: 6rem;
+                    grid-column: 1;
+                }
+            }
+            
+        }
+    }
+}
