@@ -1,6 +1,7 @@
 // font colors
 $base-font-color: #9b9999;
-$default-font-color: #000000;
+$default-font-color: #181818;
+$footer-hover-color: #facd08;
 
 // background colors
 $base-bg-color: #fcf4ee;
@@ -10,10 +11,16 @@ $modal-bg-color: #161616e3;
 
 // border colors
 $base-border-color: #cfcdcd;
+$promote-border-color: #faf3f3;
+$base-shadow-color: #88888888;
+
+// border radius
+$promote-border-radius: 5rem;
 
 // font sizes
+$base-font-size: 0.8rem;
 $nav-font-size: 0.7rem;
-
+$title-font-size: 2.7rem;
 
 // font weights
 $desc-font-weights: 500;

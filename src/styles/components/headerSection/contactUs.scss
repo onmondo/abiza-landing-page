@@ -1,0 +1,102 @@
+// #aboutme section address dl.timetoday dd#currentDayText {
+//     grid-column: 1 / span 2;
+//     grid-row: 1;
+// }
+
+// #aboutme section address dl.timetoday dd#currentDayNumber {
+//     grid-column: 1;
+//     grid-row: 2;
+//     font-size: 2rem;
+//     color: #e58787
+// }
+
+// #aboutme section address dl.timetoday dd#currenttime {
+//     grid-column: 1 / span 2;
+//     grid-row: 3;
+// }
+
+// #aboutme section address dl.timetoday dd#currentHoliday {
+//     grid-column: 1 / span 2;
+//     grid-row: 4;
+// }
+
+// #aboutme section address dl.timetoday dd#currentHoliday > span {
+//     font-weight: 800;
+//     color: #facd08;
+// }
+
+// #aboutme section address > dl.weather {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 0.5fr 1fr 1fr;
+//     border-width: 0.1rem;
+//     border-style: solid;
+//     border-radius: 0.8rem;
+//     box-sizing: border-box;
+//     padding: 0.2rem;
+//     background-color: $base-border-color;
+//     border-color: $base-border-color;
+// }
+
+// #aboutme section address > dl.weather > dd#weatherlocation {
+//     grid-column: 1 / span 2;
+//     grid-row: 1;
+// }
+
+// #aboutme section address > dl.weather > dd#temp {
+//     grid-column: 1;
+//     grid-row: 2;
+//     font-size: 1.8rem;
+// }
+
+// #aboutme section address > dl.weather > dt > img {
+//     width: 0.8rem;
+// }
+
+// #aboutme section address dl.weather dd#weatherIcon {
+//     grid-column: 1;
+//     grid-row: 3;
+// }
+
+// #aboutme section address dl.weather dd#weatherButton {
+//     grid-column: 1 / span 2;
+//     grid-row: 1 / span 3;
+// }
+
+// #aboutme section address dl.weather dd#weatherButton img {
+//     height: 4.6rem;
+//     padding: 1rem 1rem 0 1rem;
+// }
+
+// #aboutme section address dt, dd {
+//     font-size: 0.8rem;
+// }
+
+// #aboutme section address dt {
+//     font-weight: 600;
+// }
+
+// #aboutme section address dd {
+//     font-style: normal;
+//     font-size: 0.8rem;
+//     margin: 0;
+//     color: $base-font-color;
+// }
+
+// #aboutme section address dd img {
+//     height: 14rem;
+//     border-radius: 1.2rem;
+//     margin-right: 0.4rem;
+// }
+
+// #aboutme section address dd > a > img {
+//     width: 0.8rem
+// }
+
+// #aboutme section address dt > img {
+//     width: 0.8rem
+// }
+
+// #aboutme section img.weather {
+//     width: 2.6rem;
+// }

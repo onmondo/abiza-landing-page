@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { dashBoardVariant } from "./animationVariants";
-import WeatherWidget from "./weatherWidget";
-import ClockWidget from "./clockWidget";
+// import WeatherWidget from "./weatherWidget";
+// import ClockWidget from "./clockWidget";
+// import ErrorBoundary from "../errorHandling/ErrorBoundary";
+// import WeatherWidgetError from "../errorHandling/weatherWidgetError";
 import bookingDotComAward from "../../assets/Digital-Award-TRA-2024.png"
 import airbnbSuperHost from "../../assets/airbnbsuperhost.gif"
 

@@ -1,0 +1,33 @@
+@mixin qrcodesize {
+    height: 4rem;
+    width: 4rem;
+}
+
+#aboutus {
+    background-color: $default-font-color;
+    color: $base-font-color;
+    padding: 3rem 0;
+
+    header {
+        grid-column: 2;
+
+        p {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+    }
+
+    a {
+        color: $base-font-color;
+        &:hover {
+            color: $footer-hover-color;
+        }
+    }
+
+    @import "footerAddress";
+
+    @import "allRightsReserved";
+
+    @import "qrCodes";
+
+}

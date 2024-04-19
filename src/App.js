@@ -2,7 +2,7 @@ import React, { useEffect, lazy, Suspense } from "react";
 import Navigation from "./components/headerSection/nav.js";
 import Home from "./pages/home.js";
 // import TermsAndCondition from "./pages/termsAndCondition.js";
-import FooterSection from "./components/footerSection.js";
+import { FooterSection } from "./components/footerSection";
 // import Partners from "./pages/partners.js";
 import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";

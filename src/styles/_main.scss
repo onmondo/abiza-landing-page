@@ -34,6 +34,15 @@ a:hover, a:focus, a:visited, a:not(a:visited) {
     color: $default-font-color;
 }
 
+address {
+    font-style: normal;
+    font-size: $base-font-size;
+}
+
+ul {
+    list-style: none;
+}
+
 .modal {
     position: fixed;
     top: 0;
