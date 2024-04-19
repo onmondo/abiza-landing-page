@@ -38,27 +38,12 @@
         header {
     
             h4 {
-                font-size: 1.1rem;
+                font-size: $base-font-size;
                 margin: 0.4rem 0;
                 text-align:justify;
-    
-                aside {
-                    display: inline;
-                    font-size: 0.7rem;
-                }
+                font-weight: $highlight-font-weights;
             }
-    
-            blockquote {
-                margin: 0.4rem 0;
-    
-                aside {
-                    margin: 0.4rem 0;
-                    display: inline;
-                    color: black;
-                    font-weight: 700;
-                    font-size: 1.4rem;
-                }
-            }
+
         }
 
         img {

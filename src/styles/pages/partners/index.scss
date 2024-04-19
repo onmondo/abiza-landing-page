@@ -1,0 +1,90 @@
+#partners {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    margin: 4rem 0;
+
+    header {
+        grid-column: 1;
+        margin-bottom: 4rem;
+    }
+
+    address {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+        dl {
+            border-style: solid;
+            border-width: 0.1rem;
+            border-radius: 1rem;
+            border-color: $base-border-color;
+            background-color: $base-bg-color;
+            margin: 0.4rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            color: $base-font-color;
+            
+            dt {
+                visibility: hidden;
+                &.extraTitle {
+                    visibility: visible;
+                }
+            }
+    
+            dd {
+                font-style: normal;
+                margin: 0 1rem;
+    
+                svg {
+                    height: 8rem;
+                }
+    
+                img {
+                    height: 2rem;
+                }
+    
+                blockquote {
+                    margin: 0;
+                }
+            }
+    
+            a {
+                color: $base-font-color;
+                justify-content: center;
+    
+                img {
+                    height: 1rem;
+                }
+            }            
+        }
+    }
+}
+
+// #partners address a > img {
+//     height: 1rem;
+// }
+
+// #partners address dd blockquote {
+//     margin: 0;
+// }
+
+// #partners address dd.price blockquote {
+//     font-size: 2rem;
+//     color: black;
+// }
+
+// #partners address dt.extra aside {
+//     visibility: visible;
+//     font-style: normal;
+//     font-size: 0.6rem;
+//     padding-top: 1rem;
+// }
+
+// #partners address dd.extra blockquote {
+//     font-size: 1rem;
+// }
+
+// #partners address dd aside {
+//     display: inline;
+//     font-size: 0.8rem;
+// }

@@ -1,7 +1,11 @@
 // variables
 @import "styles/variables";
 
+// common
+@import "styles/common/price.scss";
+
 // modules
 @import "styles/main";
 @import "styles/components/headerSection/index.scss";
 @import "styles/components/footerSection/index.scss";
+@import "styles/pages/partners/index.scss";

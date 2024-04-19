@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Blurhash } from "react-blurhash";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import homestay from '../../assets/homestay.png';
+import { PriceTag } from "../common/pricetag";
 
 const promoteVariant = {
     hidden: { y: 20, opacity: 0 },
@@ -71,8 +72,10 @@ export function PromoteSection() {
                     />
                 </Link>
                 <header>
-                    <h4><Link to="/partners">ABIZA Homestay</Link> <aside>⭐ (4.8)</aside></h4>
-                    <blockquote >Starts from <aside>₱ 953.00</aside></blockquote>
+                    <h4>Starts at</h4>
+                    <Link to="/partners">
+                        <PriceTag symbol={"₱"} price={"953"} className="price" />
+                    </Link>
                 </header>
             </motion.section>
             <>
