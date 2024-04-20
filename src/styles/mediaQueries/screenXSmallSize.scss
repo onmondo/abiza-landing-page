@@ -18,9 +18,16 @@
     #aboutme {
         margin: 0;
 
-        section#contactus address {
-            flex-direction: column-reverse;
+        section {
+            &#contactus address {
+                flex-direction: column-reverse;
+                img {
+                    height: auto;
+                    width: 20rem;
+                }
+            }
         }
+
     }
 
     #travelpartner ul {

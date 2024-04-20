@@ -45,7 +45,7 @@
             flex-wrap: wrap;
 
             &>dl {
-                width: 22rem;
+                width: $direction-size;
                 margin-right: 1rem;
                 box-shadow: 0px 3px 9px 0px $base-shadow-color;
             }
@@ -93,7 +93,7 @@
                             }
 
                             &>img.startingpoint {
-                                width: 22rem;
+                                width: $direction-size;
                                 min-height: 16.5rem;
                                 border-top-left-radius: 1rem;
                                 border-top-right-radius: 1rem;

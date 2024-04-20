@@ -33,7 +33,7 @@
     
             dd {
                 font-style: normal;
-                margin: 0 1rem;
+                margin: 0.5rem;
     
                 svg {
                     height: 8rem;
@@ -54,6 +54,7 @@
     
                 img {
                     height: 1rem;
+                    background-color: $base-font-color;
                 }
             }            
         }

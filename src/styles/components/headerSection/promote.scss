@@ -64,6 +64,13 @@
         @include promoteimg;
     }
 
+    span {
+        width: 10rem;
+        box-sizing: border-box;
+        border-style: none;
+        background-color: $base-bg-color
+    }
+
 }
 
 // #promote img.backgroundimg, div.backgroundimg {
@@ -75,17 +82,3 @@ div.backgroundimg > canvas {
     border-bottom-right-radius: 5rem;
 }
 
-#promote span {
-    width: 10rem;
-    box-sizing: border-box;
-    border-style: none;
-    background-color: var(--base-bg-color)
-}
-
-#promotelogo {
-    grid-column: 6 / span 2 ;
-    grid-row: 3;
-    text-align: center;
-    width: 7.2rem;
-    transform: rotate(2deg);
-}
