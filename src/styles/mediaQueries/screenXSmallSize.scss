@@ -15,17 +15,21 @@
         display: none;
     }
 
-    #aboutme section#contactus address {
-        flex-direction: column-reverse;
+    #aboutme {
+        margin: 0;
+
+        section#contactus address {
+            flex-direction: column-reverse;
+        }
     }
 
     #travelpartner ul {
         justify-content: space-evenly;
         flex-direction: column;
-    }
 
-    #travelpartner ul li {
-        margin-bottom: 4rem;
+        li {
+            margin-bottom: 4rem;
+        }
     }
 
     #travelpartner ul li a.mainroom > img.bookingLogo {
@@ -62,10 +66,6 @@
     section#amenities img {
         height: 4.3rem;
     }
-    /* section#amenities img#awards {
-        height: 16rem;
-        width: 16rem;
-    } */
 
     section#reviews ul {
         height: 140rem;
