@@ -1,0 +1,23 @@
+blockquote {
+    &.price {
+        font-size: $price-font-size;
+        color: $price-font-color;
+        margin: 0;
+
+        aside {
+            display: inline;
+            font-size: $base-font-size;
+        }
+    }
+
+    &.extra {
+        font-size: $price-font-size * 0.5;
+        color: $default-font-color;
+        margin: 0;
+
+        aside {
+            display: inline;
+            font-size: $base-font-size;
+        }
+    }
+}

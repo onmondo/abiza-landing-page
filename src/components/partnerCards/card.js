@@ -1,7 +1,9 @@
 import React from "react";
 import QRCode from "react-qr-code";
 // import oneInNewWindowIcon from '../../assets/icons8-open-in-new-window-25.png';
-import OpenNewWindowLink from "../openNewWindowLink"
+import OpenNewWindowLink from "../openNewWindowLink";
+import { PriceTag } from "../common/pricetag";
+
 function PartnerCard(props) {
     const { partner } = props
     return (
@@ -26,16 +28,12 @@ function PartnerCard(props) {
                 </a>
             </dd>
             <dt>Price</dt>
-            <dd className="price">
-                <blockquote>
-                    {partner.currency.symbol}{partner.price}<aside>.00{partner.currency.name}</aside>
-                </blockquote>
+            <dd>
+                <PriceTag symbol={partner.currency.symbol} price={partner.price} className="price" />
             </dd>
-            <dt className="extra">After 2 guests, per night</dt>
-            <dd className="extra">
-                <blockquote>
-                    {partner.currency.symbol}{partner.guests.extra.price}<aside>.00{partner.currency.name}</aside>
-                </blockquote>
+            <dt className="extraTitle">After 2 guests, per night</dt>
+            <dd>
+                <PriceTag symbol={partner.currency.symbol} price={partner.guests.extra.price} className="extra" />
             </dd>
         </>
     )

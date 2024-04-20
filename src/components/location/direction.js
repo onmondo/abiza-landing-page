@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 function Direction(props) {
     const { direction } = props;
     return (
-        <dl>
+        <>
             <dt>{direction.title}</dt>
             <dd>
                 {direction.routes.map((route, index) =>
-                    <>
-                        <Route key={index} route={route} />
+                    <article key={index}>
+                        <Route route={route} />
                         {(index === direction.routes.length - 1) ? <></> : <hr />}
-                    </>
+                    </article>
                 )}
             </dd>
             <dt>Picture</dt>
@@ -34,7 +34,7 @@ function Direction(props) {
                     text={direction.title}
                 />
             </dd>
-        </dl>
+        </>
     );
 }
 

@@ -38,8 +38,6 @@ function Navigation(props) {
                                 </em>
                             )
                         }
-
-
                     </li>
                     {/* <li>FAQ</li> */}
                 </ul>

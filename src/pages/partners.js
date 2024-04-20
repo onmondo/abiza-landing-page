@@ -1,6 +1,5 @@
 import React from "react";
 import PartnerCards from "../components/partnerCards";
-import "../styles/partners.css";
 import airbnb from "../assets/airbnb-logo-transparent.svg";
 import agoda from "../assets/agoda-logo-transparent.svg";
 import bookingDotCom from "../assets/booking-dot-com-logo-transparent.svg";

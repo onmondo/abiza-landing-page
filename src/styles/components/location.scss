@@ -1,0 +1,160 @@
+@mixin commonMargin {
+    margin: 0;
+}
+
+#location {
+    /* padding: 6rem 0; */
+    /* background-image: url(../../src/assets/GPS_MAP26.jpg);
+    background-position: bottom left; */
+    box-shadow: 0px 3px 9px 0px $base-shadow-color;
+    grid-template-rows: 0.5fr 1fr;
+
+    picture {
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 5;
+        background-color: $base-bg-color;
+        z-index: -1;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.1;
+        }
+    }
+
+    iframe {
+        margin: 6rem 0;
+        grid-row: 1;
+        grid-column: 2 / span 3;
+        width: 100%;
+        height: 40rem;
+        border-radius: 1rem;
+    }
+
+    address {
+        grid-row: 2;
+        grid-column: 2 / span 3;
+
+        &.destinations {
+            grid-row: 2;
+            grid-column: 2 / span 3;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 6rem;
+            flex-wrap: wrap;
+
+            &>dl {
+                width: $direction-size;
+                margin-right: 1rem;
+                box-shadow: 0px 3px 9px 0px $base-shadow-color;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: stretch;
+            }
+
+            dl {
+                dt {
+                    display: none;
+                    @include commonMargin();
+                }
+
+                &>dd {
+                    color: $base-font-color;
+                    font-weight: 500;
+                    h4 {
+                        color: $base-font-color;
+                        font-weight: 500;
+                    }
+                }
+
+                dd {
+                    @include commonMargin();
+                    padding: 0 1rem;
+
+                    &:last-child {
+                        padding: 0;
+                        display: grid;
+                        grid-template-rows: 3fr 1fr;
+                        justify-items: center;
+
+                        a {
+                            grid-column: 1;
+                            grid-row: 1 / span 2;
+
+                            &#openWindowIcon {
+                                grid-column: 1;
+                                grid-row: 2;
+                                z-index: 2;
+                                color: $promote-border-color;
+                            }
+
+                            &>img.startingpoint {
+                                width: $direction-size;
+                                min-height: 16.5rem;
+                                border-top-left-radius: 1rem;
+                                border-top-right-radius: 1rem;
+                            }
+                        }
+                    }
+
+                    a.directiontitle {
+                        padding-top: 1rem;
+                    }
+                }
+
+
+            }
+
+        }
+
+        &.traveltime {
+            /* padding: 1rem 0 2rem 0; */
+            grid-row: 2;
+            grid-column: 2 / span 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+
+            dl {
+                width: inherit;
+
+                &>dd {
+                    color: $default-font-color;
+                }
+
+                &>dt {
+                    font-size: 0.6rem;
+                }
+
+                dd {
+                    font-size: $subtitle-font-size;
+                }
+
+                dt {
+                    display: inline;
+                }
+            }
+        }
+
+        ul {
+            padding: 0 0 0 1rem
+        }
+
+        dl {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: $promote-border-color;
+            border-radius: 1rem;
+            border-color: $promote-border-color;
+            align-items: center;
+
+            dd {
+                padding: 0 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@mixin fontsize {
+    font-size: $base-font-size;
+}
+
+#aboutme {
+    margin: 2rem 2rem 2rem 0;
+
+    header h1 {
+        font-size: $title-font-size;
+    }
+
+    section {
+        min-width: 20rem;
+        max-width: 25rem;
+
+        address {
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: center;
+            column-gap: 0.5rem;
+
+            dl {
+                dt {
+                    visibility: hidden;
+                    @include fontsize();
+                    font-weight: 600;
+                }
+
+                dd {
+                    @include fontsize();
+                    margin: 0;
+                    color: $base-font-color;
+
+                    img {
+                        height: 12rem;
+                        border-radius: 1.2rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.description {
+    font-size: 0.8rem;
+    color: $base-font-color;
+    font-weight: $desc-font-weights;
+}

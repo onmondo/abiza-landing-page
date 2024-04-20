@@ -1,0 +1,64 @@
+#amenitiesPage {
+    grid-column: 1 / span 4;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 10rem 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        grid-column: 3;
+        text-align: right;
+
+        a {
+            padding: 1rem 0;
+            &:hover {
+                color: $base-bg-color;
+            }
+        }
+    }
+
+    li {
+        padding: 0 0.1rem;
+    }
+
+    img {
+        width: 40rem;
+    }
+}
+
+#firstAmenities {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    li:first-child > img {
+        border-top-left-radius: $promote-border-radius;
+    }
+
+    li:last-child > img {
+        border-bottom-left-radius: $promote-border-radius;
+    }
+}
+
+#secondAmenities {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    li:first-child > img {
+        border-top-right-radius: $promote-border-radius
+    }
+
+    li:last-child > img {
+        border-bottom-right-radius: $promote-border-radius;
+    }
+}

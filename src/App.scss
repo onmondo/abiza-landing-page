@@ -1,0 +1,27 @@
+// variables
+@import "styles/variables";
+
+// common
+@import "styles/common/price.scss";
+
+// modules
+@import "styles/main";
+@import "styles/components/headerSection/index.scss";
+@import "styles/components/footerSection/index.scss";
+@import "styles/components/bookingSection.scss";
+@import "styles/components/amenities.scss";
+@import "styles/components/destinationSection.scss";
+@import "styles/components/reviews.scss";
+@import "styles/components/location.scss";
+
+// pages
+@import "styles/pages/partners/index.scss";
+@import "styles/pages/amenities/index.scss";
+@import "styles/pages/termsAndCondition.scss";
+
+// media queries
+@import "styles/mediaQueries/screenLargeSize.scss";
+@import "styles/mediaQueries/screenMediumSize.scss";
+@import "styles/mediaQueries/screenSmallSize.scss";
+@import "styles/mediaQueries/screenXSmallSize.scss";
+@import "styles/mediaQueries/screenXXSmallSize.scss";

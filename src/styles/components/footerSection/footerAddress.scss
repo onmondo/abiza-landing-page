@@ -1,0 +1,21 @@
+address {
+    grid-column: 4;
+    display: flex;
+    column-gap: 0.5rem;
+
+    dl {
+        margin: 0;
+    }
+
+    dd {
+        margin: 0;
+        
+        ul {
+            line-height: 1.4rem;
+            padding: 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+}

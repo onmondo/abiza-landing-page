@@ -1,0 +1,17 @@
+ul {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    column-gap: 1rem;
+
+    li {
+        svg, img {
+            @include qrcodesize()
+        }
+    }
+}

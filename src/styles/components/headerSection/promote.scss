@@ -1,0 +1,84 @@
+@mixin promoteimg {
+    width: 36rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-top-left-radius: $promote-border-radius;
+    border-bottom-right-radius: $promote-border-radius;
+    border-width: 1rem;
+    border-color: $promote-border-color;
+    border-style: solid;
+    box-shadow: 0px 3px 9px 0px $base-shadow-color;
+    /* transform: rotate(2deg); */
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 3;
+    z-index: -1;
+}
+
+#promote {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    .homestayreview {
+        width: 18rem;
+        box-sizing: border-box;
+        border-style: none;
+        border-radius: 0.8rem;
+        box-shadow: 0px 3px 9px 0px #8888;
+        z-index: 1;
+        grid-column: 1 / span 4;
+        grid-row: 2;
+        background-color: $trans-base-bg-color;
+        padding: 0.6rem;
+        margin: 1rem;
+    
+        header {
+    
+            h4 {
+                font-size: $base-font-size;
+                margin: 0.4rem 0;
+                text-align:justify;
+                font-weight: $highlight-font-weights;
+            }
+
+        }
+
+        img {
+            float: left;
+            width: 4rem;
+            margin-right: 0.5rem;
+            box-sizing: border-box;
+            border-style: none;
+            border-radius: 1rem;
+            // .backgroundimg {
+            //     @include promoteimg;
+            // }
+        }
+    }   
+    
+
+    .backgroundimg {
+        @include promoteimg;
+    }
+
+    span {
+        width: 10rem;
+        box-sizing: border-box;
+        border-style: none;
+        background-color: $base-bg-color
+    }
+
+}
+
+// #promote img.backgroundimg, div.backgroundimg {
+//     @include promoteimg;
+// }
+
+div.backgroundimg > canvas {
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+

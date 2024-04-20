@@ -35,7 +35,7 @@ function Directions() {
             imgAlt: 'Bicol International Airport'
         },
         {
-            title: 'Directions from Legazpi Airport Terminal Building',
+            title: 'Directions from Legazpi Airport Terminal Bldg.',
             routes: [
                 {
                     id: 'via Pan-Philippine Hwy/AH26',
@@ -81,9 +81,11 @@ function Directions() {
     ]
     return (
         <address className="destinations">
-            {directions.map((direction, index) => {
-                return (<Direction key={index} direction={direction} />)
-            })}
+            {directions.map((direction, index) =>
+                <dl key={index}>
+                    <Direction direction={direction} />
+                </dl>
+            )}
         </address>
     )
 }

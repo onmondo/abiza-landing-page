@@ -4,7 +4,7 @@ function Route(props) {
     const { route } = props;
 
     return (
-        <article>
+        <>
             <header>
                 <h4>{route.id}</h4>
             </header>
@@ -24,7 +24,7 @@ function Route(props) {
                     <dd>{route.distance}</dd>
                 </dl>
             </address>
-        </article>
+        </>
     )
 }
 
