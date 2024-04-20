@@ -1,5 +1,4 @@
 import React, { useReducer, useState, useEffect } from 'react'
-import "../../styles/amenities.scss";
 // import AmenitiesModal from './modal';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";

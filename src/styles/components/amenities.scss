@@ -1,0 +1,97 @@
+#amenities {
+    grid-column: 2 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+
+    header {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    a #awards {
+        grid-column: 3;
+        grid-row: 2 / span 2;
+        margin: 3rem 0;
+
+        img {
+            height: 16rem;
+            width: 16rem;
+        }
+    }
+
+    ul {
+        /* width: 41rem; */
+        padding: 0;
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        list-style: none;
+    }
+
+    li.feature img {
+        width: 41rem;
+        height: inherit;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        ul.secondpic img {
+            height: inherit;
+            width: 13rem;
+        }
+
+        ul.thirdpic img {
+            height: inherit;
+            width: 13rem;
+        }
+    }
+
+    li.feature div > canvas {
+        width: 41rem;
+        height: inherit;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    li.otherpic ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li.firstAmenityItem img {
+            border-bottom-left-radius: 1rem;
+        }
+
+        li.lastAmenityItem {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+
+            img {
+                grid-column: 1;
+                grid-row: 1 / span 3;
+                border-bottom-right-radius: 1rem;
+            }
+
+            a {
+                grid-column: 1;
+                grid-row: 2;
+                border-bottom-right-radius: 1rem;
+                color: var(--base-bg-color);
+                padding: 0.6rem;
+                z-index: 1;
+            }
+        }
+    }
+
+    img {
+        height: 8rem;
+        transition: 300ms opacity;
+        margin: 0 0.1rem;
+        &.amenityselection:hover {
+            opacity: 0.5;
+        }
+    }    
+}
