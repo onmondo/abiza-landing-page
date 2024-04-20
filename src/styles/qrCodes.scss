@@ -1,47 +1,47 @@
-#qrcodes {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-    background-color: var(--base-bg-color);
-}
+// #qrcodes {
+//     grid-column: 1 / span 4;
+//     grid-row: 1;
+//     background-color: var(--base-bg-color);
+// }
 
-#qrcodes article > section {
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: inset 0px 0px 5px 0px;
-}
+// #qrcodes article > section {
+//     display: flex;
+//     flex-direction: column-reverse;
+//     text-align: center;
+//     margin: 1rem;
+//     padding: 1rem;
+//     background-color: white;
+//     box-shadow: inset 0px 0px 5px 0px;
+// }
 
-#qrcodes article > section img {
-    width: 6rem;
-}
+// #qrcodes article > section img {
+//     width: 6rem;
+// }
 
-#qrcodes article > section a {
-    color: var(--base-color);
-}
+// #qrcodes article > section a {
+//     color: var(--base-color);
+// }
 
-#qrcodes article > button {
-    font-size: 0.6rem;
-    box-sizing: border-box;
-    border-radius: 0.8rem;
-    height: 1.6rem;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: var(--base-color);
-    padding: 0.4rem 0.8rem;
-    background-color: var(--base-color);
-    color: var(--base-bg-color);
+// #qrcodes article > button {
+//     font-size: 0.6rem;
+//     box-sizing: border-box;
+//     border-radius: 0.8rem;
+//     height: 1.6rem;
+//     border-style: solid;
+//     border-width: 0.1rem;
+//     border-color: var(--base-color);
+//     padding: 0.4rem 0.8rem;
+//     background-color: var(--base-color);
+//     color: var(--base-bg-color);
     
-}
+// }
 
-#qrcodes article > button:hover {
-    background-color: var(--base-bg-color);
-    color: var(--base-color);
-}
+// #qrcodes article > button:hover {
+//     background-color: var(--base-bg-color);
+//     color: var(--base-color);
+// }
 
-#airBnBQRcode, #agodaQRcode, #bookingDotComQRcode {
-    display: none;
-    justify-content: center;
-}
+// #airBnBQRcode, #agodaQRcode, #bookingDotComQRcode {
+//     display: none;
+//     justify-content: center;
+// }

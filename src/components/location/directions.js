@@ -81,9 +81,11 @@ function Directions() {
     ]
     return (
         <address className="destinations">
-            {directions.map((direction, index) => {
-                return (<Direction key={index} direction={direction} />)
-            })}
+            {directions.map((direction, index) =>
+                <dl key={index}>
+                    <Direction direction={direction} />
+                </dl>
+            )}
         </address>
     )
 }
