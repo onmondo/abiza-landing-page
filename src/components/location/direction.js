@@ -11,7 +11,7 @@ function Direction(props) {
             <dd>
                 {direction.routes.map((route, index) =>
                     <article key={index}>
-                        <Route route={route} />
+                        <Route route={route} direction={direction} />
                         {(index === direction.routes.length - 1) ? <></> : <hr />}
                     </article>
                 )}

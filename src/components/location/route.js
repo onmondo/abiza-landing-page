@@ -1,7 +1,8 @@
 import React from "react";
+import QRCode from "react-qr-code";
 
 function Route(props) {
-    const { route } = props;
+    const { route, direction } = props;
 
     return (
         <>
@@ -22,6 +23,9 @@ function Route(props) {
                 <dl>
                     <dt>Distance</dt>
                     <dd>{route.distance}</dd>
+                </dl>
+                <dl>
+                    <dd><QRCode value={direction.directionUrl} /></dd>
                 </dl>
             </address>
         </>

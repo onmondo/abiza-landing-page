@@ -1,0 +1,70 @@
+<mxfile host="65bd71144e">
+    <diagram id="C7hZww0AFL6brelXKXN4" name="Page-1">
+        <mxGraphModel dx="1418" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="250" width="250" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Picture here" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="250" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="direction title here (accordion)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="560" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="another accordion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="600" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="390" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="QRCode here" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="400" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="link to the map" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="137.5" y="510" width="85" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="250" width="250" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Picture here" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="250" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="accordion expanded" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="560" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="another accordion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="780" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="390" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="QRCode here" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="400" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="link to the map" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="627.5" y="510" width="85" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="335" y="480" as="sourcePoint"/>
+                        <mxPoint x="505" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="estimated time" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="640" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="label" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="710" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="distance" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="640" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="label" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="710" width="70" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
