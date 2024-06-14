@@ -12,6 +12,8 @@ function Reviews() {
             review.active === true
         )
 
+    const doubleCopy = (reviews) =>
+        [...reviews, ...reviews]
 
     const renderReviewCards = (review, index) => {
         if (isEmpty(review)) {
@@ -32,7 +34,7 @@ function Reviews() {
         <section id='reviews' >
             <ul>
                 {
-                    filteredReviews(reviews).map((review, index) => renderReviewCards(review, index))
+                    doubleCopy(filteredReviews(reviews)).map((review, index) => renderReviewCards(review, index))
                 }
             </ul>
         </section >

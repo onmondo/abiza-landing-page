@@ -1,8 +1,5 @@
 [
     {
-        "active": true
-    },
-    {
         "name": "Ner",
         "location": "Manila, Philippines",
         "date": "December 2023",
@@ -46,9 +43,9 @@
         "name": "Brian",
         "location": "Philippines",
         "date": "June 2023",
-        "review": "A real home away from home .great host family 2ho makes you feel being a part of the family. Nice clean room good internet and a strategic location. Will stay here formsure more often in the future",
+        "review": "A real home away from home .great host family 2ho makes you feel being a part of the family. Nice clean room good internet and a strategic location. Will stay here for sure more often in the future",
         "stars": 5,
-        "active": false
+        "active": true
     },
     {
         "name": "Russel",
@@ -72,7 +69,7 @@
         "date": "October 2023",
         "review": "Perfect for travelers to spend the night with and take a quick rest from a long trip. Good location and spacious",
         "stars": 4,
-        "active": false
+        "active": true
     },
     {
         "name": "Rosel Niño Kong",
