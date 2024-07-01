@@ -2,13 +2,23 @@
     grid-column: 2 / span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     gap: 1rem;
 
     header {
         grid-column: 3;
         grid-row: 1;
+
+        h2 {
+            font-size: 4rem;
+            color: #979191;
+            
+            &::first-line {
+                color: $price-font-color;
+                text-shadow: 2px 2px $footer-hover-color;
+            }
+        }
     }
     a #awards {
         grid-column: 3;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const cardVariants = {
     hover: {
-        scale: 1.1,
+        scale: 1.02,
         boxShadow: "0px 0px 12px 4px rgb(131 217 209)",
         // borderColor: "rgb(131 217 209)",
         transition: {
