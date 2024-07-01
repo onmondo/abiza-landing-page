@@ -72,8 +72,8 @@ export function PromoteSection() {
                     />
                 </Link>
                 <header>
-                    <h4>Starts at</h4>
                     <Link to="/partners">
+                        <h4>Book now!</h4>
                         <PriceTag symbol={"₱"} price={"953"} className="price" />
                     </Link>
                 </header>

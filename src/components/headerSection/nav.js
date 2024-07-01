@@ -11,7 +11,7 @@ function Navigation(props) {
             // dragConstraints={{ left: 0, right: 0, top: 0 }}
             id="navigation"
         >
-            <Link to="/">
+            {/* <Link to="/">
                 <motion.img
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -21,11 +21,11 @@ function Navigation(props) {
                     fetchpriority="high"
                     alt="Abiza Homestay Logo"
                 />
-            </Link>
+            </Link> */}
 
             <nav>
                 <ul>
-                    <li><Link to="/partners">Book Now!</Link></li>
+                    {/* <li><Link to="/partners">Book Now!</Link></li> */}
                     <li>
                         {
                             phoneNumbers.map((phoneNumber, index) =>
@@ -42,6 +42,18 @@ function Navigation(props) {
                     {/* <li>FAQ</li> */}
                 </ul>
             </nav>
+            <Link to="/">
+                <motion.img
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.2, type: "tween", duration: 1.2 }}
+                    src={logo}
+                    role="presentation"
+                    fetchpriority="high"
+                    alt="Abiza Homestay Logo"
+                />
+            </Link>
+            <Link to="/partners"><span>|</span>Book now!</Link>
         </motion.section>
 
     )

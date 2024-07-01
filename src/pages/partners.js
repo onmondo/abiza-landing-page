@@ -21,7 +21,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "500"
+                "price": "400"
             }
         }
     },
@@ -38,7 +38,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "500"
+                "price": "400"
             }
         }
     },
@@ -55,7 +55,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "500"
+                "price": "400"
             }
         }
     },
@@ -72,7 +72,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "500"
+                "price": "400"
             }
         }
     },
@@ -89,7 +89,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "500"
+                "price": "400"
             }
         }
     }
