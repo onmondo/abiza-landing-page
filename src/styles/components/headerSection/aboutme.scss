@@ -3,10 +3,17 @@
 }
 
 #aboutme {
-    margin: 2rem 2rem 2rem 0;
-
     header h1 {
         font-size: $title-font-size;
+        line-height: 5rem;
+        color: $price-font-color;
+        text-shadow: 2px 2px $footer-hover-color;
+        margin: 4rem 0;
+
+        &::first-line {
+            color: #979191;
+            text-shadow: none;
+        }
     }
 
     section {

@@ -20,7 +20,7 @@ export function ContactUs() {
                 <ErrorBoundary fallback={<WeatherWidgetError />}>
                     <WeatherWidget />
                 </ErrorBoundary> */}
-                <dl>
+                {/* <dl>
                     <dt>Booking.com awards</dt>
                     <dd>
                         <img
@@ -43,7 +43,7 @@ export function ContactUs() {
                             fetchpriority="low"
                         />
                     </dd>
-                </dl>
+                </dl> */}
                 {/* <dl>
                     <dt>📧 Email Address</dt>
                     <dd><a href="mailto:aizablando7@gmail.com">aizablando7@gmail.com</a></dd>
