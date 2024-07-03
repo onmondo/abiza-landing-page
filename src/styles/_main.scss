@@ -44,6 +44,11 @@ ul {
     list-style: none;
 }
 
+span {
+    font-weight: 800; 
+    color: $footer-hover-color;
+}   
+
 .modal {
     position: fixed;
     top: 0;
