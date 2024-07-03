@@ -51,10 +51,19 @@
                 box-shadow: 0px 3px 9px 0px $base-shadow-color;
             }
 
+            header {
+                h4 {
+                    margin: 1rem;
+                    text-align: center;
+                    font-size: 0.6rem;
+                }
+            }
+
             article {
                 display: flex;
                 flex-direction: column-reverse;
                 align-items: stretch;
+                padding: 1rem;
             }
 
             dl {
@@ -75,6 +84,7 @@
                 dd {
                     @include commonMargin();
                     padding: 0 1rem;
+                    width: 100%;
 
                     &:last-child {
                         padding: 0;
@@ -116,9 +126,9 @@
             /* padding: 1rem 0 2rem 0; */
             grid-row: 2;
             grid-column: 2 / span 3;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
+            display: flex;
+            justify-items: space-between;
+            width: 100%;
 
             dl {
                 width: inherit;

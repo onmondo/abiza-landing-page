@@ -5,16 +5,16 @@ function Route(props) {
 
     return (
         <>
-            <header>
+            {/* <header>
                 <h4>{route.id}</h4>
-            </header>
+            </header> */}
             {/* <ul>
                 {route.details.map((detail, index) =>
                     <li key={index}><p>{detail}</p></li>
                 )}
             </ul> */}
             {/* <hr /> */}
-            <address className="traveltime">
+            {/* <address className="traveltime">
                 <dl>
                     <dt>Estimated time</dt>
                     <dd>{route.estimatedTime}</dd>
@@ -22,6 +22,18 @@ function Route(props) {
                 <dl>
                     <dt>Distance</dt>
                     <dd>{route.distance}</dd>
+                </dl>
+            </address> */}
+            <address className="traveltime">
+                <dl>
+                    <dt>{route.id}</dt>
+                </dl>
+                <dl>
+                    <dt>- {route.estimatedTime} -</dt>
+                    <dd>- {route.distance} -</dd>
+                </dl>
+                <dl>
+                    <dt>Matnog</dt>
                 </dl>
             </address>
         </>
