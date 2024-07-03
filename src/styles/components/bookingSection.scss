@@ -1,3 +1,11 @@
+@mixin commonButton {
+    height: 4rem;
+    width: 8rem;
+    border-style: none;                
+    background-color: inherit;
+    cursor: pointer;
+}
+
 #travelpartner {
     grid-column: 2 / span 2;
     display: grid;
@@ -23,6 +31,15 @@
         li {
             align-items: center;
             justify-items: center;
+
+            button {
+                @include commonButton;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 80%;
+                }
+            }
 
             a.mainroom{
                 display: grid;

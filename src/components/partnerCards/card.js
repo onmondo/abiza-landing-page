@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import QRCode from "react-qr-code";
 // import oneInNewWindowIcon from '../../assets/icons8-open-in-new-window-25.png';
-import OpenNewWindowLink from "../openNewWindowLink";
+// import OpenNewWindowLink from "../openNewWindowLink";
 import { PriceTag } from "../common/pricetag";
 
-function PartnerCard(props) {
-    const { partner } = props
+function PartnerCard({ partner, setRoom }) {
     return (
         <>
             <dt>Logo</dt>
-            <dd><img src={partner.logo} loading="lazy" alt={partner.description} /></dd>
+            <dd>
+                <button popovertarget="form" onClick={() => {
+                    setRoom(partner.url)
+                    console.log("setting room to", partner.url)
+                }}>
+                    <img src={partner.logo} loading="lazy" alt={partner.description} />
+                </button>
+            </dd>
             <dt>Link</dt>
             <dd>
-                <OpenNewWindowLink
+                {/* <OpenNewWindowLink
                     url={partner.url}
                     text={partner.description}
-                />
+                /> */}
                 {/* <a href={partner.url} target="blank">
                     {partner.description}
                     <img src={oneInNewWindowIcon} alt="Open in new window icon" />

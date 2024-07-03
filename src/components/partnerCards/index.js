@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import PartnerCard from "./card";
 import { motion } from "framer-motion";
+import { BookingForm } from "../common/bookingform";
 
 const cardVariants = {
     hover: {
@@ -14,6 +15,7 @@ const cardVariants = {
     }
 }
 function PartnerCards(props) {
+    const [room, setRoom] = useState("")
     const { partners } = props
     return (
         <address>
@@ -24,11 +26,11 @@ function PartnerCards(props) {
                         variants={cardVariants}
                         whileHover="hover"
                     >
-                        <PartnerCard partner={partner} />
+                        <PartnerCard partner={partner} setRoom={setRoom} />
                     </motion.dl>
                 )
             })}
-
+            <BookingForm partner={room} />
         </address>
     )
 }
