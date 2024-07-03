@@ -41,7 +41,7 @@ function DestinationSection() {
                                 <dt>Description</dt>
                                 <dd>
                                     <p className="description videos">
-                                        📹 <a href={`https://www.youtube.com/watch?v=${youtubeVideoReference.youtubeId}`} target="_blank">{youtubeVideoReference.title}</a> by <a href="https://www.youtube.com/@gmapublicaffairs" target="_blank">GMA Public Affairs</a>
+                                        <span>|</span> <a href={`https://www.youtube.com/watch?v=${youtubeVideoReference.youtubeId}`} target="_blank">{youtubeVideoReference.title}</a> by <a href="https://www.youtube.com/@gmapublicaffairs" target="_blank">GMA Public Affairs</a>
                                     </p>
                                 </dd>
                                 <dt>Video</dt>
