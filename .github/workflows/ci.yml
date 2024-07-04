@@ -32,6 +32,5 @@ jobs:
         accountId: fa8eaa961427644b3d1208cc0ae9fc1b
         projectName: abiza
         directory: /dist
-        gitHubToken: ${{ secrets.GITH_API_TOKEN }}
+        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
         branch: dev
-        
