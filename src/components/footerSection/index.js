@@ -26,7 +26,7 @@ export function FooterSection(props) {
                 <Contacts phoneNumbers={phoneNumbers} />
                 <Attributions />
             </address>
-            <QRCodes />
+            {/* <QRCodes /> */}
             <AllRightsReserved />
         </footer>
     )

@@ -19,9 +19,17 @@ function PartnerCards(props) {
     const { partners } = props
     return (
         <address>
+            <dl>
+                <dt>Intro</dt>
+                <dd><h2>Our Travel Partners</h2></dd>
+                <dd><p className="description">Step into a world of unparalleled hospitality with our curated selection of homestays on Airbnb, Agoda, and Booking.com.</p></dd>
+                <dd><p className="description">Whether you're seeking a cozy retreat, cultural immersion, or a luxurious escape, our platforms offer a diverse range of accommodations to make your stay truly extraordinary.</p></dd>
+                <dd><p className="description">Embrace the comfort of a home, the convenience of seamless booking, and the joy of discovering new destinations—all with Airbnb, Agoda, and Booking.com.</p></dd>
+            </dl>
             {partners.map((partner, index) => {
                 return (
                     <motion.dl
+                        className="partnercards"
                         key={index}
                         variants={cardVariants}
                         whileHover="hover"
