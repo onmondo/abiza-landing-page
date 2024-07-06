@@ -3,8 +3,9 @@
     background: $base-bg-color url("~/src/assets/vecteezy_blue-watercolor-stain-watercolor-background_21971438_505.png");
     background-repeat: no-repeat;
     background-position: top left;
-    margin-top: 6rem;
-    padding: 6rem 0;
+    margin-top: -14rem;
+    padding: 18rem 0 6rem 0;
+    z-index: -1;
 
     header {
         grid-column: 2 / span 3;
