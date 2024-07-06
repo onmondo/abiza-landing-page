@@ -46,10 +46,6 @@
         width: 2rem;
     }
 
-    #partners address {
-        justify-content: center;
-    }
-
     img.qrcode {
         width: 4rem;
     }
@@ -118,5 +114,14 @@
 
     footer#aboutus section ul, footer#aboutus section li {
         padding: 0 0.4rem;
+    }
+
+    #partners {
+        address {
+            justify-content: center;
+            dl {
+                width: 100%;
+            }
+        }        
     }
 }

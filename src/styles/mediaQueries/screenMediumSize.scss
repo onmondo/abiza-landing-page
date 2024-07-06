@@ -10,10 +10,6 @@
         flex-direction: column;
         justify-items: center
     }
-
-    #navigation img {
-        width: 18rem;
-    }
     
     section#navigation a {
         grid-column: 2;
@@ -47,10 +43,6 @@
     #aboutme header h1 {
         font-size: 6rem;
         text-align: center;
-    }
-
-    .description {
-        font-size: 0.9rem;
     }
 
     #promote {
