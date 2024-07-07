@@ -1,5 +1,9 @@
 import React, { useRef } from "react"
 
+import airbnb from '../../assets/airbnb-logo-transparent.svg';
+import agoda from '../../assets/agoda-logo-transparent.svg';
+import bookingDotCom from '../../assets/booking-dot-com-logo-transparent.svg';
+
 export function BookingForm({ partner }) {
     const checkinInput = useRef("");
     const checkOutInput = useRef("");
@@ -35,13 +39,17 @@ export function BookingForm({ partner }) {
             url = `https://www.booking.com/searchresults.en-gb.html?ss=Pañge&ssne=Pañge&ssne_untouched=Pañge&highlighted_hotels=9057589&aid=304142&checkin=${checkIn}&checkout=${checkOut}&group_adults=${noOfpax}&no_rooms=1`
         }
 
-        console.log(url)
         window.open(url, "_blank")
 
     }
 
     return (
         <div id="form" className="form" popover="">
+            <header>
+                {(partner.includes("airbnb")) ? <img className="bookingLogo" src={airbnb} alt="AirBnB Logo" loading="lazy" decoding="async" /> : ""}
+                {(partner.includes("agoda")) ? <img className="bookingLogo" src={agoda} alt="Agoda Logo" loading="lazy" decoding="async" /> : ""}
+                {(partner.includes("booking.com")) ? <img className="bookingLogo" src={bookingDotCom} alt="Booking.com Logo" loading="lazy" decoding="async" /> : ""}
+            </header>
             <label>Check-in</label>
             <input type="date" name="checkin" ref={checkinInput} onBlur={handleOnBlur} />
             <label>Checkout</label>
