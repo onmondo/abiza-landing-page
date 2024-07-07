@@ -11,7 +11,6 @@ function PartnerCard({ partner, setRoom }) {
             <dd>
                 <button popovertarget="form" onClick={() => {
                     setRoom(partner.url)
-                    console.log("setting room to", partner.url)
                 }}>
                     <img src={partner.logo} loading="lazy" alt={partner.description} />
                 </button>
