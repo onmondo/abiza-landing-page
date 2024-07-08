@@ -1,31 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { motion } from "framer-motion";
 import { Blurhash } from "react-blurhash";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import homestay from '../../assets/homestay.png';
+import logo from '../../assets/logo-transparent.png';
 import { PriceTag } from "../common/pricetag";
+import { promoteVariant } from "./animationVariants";
 
-const promoteVariant = {
-    hidden: { y: 20, opacity: 0 },
+const visitstatsVariant = {
+    ...promoteVariant,
     visible: {
-        y: 0, opacity: 1,
-        transition: { duration: 0.8, type: "tween" }
+        ...promoteVariant.visible,
+        transition: { duration: 1.2, type: "tween" }
     },
     hover: {
-        scale: 2.8,
-        boxShadow: "0px 0px 12px 4px rgb(249, 247, 222)",
-        // borderColor: "rgb(131 217 209)",
-        transition: {
-            duration: 0.4,
-            // yoyo: Infinity
-        }
+        ...promoteVariant.hover,
+        transition: { duration: 0.8 }
     }
 }
 
 export function PromoteSection() {
     const [beachImageLoaded, setBeachImageLoaded] = useState(false);
     const beachImage = 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Matnog_317.jpg';
-    useEffect(() => {
+    useLayoutEffect(() => {
         const img = new Image();
         img.onload = () => {
             setBeachImageLoaded(true)
@@ -35,7 +32,7 @@ export function PromoteSection() {
 
     const [houseImageLoaded, setHouseImageLoaded] = useState(false);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const img = new Image();
         img.onload = () => {
             setHouseImageLoaded(true)
@@ -46,15 +43,14 @@ export function PromoteSection() {
     return (
         <section id="promote">
             <motion.section
-                className="homestayreview"
+                className="homestayprice"
                 variants={promoteVariant}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 0.8, type: "tween" }}
+                transition={{ duration: 1.2, type: "tween" }}
             >
                 <Link to="/partners" className="mainroom">
                     <Blurhash
-                        className="profilepic"
                         hash="LVFicG9FD%sS_NIoRQn$yXW;V?s."
                         punch={1}
                         src={homestay}
@@ -78,8 +74,31 @@ export function PromoteSection() {
                     </Link>
                 </header>
             </motion.section>
+            <motion.section
+                className="visitstats"
+                variants={visitstatsVariant}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 2, duration: 1, type: "tween" }}
+            >
+                <Link to="/partners" className="mainroom">
+                    <img
+                        className="profilepic"
+                        src={logo}
+                        alt="Abiza Homestay Logo"
+                        style={{ display: !houseImageLoaded ? "none" : "inline" }}
+                        fetchpriority="high"
+                    />
+                </Link>
+                <header>
+                    <Link to="/partners">
+                        <h4>Visits</h4>
+                        <blockquote className="quantity">+{121 + 68 + 137}</blockquote>
+                    </Link>
+                </header>
+            </motion.section>
             <>
-                <Blurhash className="backgroundimg"
+                <Blurhash
                     hash="LBK.VG004m$y1U^Yn0$^05%g-inK"
                     punch={1}
                     style={{ display: beachImageLoaded ? "none" : "inline" }}

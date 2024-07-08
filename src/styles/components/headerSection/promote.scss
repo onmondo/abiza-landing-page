@@ -14,55 +14,55 @@
     z-index: -1;
 }
 
+@mixin overlaycapsule {
+    width: 20rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 0.8rem;
+    box-shadow: 0px 3px 9px 0px #8888;
+    z-index: 1;
+    grid-column: 1 / span 4;
+    background-color: $trans-base-bg-color;
+    padding: 0.6rem;
+    margin: 1rem;
+    position: absolute;
+    header {
+        h4 {
+            font-size: 0.8rem;
+            margin: 0.4rem 0;
+            text-align:justify;
+            font-weight: $highlight-font-weights;
+        }
+    }
+
+    img {
+        float: left;
+        width: 4.5rem;
+        margin-right: 0.5rem;
+        box-sizing: border-box;
+        border-style: none;
+        border-radius: 1rem;
+    }
+}
+
 #promote {
     grid-column: 3;
-    // display: grid;
-    // grid-template-columns: repeat(8, 1fr);
-    // grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
     position: relative;
     margin: 1rem;
 
-    .homestayreview {
-        width: 20rem;
-        box-sizing: border-box;
-        border-style: none;
-        border-radius: 0.8rem;
-        box-shadow: 0px 3px 9px 0px #8888;
-        z-index: 1;
-        grid-column: 1 / span 4;
-        // grid-row: 2;
-        background-color: $trans-base-bg-color;
-        padding: 0.6rem;
-        margin: 1rem;
-        position: absolute;
-        top: 8rem;
-        left: 10rem;
-
-        header {
-    
-            h4 {
-                font-size: 1rem;
-                margin: 0.4rem 0;
-                text-align:justify;
-                font-weight: $highlight-font-weights;
-            }
-
-        }
-
-        img {
-            float: left;
-            width: 5rem;
-            margin-right: 0.5rem;
-            box-sizing: border-box;
-            border-style: none;
-            border-radius: 1rem;
-            // .backgroundimg {
-            //     @include promoteimg;
-            // }
-        }
+    .homestayprice {
+        @include overlaycapsule();
+        top: 2rem;
+        left: -4rem;
     }   
+
+    .visitstats {
+        @include overlaycapsule();
+        bottom: 2rem;
+        left: 8rem;
+    }
     
 
     .backgroundimg {
@@ -77,10 +77,6 @@
     }
 
 }
-
-// #promote img.backgroundimg, div.backgroundimg {
-//     @include promoteimg;
-// }
 
 div.backgroundimg > canvas {
     border-top-left-radius: 5rem;
