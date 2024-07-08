@@ -20,4 +20,10 @@ blockquote {
             font-size: $base-font-size;
         }
     }
+
+    &.quantity {
+        font-size: $price-font-size;
+        color: $take-action-color;
+        margin: 0;
+    }
 }
