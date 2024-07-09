@@ -15,7 +15,7 @@
 }
 
 @mixin overlaycapsule {
-    width: 20rem;
+    width: 18rem;
     box-sizing: border-box;
     border-style: none;
     border-radius: 0.8rem;
@@ -64,6 +64,24 @@
         left: 8rem;
     }
     
+    .rewards {
+        @include overlaycapsule();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        top: 4rem;
+        left: 20rem;
+
+        img {
+            margin: 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
 
     .backgroundimg {
         @include promoteimg;
