@@ -22,6 +22,7 @@ const visitstatsVariant = {
 export function PromoteSection() {
     const [beachImageLoaded, setBeachImageLoaded] = useState(false);
     const beachImage = 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Matnog_317.jpg';
+    const topHost = 'https://img.agoda.net/images/agoda-homes/overview-dashboard/top-host-active.svg';
     useLayoutEffect(() => {
         const img = new Image();
         img.onload = () => {
@@ -81,20 +82,42 @@ export function PromoteSection() {
                 animate="visible"
                 transition={{ delay: 2, duration: 1, type: "tween" }}
             >
-                <Link to="/partners" className="mainroom">
-                    <img
-                        className="profilepic"
-                        src={logo}
-                        alt="Abiza Homestay Logo"
-                        style={{ display: !houseImageLoaded ? "none" : "inline" }}
-                        fetchpriority="high"
-                    />
-                </Link>
+                {/* <Link to="/partners" className="mainroom"> */}
+                <img
+                    className="profilepic"
+                    src={logo}
+                    alt="Abiza Homestay Logo"
+                    style={{ display: !houseImageLoaded ? "none" : "inline" }}
+                    fetchpriority="high"
+                />
+                {/* </Link> */}
                 <header>
                     <Link to="/partners">
                         <h4>Visits</h4>
                         <blockquote className="quantity">+{121 + 68 + 137}</blockquote>
                     </Link>
+                </header>
+            </motion.section>
+            <motion.section
+                className="rewards"
+                variants={visitstatsVariant}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 2, duration: 1, type: "tween" }}
+            >
+                <img
+                    className="profilepic"
+                    src={topHost}
+                    alt="Agoda Top Host"
+                    // style={{ display: !houseImageLoaded ? "none" : "inline" }}
+                    fetchpriority="high"
+                />
+                <header>
+                    {/* <Link to="/partners">
+                        <h4>Visits</h4>
+                        <blockquote className="quantity">+{121 + 68 + 137}</blockquote>
+                    </Link> */}
+                    <p>Agoda Top Host</p>
                 </header>
             </motion.section>
             <>
