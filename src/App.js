@@ -14,7 +14,8 @@ import room2A from './assets/room2A.jpeg';
 import room2B from './assets/room2B.jpeg';
 import crA from './assets/crA.jpeg';
 import crB from './assets/crB.jpeg';
-import parking from './assets/parking.jpg';
+// import parking from './assets/parking.jpg';
+import parking from './assets/shared_garage.jpg'
 import loading from "./assets/loading-twotone-loop.svg";
 import './App.scss';
 

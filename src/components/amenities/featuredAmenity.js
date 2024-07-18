@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Blurhash } from "react-blurhash";
 
@@ -23,6 +23,23 @@ const scaleVariants = {
 
 function FeaturedAmenity(props) {
     const { amenities, shown, state } = props;
+    const imageRef = useRef(null)
+    const popoverRef = useRef(null);
+    const [show, setShow] = useState(false);
+    const [position, setPosition] = useState({});
+
+    const onViewImage = (e) => {
+        const imgRect = imageRef.current.getBoundingClientRect();
+        setPosition({
+            top: imgRect.bottom,
+            left: imgRect.left + imgRect.width / 2,
+        });
+
+        console.log(position)
+        setShow(!show);
+    };
+
+    console.log("selected amenity: ", state)
     return (
         <>
             {
@@ -59,10 +76,39 @@ function FeaturedAmenity(props) {
                                 alt="Featured amenity - entire house"
                                 // style={{ display: !featureImageLoaded ? "none" : "inline" }}
                                 variants={scaleVariants}
+                                ref={imageRef}
+                                onClick={onViewImage}
+                                style={{ cursor: 'pointer' }}
                             />
                         </motion.li>
                     )
                 })
+            }
+            {(show)
+                ?
+                <>
+                    <div className="backdrop" onClick={onViewImage}></div>
+                    <div
+                        className="popover"
+                        ref={popoverRef}
+                        style={{
+                            position: 'fixed',
+                            // top: '100%',
+                            top: `${position.top}`,
+                            // color: "canvastext",
+                            // overflow: "auto",
+                            left: `${position.left}`,
+                            transform: 'translateX(50%)',
+                            zIndex: 3,
+                        }}
+                    >
+                        <div className="popover-content">
+                            <img className="display" src={state.selectedAmenity} alt={state.selectedAlt} />
+                        </div>
+                    </div>
+                </>
+                :
+                ""
             }
         </>
     )
