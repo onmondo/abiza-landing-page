@@ -1,9 +1,7 @@
 import React, { useReducer, useState, useEffect } from 'react'
-// import AmenitiesModal from './modal';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
 import FeaturedAmenity from "./featuredAmenity";
-// import bookingDotComAward from "../../assets/Digital-Award-TRA-2024.png"
 
 const featureVariant = {
     hidden: {
