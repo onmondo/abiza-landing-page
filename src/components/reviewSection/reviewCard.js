@@ -23,8 +23,6 @@ function ReviewCard(props) {
                 <dd className="reviewprofile">{review.name}</dd>
                 <dt>Location</dt>
                 <dd className="reviewprofile comments">{review.location}</dd>
-                {/* <dt>Date</dt>
-        <dd>{review.date}</dd> */}
 
             </dl>
         </address>
