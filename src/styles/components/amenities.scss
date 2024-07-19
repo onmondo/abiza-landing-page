@@ -123,9 +123,17 @@
 }
   
 .popover-content {
+    background-color: #fff;
+    padding: 0.8rem;
     header {
         display: flex;
         justify-content: space-between;
+    }
+    img {
+        &.display {
+            height: 50%;
+            width: 100%;
+        }
     }
 }
 

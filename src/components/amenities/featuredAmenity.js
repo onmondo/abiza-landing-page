@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Blurhash } from "react-blurhash";
+import { ViewAmenity } from "./viewAmenity";
 
 const scaleVariants = {
     scaleup: {
@@ -35,11 +36,9 @@ function FeaturedAmenity(props) {
             left: imgRect.left + imgRect.width / 2,
         });
 
-        console.log(position)
         setShow(!show);
     };
 
-    console.log("selected amenity: ", state)
     return (
         <>
             {
@@ -84,32 +83,7 @@ function FeaturedAmenity(props) {
                     )
                 })
             }
-            {(show)
-                ?
-                <>
-                    <div className="backdrop" onClick={onViewImage}></div>
-                    <div
-                        className="popover"
-                        ref={popoverRef}
-                        style={{
-                            position: 'fixed',
-                            // top: '100%',
-                            top: `${position.top}`,
-                            // color: "canvastext",
-                            // overflow: "auto",
-                            left: `${position.left}`,
-                            transform: 'translateX(50%)',
-                            zIndex: 3,
-                        }}
-                    >
-                        <div className="popover-content">
-                            <img className="display" src={state.selectedAmenity} alt={state.selectedAlt} />
-                        </div>
-                    </div>
-                </>
-                :
-                ""
-            }
+            {(show) ? <ViewAmenity position={position} popoverRef={popoverRef} onViewImage={onViewImage} amenity={state.selectedAmenity} alt={state.selectedAlt} /> : ""}
         </>
     )
 }
