@@ -1,11 +1,9 @@
 import React from 'react';
 import isEmpty from 'lodash/isEmpty';
 import ReviewCard from './reviewCard';
-// import { useMediaQuery } from 'react-responsive';
 import reviews from './reviews.json'
 
 function Reviews() {
-    // const isMobile = useMediaQuery({ query: `(max-width: 535px)` });
 
     const filteredReviews = (reviews) =>
         reviews.filter((review) =>
@@ -33,9 +31,7 @@ function Reviews() {
     return (
         <section id='reviews' >
             <ul>
-                {
-                    doubleCopy(filteredReviews(reviews)).map((review, index) => renderReviewCards(review, index))
-                }
+                {doubleCopy(filteredReviews(reviews)).map((review, index) => renderReviewCards(review, index))}
             </ul>
         </section >
     )
