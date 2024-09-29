@@ -8,6 +8,7 @@ export function AllRightsReserved() {
             <ul>
                 <li><Link to="/termsandcondition#privacypolicy">Privacy Policy</Link></li>
                 <li><Link to="/termsandcondition">Terms of Service</Link></li>
+                <li>v{process.env.APP_VERSION}</li>
                 {/* <li>Cookies Settings</li> */}
             </ul>
         </section>
