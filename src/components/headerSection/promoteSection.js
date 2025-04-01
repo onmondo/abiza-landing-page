@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { motion } from "framer-motion";
 import { Blurhash } from "react-blurhash";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
@@ -6,6 +6,7 @@ import homestay from '../../assets/homestay.png';
 import logo from '../../assets/logo-transparent.png';
 import { PriceTag } from "../common/pricetag";
 import { promoteVariant } from "./animationVariants";
+import { headerSectionData } from "./constant";
 
 const visitstatsVariant = {
     ...promoteVariant,
@@ -21,8 +22,16 @@ const visitstatsVariant = {
 
 export function PromoteSection() {
     const [beachImageLoaded, setBeachImageLoaded] = useState(false);
-    const beachImage = 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Matnog_317.jpg';
-    const topHost = 'https://img.agoda.net/images/agoda-homes/overview-dashboard/top-host-active.svg';
+    const {
+        beachImage,
+        beachDesc,
+        topHost,
+        currency,
+        price,
+        bookings,
+        tophost
+    } = headerSectionData;
+
     useLayoutEffect(() => {
         const img = new Image();
         img.onload = () => {
@@ -71,7 +80,7 @@ export function PromoteSection() {
                 <header>
                     <Link to="/partners">
                         <h4>Starts at</h4>
-                        <PriceTag symbol={"₱"} price={"953"} className="price" />
+                        <PriceTag symbol={currency} price={price} className="price" />
                     </Link>
                 </header>
             </motion.section>
@@ -94,7 +103,7 @@ export function PromoteSection() {
                 <header>
                     <Link to="/partners">
                         <h4>Visits</h4>
-                        <blockquote className="quantity">+{121 + 68 + 137}</blockquote>
+                        <blockquote className="quantity">{`+${bookings}`}</blockquote>
                     </Link>
                 </header>
             </motion.section>
@@ -108,7 +117,7 @@ export function PromoteSection() {
                 <img
                     className="profilepic"
                     src={topHost}
-                    alt="Agoda Top Host"
+                    alt={tophost.agoda}
                     // style={{ display: !houseImageLoaded ? "none" : "inline" }}
                     fetchpriority="high"
                 />
@@ -117,7 +126,7 @@ export function PromoteSection() {
                         <h4>Visits</h4>
                         <blockquote className="quantity">+{121 + 68 + 137}</blockquote>
                     </Link> */}
-                    <p>Agoda Top Host</p>
+                    <p>{tophost.agoda}</p>
                 </header>
             </motion.section>
             <>
@@ -134,7 +143,7 @@ export function PromoteSection() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2, duration: 1.2, type: "tween" }}
                     src={beachImage}
-                    alt="One of the travel destinations - Subic Beach"
+                    alt={beachDesc}
                     style={{ display: !beachImageLoaded ? "none" : "inline" }}
                     sizes="(max-width: 544px) 100vw, 50vw"
                     fetchpriority="high"
