@@ -13,7 +13,7 @@ const partners = [
         "description": "Airbnb Room 1",
         "logo": airbnb,
         "url": process.env.AIRBNB_ROOM1,
-        "price": "953",
+        "price": "1000",
         "currency": {
             "symbol": "₱",
             "name": "PHP"
@@ -21,7 +21,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "400"
+                "price": "500"
             }
         }
     },
@@ -30,7 +30,7 @@ const partners = [
         "description": "Airbnb Room 2",
         "logo": airbnb,
         "url": process.env.AIRBNB_ROOM2,
-        "price": "953",
+        "price": "1000",
         "currency": {
             "symbol": "₱",
             "name": "PHP"
@@ -38,7 +38,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "400"
+                "price": "500"
             }
         }
     },
@@ -47,7 +47,7 @@ const partners = [
         "description": "Agoda Room 1",
         "logo": agoda,
         "url": process.env.AGODA_ROOM1,
-        "price": "953",
+        "price": "1000",
         "currency": {
             "symbol": "₱",
             "name": "PHP"
@@ -55,7 +55,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "400"
+                "price": "500"
             }
         }
     },
@@ -64,7 +64,7 @@ const partners = [
         "description": "Agoda Room 2",
         "logo": agoda,
         "url": process.env.AGODA_ROOM2,
-        "price": "953",
+        "price": "1000",
         "currency": {
             "symbol": "₱",
             "name": "PHP"
@@ -72,7 +72,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "400"
+                "price": "500"
             }
         }
     },
@@ -81,7 +81,7 @@ const partners = [
         "description": "Booking.com room 1 & 2",
         "logo": bookingDotCom,
         "url": process.env.BOOKING_DOT_COM_ROOMS,
-        "price": "953",
+        "price": "1000",
         "currency": {
             "symbol": "₱",
             "name": "PHP"
@@ -89,7 +89,7 @@ const partners = [
         "guests": {
             "maxCapacity": 3,
             "extra": {
-                "price": "400"
+                "price": "500"
             }
         }
     }
