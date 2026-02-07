@@ -12,11 +12,11 @@ const visitstatsVariant = {
     ...promoteVariant,
     visible: {
         ...promoteVariant.visible,
-        transition: { duration: 1.2, type: "tween" }
+        transition: { duration: 0.1, type: "tween" }
     },
     hover: {
         ...promoteVariant.hover,
-        transition: { duration: 0.8 }
+        transition: { duration: 0.1 }
     }
 }
 
@@ -57,7 +57,7 @@ export function PromoteSection() {
                 variants={promoteVariant}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 1.2, type: "tween" }}
+                transition={{ duration: 0.1, type: "tween" }}
             >
                 <Link to="/partners" className="mainroom">
                     <Blurhash
@@ -89,7 +89,7 @@ export function PromoteSection() {
                 variants={visitstatsVariant}
                 initial="hidden"
                 animate="visible"
-                transition={{ delay: 2, duration: 1, type: "tween" }}
+                transition={{ delay: 0.1, duration: 0.1, type: "tween" }}
             >
                 {/* <Link to="/partners" className="mainroom"> */}
                 <img
@@ -112,7 +112,7 @@ export function PromoteSection() {
                 variants={visitstatsVariant}
                 initial="hidden"
                 animate="visible"
-                transition={{ delay: 2, duration: 1, type: "tween" }}
+                transition={{ delay: 0.1, duration: 0.1, type: "tween" }}
             >
                 <img
                     className="profilepic"
@@ -141,7 +141,7 @@ export function PromoteSection() {
                     className="backgroundimg"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 1.2, type: "tween" }}
+                    transition={{ delay: 0.1, duration: 0.1, type: "tween" }}
                     src={beachImage}
                     alt={beachDesc}
                     style={{ display: !beachImageLoaded ? "none" : "inline" }}

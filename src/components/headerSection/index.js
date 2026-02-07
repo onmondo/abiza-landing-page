@@ -13,7 +13,7 @@ function HeaderSection() {
                     <motion.h1
                         initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2, duration: 1.2 }}
+                        transition={{ delay: 0.1, duration: 1.2 }}
                     >
                         Discover Tranquility
                     </motion.h1>

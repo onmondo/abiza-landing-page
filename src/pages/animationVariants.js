@@ -28,9 +28,9 @@ const listVariants = {
         opacity: 1,
         scale: 1,
         transition: {
-            duration: 0.6,
+            duration: 0.1,
             when: 'beforeChildren',
-            staggerChildren: 0.4
+            staggerChildren: 0.1
         }
     }
 }
@@ -42,13 +42,13 @@ const containerVariant = {
     visible: {
         opacity: 1,
         transition: {
-            duration: 0.6
+            duration: 0.1
         }
     },
     exit: {
         opacity: 0,
         transition: {
-            duration: 0.6
+            duration: 0.1
         }
     }
 }
