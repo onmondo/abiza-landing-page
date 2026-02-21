@@ -39,19 +39,28 @@ function BookingSection() {
           animate="visible"
         >
           <motion.li variants={listVariants}>
-            <button popovertarget="form" onClick={() => { setPartner(process.env.AIRBNB_ROOM1) }}>
+            <button popovertarget="form" onClick={() => { 
+              // eslint-disable-next-line no-undef
+              setPartner(AIRBNB_ROOM1) 
+            }}>
               <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
               <img className="bookingLogo" src={airbnb} alt="AirBnB Logo" loading="lazy" decoding="async" />
             </button>
           </motion.li>
           <motion.li variants={listVariants}>
-            <button popovertarget="form" onClick={() => { setPartner(process.env.AGODA_ROOM1) }}>
+            <button popovertarget="form" onClick={() => { 
+              // eslint-disable-next-line no-undef
+              setPartner(AGODA_ROOM1) 
+            }}>
               <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
               <img className="bookingLogo" src={agoda} alt="Agoda Logo" loading="lazy" decoding="async" />
             </button>
           </motion.li>
           <motion.li variants={listVariants}>
-            <button popovertarget="form" onClick={() => { setPartner(process.env.BOOKING_DOT_COM_ROOMS) }}>
+            <button popovertarget="form" onClick={() => { 
+              // eslint-disable-next-line no-undef
+              setPartner(BOOKING_DOT_COM_ROOMS) 
+            }}>
               <img className="openWindowIcon" src={oneInNewWindowIcon} alt="Open in new window icon" />
               <img className="bookingLogo" src={bookingDotCom} alt="Booking.com Logo" loading="lazy" decoding="async" />
             </button>

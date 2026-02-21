@@ -13,7 +13,8 @@ const partners = [
     'partner': 'Airbnb',
     'description': 'Airbnb Room 1',
     'logo': airbnb,
-    'url': process.env.AIRBNB_ROOM1,
+    // eslint-disable-next-line no-undef
+    'url': AIRBNB_ROOM1,
     'price': '1000',
     'currency': {
       'symbol': '₱',
@@ -30,7 +31,8 @@ const partners = [
     'partner': 'Airbnb',
     'description': 'Airbnb Room 2',
     'logo': airbnb,
-    'url': process.env.AIRBNB_ROOM2,
+    // eslint-disable-next-line no-undef
+    'url': AIRBNB_ROOM2,
     'price': '1000',
     'currency': {
       'symbol': '₱',
@@ -47,7 +49,8 @@ const partners = [
     'partner': 'Agoda',
     'description': 'Agoda Room 1',
     'logo': agoda,
-    'url': process.env.AGODA_ROOM1,
+    // eslint-disable-next-line no-undef
+    'url': AGODA_ROOM1,
     'price': '1000',
     'currency': {
       'symbol': '₱',
@@ -64,7 +67,8 @@ const partners = [
     'partner': 'Agoda',
     'description': 'Agoda Room 2',
     'logo': agoda,
-    'url': process.env.AGODA_ROOM2,
+    // eslint-disable-next-line no-undef
+    'url': AGODA_ROOM2,
     'price': '1000',
     'currency': {
       'symbol': '₱',
@@ -81,7 +85,8 @@ const partners = [
     'partner': 'Booking.com',
     'description': 'Booking.com room 1 & 2',
     'logo': bookingDotCom,
-    'url': process.env.BOOKING_DOT_COM_ROOMS,
+    // eslint-disable-next-line no-undef
+    'url': BOOKING_DOT_COM_ROOMS,
     'price': '1000',
     'currency': {
       'symbol': '₱',
