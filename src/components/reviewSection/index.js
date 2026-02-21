@@ -1,40 +1,41 @@
-import React from 'react';
-import isEmpty from 'lodash/isEmpty';
-import ReviewCard from './reviewCard';
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import isEmpty from 'lodash/isEmpty'
+import ReviewCard from './reviewCard'
 import reviews from './reviews.json'
 
 function Reviews() {
 
-    const filteredReviews = (reviews) =>
-        reviews.filter((review) =>
-            review.active === true
-        )
-
-    const doubleCopy = (reviews) =>
-        [...reviews, ...reviews]
-
-    const renderReviewCards = (review, index) => {
-        if (isEmpty(review)) {
-            return (
-                <li key={index} className='reviewspacer'>
-                    <ReviewCard review={review} />
-                </li>
-            )
-        }
-        return (
-            <li key={index}>
-                <ReviewCard review={review} />
-            </li>
-        )
-    }
-
-    return (
-        <section id='reviews' >
-            <ul>
-                {doubleCopy(filteredReviews(reviews)).map((review, index) => renderReviewCards(review, index))}
-            </ul>
-        </section >
+  const filteredReviews = (reviews) =>
+    reviews.filter((review) =>
+      review.active === true
     )
+
+  const doubleCopy = (reviews) =>
+    [...reviews, ...reviews]
+
+  const renderReviewCards = (review, index) => {
+    if (isEmpty(review)) {
+      return (
+        <li key={index} className='reviewspacer'>
+          <ReviewCard review={review} />
+        </li>
+      )
+    }
+    return (
+      <li key={index}>
+        <ReviewCard review={review} />
+      </li>
+    )
+  }
+
+  return (
+    <section id='reviews' >
+      <ul>
+        {doubleCopy(filteredReviews(reviews)).map((review, index) => renderReviewCards(review, index))}
+      </ul>
+    </section >
+  )
 }
 
-export default Reviews;
+export default Reviews
