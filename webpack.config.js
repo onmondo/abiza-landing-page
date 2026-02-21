@@ -1,6 +1,6 @@
 const path = require('path')
+const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   entry: './src/index.js',
@@ -13,7 +13,17 @@ module.exports = {
       template: './src/index.html',
       favicon: './src/favicon.ico',
     }),
-    new Dotenv()
+    new webpack.DefinePlugin({
+      'APP_VERSION': JSON.stringify('1.3.7'),
+      'AIRBNB_ROOM1': JSON.stringify('https://airbnb.com/h/abiza'),
+      'AIRBNB_ROOM2': JSON.stringify('https://airbnb.com/h/abiza2'),
+      'AGODA_ROOM1': JSON.stringify('https://www.agoda.com/abiza-homestay/hotel/matnog-ph.html?hotel_id=35077109'),
+      'AGODA_ROOM2': JSON.stringify('https://www.agoda.com/en-us/pages/agoda/default/page_hotel.aspx?hotel_id=42077085'),
+      'BOOKING_DOT_COM_ROOMS': JSON.stringify('https://www.booking.com/hotel/ph/abiza-homestay.en-gb.html?aid=304142'),
+      'GMAP_LOCATION': JSON.stringify('https://maps.google.com/?q=Abiza+Homestay'),
+      'OPEN_WEATHER_RESOURCE_URL': JSON.stringify('https://api-weather-forecast.john-raymond-blando.workers.dev'),
+      'OPEN_WEATHER_IMG_URL': JSON.stringify('https://openweathermap.org/img'),
+    })
   ],
   module: {
     rules: [
