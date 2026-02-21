@@ -20,37 +20,37 @@
 // }
 
 const listVariants = {
-    hidden: {
-        opacity: 0,
-        scale: 0,
-    },
-    visible: {
-        opacity: 1,
-        scale: 1,
-        transition: {
-            duration: 0.6,
-            when: 'beforeChildren',
-            staggerChildren: 0.4
-        }
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      when: 'beforeChildren',
+      staggerChildren: 0.4
     }
+  }
 }
 
 const containerVariant = {
-    hidden: {
-        opacity: 0
-    },
-    visible: {
-        opacity: 1,
-        transition: {
-            duration: 0.6
-        }
-    },
-    exit: {
-        opacity: 0,
-        transition: {
-            duration: 0.6
-        }
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.6
     }
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 0.6
+    }
+  }
 }
 
-export { containerVariant, listVariants };
+export { containerVariant, listVariants }
