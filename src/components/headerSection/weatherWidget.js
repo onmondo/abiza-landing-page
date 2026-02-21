@@ -13,9 +13,10 @@ function WeatherWidget() {
   const [data, setData] = useState({})
 
   const updateWeather = () => {
-    // const weatherURL = `${process.env.OPEN_WEATHER_RESOURCE_URL}/weather?lat=${process.env.LAT}&lon=${process.env.LONG}&units=metric&appid=${process.env.OPEN_WEATHER_API_KEY}`
+    // const weatherURL = `${OPEN_WEATHER_RESOURCE_URL}/weather?lat=${LAT}&lon=${LONG}&units=metric&appid=${OPEN_WEATHER_API_KEY}`
     try {
-      const weatherURL = process.env.OPEN_WEATHER_RESOURCE_URL
+      // eslint-disable-next-line no-undef
+      const weatherURL = OPEN_WEATHER_RESOURCE_URL
       axios.get(weatherURL).then((response) => {
         // console.log('response.data', response);
         setWithExpiry('matnogweather', response.data, 14400000)
@@ -50,12 +51,12 @@ function WeatherWidget() {
             <dd id="weatherlocation">{data?.name}</dd>
             <dd id="temp">{data?.main?.feels_like}°</dd>
             <dd id="weatherIcon">
-              <img
-                src={`${process.env.OPEN_WEATHER_IMG_URL}/wn/${head(data.weather)?.icon}@2x.png`}
+              {/* <img
+                src={`${OPEN_WEATHER_IMG_URL}/wn/${head(data.weather)?.icon}@2x.png`}
                 alt="Current weather icon"
                 className="weather"
                 loading="lazy"
-              />
+              /> */}
             </dd>
             <dd id="weatherdetails">
               {head(data.weather)?.description}

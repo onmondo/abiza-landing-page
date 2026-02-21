@@ -2,9 +2,11 @@ import globals from 'globals'
 import { defineConfig } from 'eslint/config'
 import js from '@eslint/js'
 import stylisticJs from '@stylistic/eslint-plugin'
-import json from 'eslint-plugin-json'
 
 export default defineConfig([
+  {
+    ignores: ['dist/**']
+  },
   js.configs.recommended,
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
@@ -27,14 +29,5 @@ export default defineConfig([
       '@stylistic/js/quotes': ['error', 'single'],
       '@stylistic/js/semi': ['error', 'never'],
     }
-  },
-  {
-    files: ['**/*.json'],
-    plugins: {
-      json,
-    },
-    rules: {
-      'json/indent': ['error', 2],
-    },
   },
 ])

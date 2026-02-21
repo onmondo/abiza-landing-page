@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import QRCode from 'react-qr-code'
@@ -11,17 +12,17 @@ export function QRCodes() {
       <li>
         <img src={airbnb} alt="AirBnB Logo" loading="lazy" decoding="async" />
       </li>
-      <li><QRCode value={process.env.AIRBNB_ROOM1} /></li>
-      <li><QRCode value={process.env.AIRBNB_ROOM2} /></li>
+      <li><QRCode value={AIRBNB_ROOM1} /></li>
+      <li><QRCode value={AIRBNB_ROOM2} /></li>
       <li>
         <img src={agoda} alt="Agoda Logo" loading="lazy" decoding="async" />
       </li>
-      <li><QRCode value={process.env.AGODA_ROOM1} /></li>
-      <li><QRCode value={process.env.AGODA_ROOM2} /></li>
+      <li><QRCode value={AGODA_ROOM1} /></li>
+      <li><QRCode value={AGODA_ROOM2} /></li>
       <li>
         <img src={bookingDotCom} alt="Booking.com Logo" loading="lazy" decoding="async" />
       </li>
-      <li><QRCode value={process.env.BOOKING_DOT_COM_ROOMS} /></li>
+      <li><QRCode value={BOOKING_DOT_COM_ROOMS} /></li>
     </ul>
   )
 }
