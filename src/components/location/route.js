@@ -1,43 +1,44 @@
-import React from "react";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
 
 function Route(props) {
-    const { route } = props;
+  const { route } = props
 
-    return (
-        <>
-            {/* <header>
+  return (
+    <>
+      {/* <header>
                 <h4>{route.id}</h4>
             </header> */}
-            {/* <ul>
+      {/* <ul>
                 {route.details.map((detail, index) =>
                     <li key={index}><p>{detail}</p></li>
                 )}
             </ul> */}
-            {/* <hr /> */}
-            {/* <address className="traveltime">
-                <dl>
-                    <dt>Estimated time</dt>
-                    <dd>{route.estimatedTime}</dd>
-                </dl>
-                <dl>
-                    <dt>Distance</dt>
-                    <dd>{route.distance}</dd>
-                </dl>
-            </address> */}
-            <address className="traveltime">
-                <dl>
-                    <dt>{route.id}</dt>
-                </dl>
-                <dl>
-                    <dt>- {route.estimatedTime} -</dt>
-                    <dd>- {route.distance} -</dd>
-                </dl>
-                <dl>
-                    <dt>Matnog</dt>
-                </dl>
-            </address>
-        </>
-    )
+      {/* <hr /> */}
+      {/* <address className="traveltime">
+            <dl>
+                <dt>Estimated time</dt>
+                <dd>{route.estimatedTime}</dd>
+            </dl>
+            <dl>
+                <dt>Distance</dt>
+                <dd>{route.distance}</dd>
+            </dl>
+        </address> */}
+      <address className="traveltime">
+        <dl>
+          <dt>{route.id}</dt>
+        </dl>
+        <dl>
+          <dt>- {route.estimatedTime} -</dt>
+          <dd>- {route.distance} -</dd>
+        </dl>
+        <dl>
+          <dt>Matnog</dt>
+        </dl>
+      </address>
+    </>
+  )
 }
 
-export default Route;
+export default Route
