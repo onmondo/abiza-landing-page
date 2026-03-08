@@ -26,9 +26,9 @@ function AboutSection() {
             <h2 class="font-serif text-4xl md:text-5xl font-bold text-deep-sea leading-tight">
               Intimate Comfort, Memorable Stay
             </h2>
-            <p class="text-lg text-gray-600 leading-relaxed">
+            {/* <p class="text-lg text-gray-600 leading-relaxed">
               At ABIZA Homestay, you can easily travel to Matnog Port because our location is just off the highway and 7 kilometers from the port. And since Sorsogon's beaches and tourist attractions are close to our place, you will surely enjoy and unwind while staying with us.
-            </p>
+            </p> */}
             <p class="text-lg text-gray-600 leading-relaxed">
               Discover comfort at our homestay with two inviting bedrooms for up to three guests each. Enjoy plush bedding and a peaceful night's sleep. Our spacious comfort room with a refreshing shower provides a tranquil escape and all amenities for a rejuvenating stay.
             </p>            
@@ -76,7 +76,7 @@ function AboutSection() {
                   </div>
                 ))}
               </div>
-              <button
+              {/* <button
                 id="data-carousel-prev"
                 type="button"
                 class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
@@ -127,7 +127,7 @@ function AboutSection() {
                   </svg>
                   <span class="hidden">Next</span>
                 </span>
-              </button>
+              </button> */}
             </div>
 
 
