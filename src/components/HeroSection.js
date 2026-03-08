@@ -16,12 +16,12 @@ function HeroSection() {
             A charming single-story retreat with two cozy rooms, steps away from the bustling sea port
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-300">
-            <a href="#contact" class="bg-terracotta text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
+            <a href="tel:09177053956" class="bg-terracotta text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl">
               Reserve Your Stay
             </a>
-            <a href="#rooms" class="bg-white bg-opacity-20 backdrop-blur-md text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-deep-sea transition-all">
+            {/* <a href="#rooms" class="bg-white bg-opacity-20 backdrop-blur-md text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-deep-sea transition-all">
               Explore Rooms
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
