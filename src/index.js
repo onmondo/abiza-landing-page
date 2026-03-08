@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom/client'
 import { App } from './App'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+// const root = ReactDOM.createRoot(document.getElementById('root'))
+const heroSection = document.getElementById('hero')
+const root = ReactDOM.createRoot(heroSection)
 root.render(
   // <React.StrictMode>
   <Router>
