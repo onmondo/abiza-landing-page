@@ -3,7 +3,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <section className="relative h-screen hero-pattern flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative h-screen hero-pattern flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-warm-white"></div>
         
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">

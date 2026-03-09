@@ -194,7 +194,7 @@
     </section> -->
 
     <!-- Contact/Booking Section -->
-    <!-- <section id="contact" class="py-20 md:py-32 bg-sand bg-opacity-20">
+    <section id="contact" class="py-20 md:py-32 bg-sand bg-opacity-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl shadow-2xl overflow-hidden reveal-on-scroll">
                 <div class="bg-terracotta p-8 text-center text-white">
@@ -240,7 +240,7 @@
                             <textarea rows="3" placeholder="Any dietary requirements, arrival time, or special occasions?" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-terracotta focus:ring-2 focus:ring-terracotta focus:ring-opacity-20 outline-none transition-all resize-none"></textarea>
                         </div>
                         
-                        <button type="submit" class="w-full bg-terracotta text-white py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                        <button type="submit" class="w-full bg-terracotta text-white py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl disabled:cursor-not-allowed disabled:bg-gray-400" disabled>
                             Request Booking
                         </button>
                         
@@ -251,7 +251,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Footer -->
     <footer class="bg-deep-sea text-white py-12 border-t border-gray-800">
@@ -329,12 +329,6 @@
                 navbar.classList.remove('bg-white', 'shadow-md');
             }
         });
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
 
         // Room selection
         function selectRoom(room) {
