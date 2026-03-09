@@ -17,6 +17,37 @@ export function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [pathname])
 
+  // Initialize scroll animations
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up')
+          entry.target.style.opacity = '1'
+          observer.unobserve(entry.target)
+        }
+      })
+    }, observerOptions)
+
+    // Observe all reveal-on-scroll elements
+    document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+      el.style.opacity = '0'
+      observer.observe(el)
+    })
+
+    // Cleanup
+    return () => {
+      document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+        observer.unobserve(el)
+      })
+    }
+  }, [])
+
   return (
     <>
       <Navigation />
