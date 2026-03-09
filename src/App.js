@@ -8,6 +8,7 @@ import HeroSection from './components/HeroSection'
 import Navigation from './components/Navigation'
 import AboutSection from './components/AboutSection'
 import LocationSection from './components/LocationSection'
+import AmenitiesSection from './components/AmenitiesSection'
 
 export function App() {
   const { pathname } = useLocation()
@@ -22,6 +23,7 @@ export function App() {
       <HeroSection />
       <AboutSection />
       <LocationSection />
+      <AmenitiesSection />
     </>
   )
 }

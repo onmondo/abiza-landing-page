@@ -16,63 +16,63 @@ function AboutSection() {
   ]
 
   return (
-    <section id="about" class="py-20 md:py-32 bg-warm-white relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-terracotta opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+    <section id="about" className="py-20 md:py-32 bg-warm-white relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-terracotta opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
         
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="space-y-6 reveal-on-scroll">
-            <span class="text-terracotta font-semibold tracking-wider uppercase text-sm">About Our Home</span>
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-deep-sea leading-tight">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 reveal-on-scroll">
+            <span className="text-terracotta font-semibold tracking-wider uppercase text-sm">About Our Home</span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-deep-sea leading-tight">
               Intimate Comfort, Memorable Stay
             </h2>
-            {/* <p class="text-lg text-gray-600 leading-relaxed">
+            {/* <p className="text-lg text-gray-600 leading-relaxed">
               At ABIZA Homestay, you can easily travel to Matnog Port because our location is just off the highway and 7 kilometers from the port. And since Sorsogon's beaches and tourist attractions are close to our place, you will surely enjoy and unwind while staying with us.
             </p> */}
-            <p class="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Discover comfort at our homestay with two inviting bedrooms for up to three guests each. Enjoy plush bedding and a peaceful night's sleep. Our spacious comfort room with a refreshing shower provides a tranquil escape and all amenities for a rejuvenating stay.
             </p>            
-            <p class="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               At Abiza Homestay, we redefine hospitality, ensuring your visit is not just a stay but a collection of unforgettable moments. Welcome to a home where comfort meets charm.
             </p>
                     
-            <div class="grid grid-cols-2 gap-6 pt-4">
-              <div class="flex items-start space-x-3">
-                <div class="bg-terracotta bg-opacity-10 p-3 rounded-full">
-                  <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="grid grid-cols-2 gap-6 pt-4">
+              <div className="flex items-start space-x-3">
+                <div className="bg-terracotta bg-opacity-10 p-3 rounded-full">
+                  <svg className="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-deep-sea">Prime Location</h4>
-                  <p class="text-sm text-gray-500">10 min drive to port</p>
+                  <h4 className="font-bold text-deep-sea">Prime Location</h4>
+                  <p className="text-sm text-gray-500">10 min drive to port</p>
                 </div>
               </div>
-              <div class="flex items-start space-x-3">
-                <div class="bg-ocean bg-opacity-10 p-3 rounded-full">
-                  <svg class="w-6 h-6 text-ocean" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-start space-x-3">
+                <div className="bg-ocean bg-opacity-10 p-3 rounded-full">
+                  <svg className="w-6 h-6 text-ocean" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-deep-sea">Flexible Check-in</h4>
-                  <p class="text-sm text-gray-500">16-Hour Availability</p>
+                  <h4 className="font-bold text-deep-sea">Flexible Check-in</h4>
+                  <p className="text-sm text-gray-500">16-Hour Availability</p>
                 </div>
               </div>
             </div>
           </div>
                 
-          <div class="relative reveal-on-scroll">
-            <div class="absolute inset-0 bg-terracotta rounded-3xl transform rotate-3 opacity-20"></div>
-            {/* <img src={room1A} alt="Cozy seaside cottage exterior" class="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover transform hover:scale-[1.02] transition-transform duration-500" /> */}
+          <div className="relative reveal-on-scroll">
+            <div className="absolute inset-0 bg-terracotta rounded-3xl transform rotate-3 opacity-20"></div>
+            {/* <img src={room1A} alt="Cozy seaside cottage exterior" className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover transform hover:scale-[1.02] transition-transform duration-500" /> */}
                     
 
-            <div id="default-carousel" class="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover transform hover:scale-[1.02] transition-transform duration-500" data-carousel="slide">
-              <div class="relative h-[500px] overflow-hidden rounded-base md:h-[500px]">
+            <div id="default-carousel" className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover transform hover:scale-[1.02] transition-transform duration-500" data-carousel="slide">
+              <div className="relative h-[500px] overflow-hidden rounded-base md:h-[500px]">
                 {roomImages.map((image, index) => (
-                  <div key={index} class={`duration-700 ease-in-out ${index === 0 ? '' : 'hidden'}`} data-carousel-item>
-                    <img src={image} class="relative rounded-3xl h-[500px] w-full object-cover" alt={`Room Image ${index + 1}`} />
+                  <div key={index} className={`duration-700 ease-in-out ${index === 0 ? '' : 'hidden'}`} data-carousel-item>
+                    <img src={image} className="relative rounded-3xl h-[500px] w-full object-cover" alt={`Room Image ${index + 1}`} />
                   </div>
                 ))}
               </div>
