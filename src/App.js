@@ -1,20 +1,43 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from 'react'
-import {
-  useLocation 
-} from 'react-router-dom'
 import './App.css'
 import HeroSection from './components/HeroSection'
 import Navigation from './components/Navigation'
 import AboutSection from './components/AboutSection'
 import LocationSection from './components/LocationSection'
+import AmenitiesSection from './components/AmenitiesSection'
 
 export function App() {
-  const { pathname } = useLocation()
-
+  // Initialize scroll animations
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [pathname])
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up')
+          entry.target.style.opacity = '1'
+          observer.unobserve(entry.target)
+        }
+      })
+    }, observerOptions)
+
+    // Observe all reveal-on-scroll elements
+    document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+      el.style.opacity = '0'
+      observer.observe(el)
+    })
+
+    // Cleanup
+    return () => {
+      document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+        observer.unobserve(el)
+      })
+    }
+  }, [])
 
   return (
     <>
@@ -22,6 +45,7 @@ export function App() {
       <HeroSection />
       <AboutSection />
       <LocationSection />
+      <AmenitiesSection />
     </>
   )
 }
