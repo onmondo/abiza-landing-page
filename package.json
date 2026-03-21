@@ -1,6 +1,6 @@
 {
   "name": "abiza-landing-page",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "homestay landing page",
   "main": "index.js",
   "scripts": {
