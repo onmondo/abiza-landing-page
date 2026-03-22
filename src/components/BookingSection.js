@@ -1,7 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import agodaLogo from '../assets/agoda-logo-transparent.svg'
-import bookingLogo from '../assets/booking-dot-com-logo-transparent.svg'
 import airbnbLogo from '../assets/airbnb-logo-transparent.svg'
 
 function BookingSection() {
@@ -30,8 +28,11 @@ function BookingSection() {
                 <a href={AIRBNB_ROOM2} target="_blank" rel="noopener noreferrer">
                   <img src={airbnbLogo} alt="Airbnb Logo" class="w-auto md:w-32 mx-auto md:mx-0 h-12 object-contain rounded-lg mb-6 md:mb-0 grayscale" />
                 </a>                
-              </div>              
+              </div>
             </div>
+          </div>
+          <div class="p-8 md:p-12">
+            <div id="container-1f431b9e246d1bdd442126a4f6549222"></div>
           </div>
         </div>
       </div>
