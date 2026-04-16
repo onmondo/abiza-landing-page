@@ -6,6 +6,7 @@ import Navigation from './components/Navigation'
 import AboutSection from './components/AboutSection'
 import LocationSection from './components/LocationSection'
 import AmenitiesSection from './components/AmenitiesSection'
+import BookingSection from './components/BookingSection'
 
 export function App() {
   // Initialize scroll animations
@@ -46,6 +47,7 @@ export function App() {
       <AboutSection />
       <LocationSection />
       <AmenitiesSection />
+      <BookingSection />
     </>
   )
 }
